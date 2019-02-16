@@ -1,12 +1,12 @@
-# WavesJ
+# Neel Java Library
 
-It's a [Java library](https://github.com/wavesplatform/WavesJ) for interacting with the Waves blockchain.
+It's a [Java library](https://github.com/wavesplatform/WavesJ) for interacting with the Neel blockchain.
 
 Supports node interaction, offline transaction signing, Matcher orders, and creating addresses and keys.
 
-## Using WavesJ in your project
+## Using Neel Java Library in your project
 
-Use the codes below to add WavesJ as a dependency for your project.
+Use the codes below to add Neel Java Library as a dependency for your project.
 
 ##### Maven:
 
