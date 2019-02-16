@@ -1,4 +1,4 @@
-# Neel Node in Docker
+# Neel Node in Docker 
 
 The easiest way to **run a Neel Node** is by using the new **Neel Docker container**. It requires just **one command** to enable everything or to change the settings of the node.
 
