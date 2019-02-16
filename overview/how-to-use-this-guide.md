@@ -10,17 +10,17 @@ In this guide, you can find all the information about Neel Network as the struct
 
 # Overview
 
-This section will give you a general information about Waves Platform and its main components.
+This section will give you a general information about Neel Network and its main components.
 
 1. [Platform Components](../overview/platform-components.md)
-2. [Waves Official Resources](../overview/waves-official-resources.md)
+2. [Neel Official Resources](../overview/waves-official-resources.md)
 3. [Security Notes](../overview/security-notes.md)
 4. [Neel Releases](../overview/waves-releases.md)
 5. [Neel Tokens](../overview/waves-tokens.md)
 
 # Platform Features
 
-This section contains explanations about Waves main Features such as \(Neel-NG Protocol\).
+This section contains explanations about Neel main Features such as \(Neel-NG Protocol\).
 
 1. [Decentralized Exchange \(DEX\)](../platform-features/decentralized-cryptocurrency-exchange-dex.md)
 2. [Tokens \(Custom Tokens\)](../platform-features/assets-custom-tokens.md)
