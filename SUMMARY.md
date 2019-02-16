@@ -25,7 +25,7 @@
 
 ## Neel Full Node
 
-* [What is Neel Full Node ](neel-master-node/what-is-a-full-node.md)
+* [What is Neel Full Node ](neel-master-node/what-is-a-master-node.md)
 * [How To Install a Node](neel-master-node/how-to-install-a-node/how-to-install-a-node.md)
   * [On Mac](neel-master-node/how-to-install-a-node/on-mac.md)
   * [On Windows](neel-master-node/how-to-install-a-node/on-windows.md)
