@@ -1,6 +1,6 @@
 ## Private Functions
 
-All private functions below require API Key to be provided in every HTTP request using `X-Api-Key` header. The default value is `ridethewaves!`. Securely hashed header value is stored in `rest-api.api-key-hash` setting in the waves.conf configuration file. See [/utils/hash/secure](/development-and-api/waves-node-rest-api/utils.md) for more information on how to obtain a secure hash.
+All private functions below require API Key to be provided in every HTTP request using `X-Api-Key` header. The default value is `ridetheneel!`. Securely hashed header value is stored in `rest-api.api-key-hash` setting in the neel.conf configuration file. See [/utils/hash/secure](/development-and-api/waves-node-rest-api/utils.md) for more information on how to obtain a secure hash.
 
 ### POST /assets/issue
 ![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
@@ -187,7 +187,7 @@ Create transaction to transfer an asset to several recipient addresses at once.
 
 ```
 "sender" - Sender address, Base58-encoded
-"assetId" - ID of the asset to send. By default, WAVES is assumed.
+"assetId" - ID of the asset to send. By default, NEEL is assumed.
 "transfers" - list of (recipient, amount) pairs where
    "recipient" is a Base58 address, and
    "amount" is the amount to send to that address.
