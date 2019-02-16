@@ -1,13 +1,10 @@
 # Client libraries
 
-Waves Full Node provides access to the [REST API](/en/development-and-api/node-api-overview.md) also there are community-driven open source libraries for different programming languages:
+Neel Master Node provides access to the [REST API](/en/development-and-api/node-api-overview.md) also there are community-driven open source libraries for different programming languages:
 
-* _**Python: **_[_**PyWaves**_](/development-and-api/client-libraries/pywaves.md).
-* _**Java: **_[_**WavesJ**_](/development-and-api/client-libraries/wavesj.md).
-* _**C\#: **_[_**WavesCS**_](/development-and-api/client-libraries/wavescs.md).
-* **TypeScript/JavaScript:** [_**Waves Signature Adapter**_](/development-and-api/client-libraries/waves-signature-adapter.md) and [_**Waves Transactions**_](/development-and-api/client-libraries/waves-transactions.md).
-* **C: ** [_**WavesC**_](/development-and-api/client-libraries/waves-c.md).
-* [_**Community Libraries**_](/development-and-api/client-libraries/unofficial-libraries.md).
+* _**Python: **_[_**PyNeel**_](/development-and-api/client-libraries/pyNeel.md).
+* _**Java: **_[_**Neel Java Library**_](/development-and-api/client-libraries/NeelJavaLibrary.md).
+* **TypeScript/JavaScript:** [_**NeelTx**_](/development-and-api/client-libraries/NeelTx.md).
 
 All libraries are open for contribution and testing.
 
