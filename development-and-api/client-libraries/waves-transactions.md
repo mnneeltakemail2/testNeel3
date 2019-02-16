@@ -1,6 +1,6 @@
-# Waves Transactions
+# Neel Transactions
 
-Using [_**this library **_](https://www.npmjs.com/package/waves-transactions)you can easily create and sign transactions for Waves blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
+Using [_**this library **_](https://www.npmjs.com/package/waves-transactions)you can easily create and sign transactions for Neel blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
 
 This library is a set of transaction constructing functions:
 
@@ -60,7 +60,7 @@ Output will be a signed transfer transaction:
 }
 ```
 
-Now you are able to POST it to Waves API or store for future purpose or you can add another signature from other party:
+Now you are able to POST it to Neel API or store for future purpose or you can add another signature from other party:
 
 ```js
 const otherPartySeed = '18f6edd4c8d647b4ba5ed366093ef5b8d0c4d8b3a6154a2b876f54773a678781'
