@@ -1,6 +1,6 @@
 # Upgrading
 
-1. First of all, you need to check the[ latest Waves Release.](https://github.com/wavesplatform/Waves/releases) and choose the latest Mainnet release.
+1. First of all, you need to check the[ latest Neel Release.](https://github.com/wavesplatform/Waves/releases) and choose the latest Mainnet release.
 2. Download the DEB or Jar file depending on your operating system.
 3. Upgrade DEB by running the following command:
    ```bash
@@ -13,7 +13,7 @@
 
 Basically, the node should be upgraded as follows:  
 1. Stop the node  
-2. Export all existing blocks in the blockchain to a binary file. Please read [the documentation about export and import of the blockchain.](/waves-full-node/export-and-import-from-the-blockchain.md) or download the binary file.  
+2. Export all existing blocks in the blockchain to a binary file. Please read [the documentation about export and import of the blockchain.](/neel-full-node/export-and-import-from-the-blockchain.md) or download the binary file.  
 3. Update node's executables  
 4. Import binary file  
 5. Start the node
@@ -51,7 +51,7 @@ Basically, the node should be upgraded as follows:
 
 ## Update the Configuration
 
-Please, read the updated [documentation of Waves node configuration file](/waves-full-node/how-to-configure-a-node.md)
+Please, read the updated [documentation of Neel node configuration file](/neel-full-node/how-to-configure-a-node.md)
 
 
 
