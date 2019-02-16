@@ -117,3 +117,4 @@ During the next 10000 blocks 'SuperMiners' convinced few smaller miners to suppo
 
 At block 1250000 the feature number 123 will be activated and nodes version 1.0.0 and above start use it. Nodes on earlier versions will stop working.
 
+
