@@ -14,17 +14,17 @@ then all is ok, and you can move on to the next step!
 
 If you get an error check your installation and try to find a solution or a better tutorial online.
 
-**Note.** It's necessary to install **Oracle JRE 8 **with **64-bit version, **you also can check Waves Releases [Here](https://github.com/wavesplatform/Waves/releases).
+**Note.** It's necessary to install **Oracle JRE 8 **with **64-bit version, **you also can check Neel Releases [Here](https://github.com/wavesplatform/Waves/releases).
 
-# Download Waves package and configure the application
+# Download Neel package and configure the application
 
-[Download the latest version](https://github.com/wavesplatform/Waves/releases) of waves.jar and the required .conf configuration file \(for mainnet or testnet\) to any folder, for example `~/waves`.
+[Download the latest version](https://github.com/wavesplatform/Waves/releases) of neel.jar and the required .conf configuration file \(for mainnet or testnet\) to any folder, for example `~/neel`.
 
-Carefully edit the configuration waves.conf file, **it is very important! The safety of your wallet and money depends on this!**
+Carefully edit the configuration neel.conf file, **it is very important! The safety of your wallet and money depends on this!**
 
 So, just open it with your favorite text editor, pour a cup of tea and read [the documentation of the configuration file](/waves-full-node/configuration-parameters.md).
 
-Then start Terminal app `Terminal.app`, navigate to the folder with the jar file with the command `cd ~/waves`and start waves node with command `java -jar waves.jar waves.conf`.
+Then start Terminal app `Terminal.app`, navigate to the folder with the jar file with the command `cd ~/neel`and start neel node with command `java -jar neel.jar neel.conf`.
 
 # Additional security
 
