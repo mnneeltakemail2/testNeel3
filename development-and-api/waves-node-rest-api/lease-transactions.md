@@ -12,7 +12,7 @@ Creates lease transaction.
 ```
 "sender" - Sender address, Base58-encoded
 "fee" - Amount of transaction fee
-"amount" - amount of leased waves
+"amount" - amount of leased neel
 ```
 
 **Request JSON example**
@@ -97,7 +97,7 @@ Creates signed lease transaction.
 ```
 "senderPublicKey" - Sender account's public key, Base58-encoded
 "fee" - Amount of transaction fee
-"amount" - amount of leased waves
+"amount" - amount of leased neel
 "timestamp" - Transaction timestamp
 "signature" - Signature of all transaction data, Base58-encoded
 ```
