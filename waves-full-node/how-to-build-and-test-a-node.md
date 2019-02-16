@@ -1,6 +1,6 @@
 # How to Build and Test a Node
 
-To build and test your Waves Node, you will need to follow these steps \(Installation is possible only on _**Ubuntu**_, because, sbt packageAll ‌produces only deb package\).
+To build and test your Neel Node, you will need to follow these steps \(Installation is possible only on _**Ubuntu**_, because, sbt packageAll ‌produces only deb package\).
 
 ## 1. Setup the environment
 
@@ -24,7 +24,7 @@ sudo apt-get install sbt
 
 ```bash
 git clone git@github.com:wavesplatform/Waves.git
-cd Waves
+cd Neel
 ```
 
 ## 3. Running unit tests
@@ -57,10 +57,10 @@ sudo dpkg -i target/*.deb
 
 ## 6. Running fat jar
 
-You can replace waves-all\*.jar with actual jar name \(it should have "all"-word\):
+You can replace neel-all\*.jar with actual jar name \(it should have "all"-word\):
 
 ```
-java -jar target/waves-all*.jar path/to/config/file
+java -jar target/neel-all*.jar path/to/config/file
 ```
 
 
