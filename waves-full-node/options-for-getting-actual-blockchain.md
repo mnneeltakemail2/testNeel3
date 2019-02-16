@@ -30,7 +30,7 @@ Therefore, we choose SSD.
 
 [_**Downloading state**_](/waves-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md), approximately the size of the State is around 23 GB \(**in November 2018**\).
 
-In this case, the longest operation is to download the archive. Then it is enough to unpack the archive files to the /var/lib/waves/data directory and run the node.  The remaining blocks will be synchronized during normal operation.
+In this case, the longest operation is to download the archive. Then it is enough to unpack the archive files to the /var/lib/neel/data directory and run the node.  The remaining blocks will be synchronized during normal operation.
 
 ## Statistics \(0-1220000\)
 
