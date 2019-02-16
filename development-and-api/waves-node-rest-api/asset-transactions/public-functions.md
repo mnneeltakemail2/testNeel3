@@ -7,7 +7,7 @@
 
 
 
-Balances for all assets that the given account ever had \(besides WAVES\).
+Balances for all assets that the given account ever had \(besides NEEL\).
 
 ```
 "address" - account's address in Base58 format
@@ -24,7 +24,7 @@ Balances for all assets that the given account ever had \(besides WAVES\).
 "reissuable" - is this asset reissuable?
 "issueTransaction" - transaction witch create this asset
 "minSponsoredAssetFee" - minimal tokens number to fee, optional, avaliable for sponsored assets
-"sponsorBalance" - sponsor balance in waves
+"sponsorBalance" - sponsor balance in neel
 ```
 
 **Response JSON example:**
@@ -135,7 +135,7 @@ Publish signed Asset issue transaction to the network.
 "description" - Asset description, max length is 1000 bytes, in plain text.
 "sender" - Sender account's address that exists in the node's wallet, Base58-encoded
 "senderPublicKey" - Sender account's public key, Base58-encoded
-"fee" - Transaction fee for Asset issue, min = 100000000 (1WAVES).
+"fee" - Transaction fee for Asset issue, min = 100000000 (1NEEL).
 "decimals" - Number of decimals to represent a piece of asset, max = 8.
 "quantity" - Quantity of asset'lets to issue (number of indivisible pieces of assets).
 "reissuable" - Boolean flag whether it is possible to issue additional assets.
@@ -325,11 +325,11 @@ Publish signed Asset transfer from one address to another as a transaction to th
 * Signed transfer request:
 
     ```
-    "assetId" [optional] - Asset ID to transfer or omit that param when transfer WAVES, Base58-encoded
+    "assetId" [optional] - Asset ID to transfer or omit that param when transfer NEEL, Base58-encoded
     "senderPublicKey" - Sender account's public key, Base58-encoded
     "recipient" - Recipient account's address, Base58-encoded
     "fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
-    "feeAssetId" [optional] - Asset ID of transaction fee. WAVES by default, if empty or absent
+    "feeAssetId" [optional] - Asset ID of transaction fee. NEEL by default, if empty or absent
     "amount" - amount of asset'lets (or wavelets) to transfer
     "attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
     "timestamp" - Transaction timestamp
@@ -339,7 +339,7 @@ Publish signed Asset transfer from one address to another as a transaction to th
 * Signed versioned transfer request:
 
     ```
-    "assetId" [optional] - Asset ID to transfer or omit that param when transfer WAVES, Base58-encoded
+    "assetId" [optional] - Asset ID to transfer or omit that param when transfer NEEL, Base58-encoded
     "senderPublicKey" - Sender account's public key, Base58-encoded
     "recipient" - Recipient account's address, Base58-encoded
     "fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
@@ -377,7 +377,7 @@ Publish signed Asset transfer from one address to another as a transaction to th
     "sender" - Sender account's address, Base58-encoded
     "senderPublicKey" - Sender account's public key, Base58-encoded
     "recipient" - Recipient account's address, Base58-encoded
-    "feeAsset" - Asset ID of transaction fee, currently is null, i.e. WAVES
+    "feeAsset" - Asset ID of transaction fee, currently is null, i.e. NEEL
     "fee" - Amount of transaction fee
     "attachment" - Attachment, Base58-encoded
     "signature" - Signature of all transaction data, Base58-encoded
@@ -437,11 +437,11 @@ Array of JSON Objects:
 * Signed transfer request:
 
     ```
-    "assetId" [optional] - Asset ID to transfer or omit that param when transfer WAVES, Base58-encoded
+    "assetId" [optional] - Asset ID to transfer or omit that param when transfer NEEL, Base58-encoded
     "senderPublicKey" - Sender account's public key, Base58-encoded
     "recipient" - Recipient account's address, Base58-encoded
     "fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
-    "feeAssetId" [optional] - Asset ID of transaction fee. WAVES by default, if empty or absent
+    "feeAssetId" [optional] - Asset ID of transaction fee. NEEL by default, if empty or absent
     "amount" - amount of asset'lets (or wavelets) to transfer
     "attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
     "timestamp" - Transaction timestamp
@@ -451,7 +451,7 @@ Array of JSON Objects:
 * Signed versioned transfer request:
 
     ```
-    "assetId" [optional] - Asset ID to transfer or omit that param when transfer WAVES, Base58-encoded
+    "assetId" [optional] - Asset ID to transfer or omit that param when transfer Neel, Base58-encoded
     "senderPublicKey" - Sender account's public key, Base58-encoded
     "recipient" - Recipient account's address, Base58-encoded
     "fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
@@ -507,7 +507,7 @@ Array of JSON Objects:
     "sender" - Sender account's address, Base58-encoded
     "senderPublicKey" - Sender account's public key, Base58-encoded
     "recipient" - Recipient account's address, Base58-encoded
-    "feeAsset" - Asset ID of transaction fee, currently is null, i.e. WAVES
+    "feeAsset" - Asset ID of transaction fee, currently is null, i.e. NEEL
     "fee" - Amount of transaction fee
     "attachment" - Attachment, Base58-encoded
     "signature" - Signature of all transaction data, Base58-encoded
