@@ -60,9 +60,9 @@ Get Balance details:
 
 ```
 "address" - account's address in Base58 format
-"Regular" — that's how much Waves you have, including those you leased;
-"Available" — the same as regular only without Waves you leased;
-"Effective" — available plus those Waves which is leased to you;
+"Regular" — that's how much Neel you have, including those you leased;
+"Available" — the same as regular only without Neel you leased;
+"Effective" — available plus those Neel which is leased to you;
 "Generating" — the minimal effective for last 1000 blocks;
 ```
 
@@ -82,7 +82,7 @@ Get Balance details:
 
 ![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
 
-Get account balance in WAVES in {address}:
+Get account balance in NEEL in {address}:
 
 ```
   "address" - account's address in Base58 format
@@ -104,7 +104,7 @@ Get account balance in WAVES in {address}:
 
 ![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
 
-Get account balance in WAVES by {address} after {confirmations} from now:
+Get account balance in NEEL by {address} after {confirmations} from now:
 
 ```
   "address" - account's address in Base58 format
@@ -150,6 +150,10 @@ Get a script information by address.
   "extraFee": 10001
 }
 ```
+
+
+
+
 
 
 
