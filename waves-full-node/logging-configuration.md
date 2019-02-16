@@ -4,7 +4,7 @@
 
 For log writing, we use one of the logging frameworks [logback](https://logback.qos.ch/documentation.html). For the logback correct work, it needs the right configuration, [here](https://logback.qos.ch/manual/configuration.html) you can see how to configure the [logback.xml](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) file.
 
-By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logs are written to STDOUT and to `waves.log` file in a human-readable format.
+By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logs are written to STDOUT and to `neel.log` file in a human-readable format.
 
 ## STDOUT
 
@@ -13,7 +13,7 @@ By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resourc
 ## Files
 
 * `-Dlogback.stdout.level={LEVEL_OF_LOGGING}`. The default level is `DEBUG`. Changes the level of logging, see below about it.
-* `-Dlogback.file.directory=/path/to/directory/for/logs`. The default directory is `{waves.directory}/log`.
+* `-Dlogback.file.directory=/path/to/directory/for/logs`. The default directory is `{neel.directory}/log`.
   Changes the directory for logs. Note, the node must have rights to write files to this directory.
 
 If you want to write logs, for example, to `JSON` files, you should define your own logging configuration and specify a path to it with option:
@@ -22,8 +22,8 @@ If you want to write logs, for example, to `JSON` files, you should define your 
 ```
 
 You can change the place where the log will be written:
-* If you set up node from the package: in `{waves.directory}/conf/application.ini` . `{waves.directory}` is set up in [configuration](./configuration-parameters.md);
-* If you run the node from the jar: using Java's options, for example, `java -Dsomeoption=somevalue -jar /path/to/waves-all.jar /path/to/config`
+* If you set up node from the package: in `{neel.directory}/conf/application.ini` . `{neel.directory}` is set up in [configuration](./configuration-parameters.md);
+* If you run the node from the jar: using Java's options, for example, `java -Dsomeoption=somevalue -jar /path/to/neel-all.jar /path/to/config`
 
 
 According to a [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logging configuration, we have such limits for file logs:
