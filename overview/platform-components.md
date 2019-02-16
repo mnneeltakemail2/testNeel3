@@ -1,10 +1,10 @@
-# Waves Platform Components
+# Neel Network Components
 
-# 1. Waves Client
+# 1. Neel Client
 
-[The Waves Client](https://client.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
+[The Neel Client](https://client.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
-# 2. Waves Wallet
+# 2. Neel Wallet
 
 * It’s a fully-featured client that lets you access all features of the Waves platform.
 
@@ -24,7 +24,7 @@
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
 * Get started with Waves App for [iOS](/waves-client/mobile-apps/iOS.md) and [Android](/waves-client/mobile-apps/android.md) devices.
 
-# 5. Waves Gateways
+# 5. Neel Gateways
 
 Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/LTC/ZCash/BCH/Dash\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
@@ -54,7 +54,7 @@ Fees are minimal and the only delays are those required by blockchain confirmati
 
 # 7. Nodes
 
-Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), help process transactions, ask the community to [lease their WAVES](/waves-client/account-management/waves-leasing.md) to you and get paid for securing the network.
+Nodes are a critical part of our ecosystem. [Run a Waves node](/neel-full-node/how-to-install-a-node/how-to-install-a-node.md), help process transactions, ask the community to [lease their WAVES](/waves-client/account-management/waves-leasing.md) to you and get paid for securing the network.
 
 **Features:**
 
