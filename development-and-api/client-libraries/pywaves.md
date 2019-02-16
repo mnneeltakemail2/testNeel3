@@ -1,15 +1,15 @@
-# PyWaves
-PyWaves is an object-oriented Python interface to the Waves blockchain platform. The library is developing by community and open source. Latest documentation and examples can be found in [Github repository](https://github.com/PyWaves/PyWaves/). 
+# PyNeel
+PyNeel is an object-oriented Python interface to the Neel blockchain platform. The library is developing by community and open source. Latest documentation and examples can be found in [Github repository](https://github.com/PyWaves/PyWaves/). 
 
 ## Getting Started
 
-You can install PyWaves using:
+You can install PyNeel using:
 
     pip install pywaves
 
 ## Documentation
 
-The library utilizes classes to represent various Waves data structures:
+The library utilizes classes to represent various Neel data structures:
 
 - pywaves.Address
 - pywaves.Asset
