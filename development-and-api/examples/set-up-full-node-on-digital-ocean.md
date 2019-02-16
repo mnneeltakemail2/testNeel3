@@ -1,4 +1,4 @@
-# Setting Up a Nell Network Full Node on Digital Ocean
+# Setting Up a Neel Network Full Node on Digital Ocean
 
 Neel Full Node stores the whole blockchain and gives access to the REST API.
 For more information follow the links:
