@@ -1,0 +1,62 @@
+.wd-pretty-link,
+.wd-pretty-link__icon,
+.wd-pretty-link__text,
+.wd-pretty-link__path
+{
+    display: flex;
+
+    padding: 5px 10px;
+}
+
+.wd-pretty-link__text,
+.wd-pretty-link__path
+{
+    max-width: 45%;
+}
+
+.wd-pretty-link
+{
+    line-height: 26px;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: border 200ms ease 0s;
+
+    border: rgb(230, 236, 241) 1px solid;
+    border-radius: 3px;
+    box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+    outline: none;
+}
+
+.markdown-section .wd-pretty-link:hover,
+.markdown-section .wd-pretty-link:active
+{
+    text-decoration: none;
+}
+
+.markdown-section .wd-pretty-link:hover
+{
+    border-color: inherit;
+}
+
+.wd-pretty-link__path
+{
+    font-size: 12px;
+    font-weight: 400;
+
+    justify-self: flex-end;
+
+    color: rgb(157, 170, 182);
+}
+
+.wd-pretty-link .wd-crop
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    display: block;
+
+    overflow: hidden;
+}

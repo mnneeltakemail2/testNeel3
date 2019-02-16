@@ -1,0 +1,80 @@
+.markdown-section .wd-code
+{
+    font-size: 1em;
+
+    line-height: 30px;
+
+    display: inline-block;
+
+    padding: 0 .5rem;
+
+    background: rgb(237, 245, 253);
+    border-radius: 3px;
+}
+
+.markdown-section pre.wd-code
+{
+    white-space: normal;
+    line-height: normal;
+
+    display: block;
+    position: relative;
+
+    padding: 14px 10px 0 10px;
+}
+
+.markdown-section .wd-code__source
+{
+    background: inherit;
+}
+
+.markdown-section pre.wd-code .wd-code__source
+{
+    white-space: pre;
+
+    padding: 0;
+}
+
+.markdown-section pre.wd-code .wd-code__scroll
+{
+    display: block;
+
+    overflow: auto;
+}
+
+.markdown-section .wd-code__icon
+{
+    display: inline-block;
+    position: relative;
+
+    margin: 0 0 0 0.3rem;
+}
+
+.markdown-section pre.wd-code  .wd-code__icon
+{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+
+.markdown-section .wd-code__icon .wd-ico
+{
+    width: 14px;
+    height: 14px;
+}
+
+.markdown-section .wd-code__icon:active
+{
+    transform: translate(1px, 1px);
+}
+
+.markdown-section .wd-code__icon::before
+{
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
