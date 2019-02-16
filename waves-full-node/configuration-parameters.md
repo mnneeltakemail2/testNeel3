@@ -1,14 +1,14 @@
-# Waves Node Configuration Parameters
+# Neel Node Configuration Parameters
 
 ## Configuration Format
 
-The configuration system of Waves Node uses HOCON format. HOCON stands for Human-Optimized Config Object Notation. The complete description of HOCON could be found in the [Official HOCON documentation](https://github.com/typesafehub/config/blob/master/HOCON.md). The advantages of HOCON are simple syntax and ability to use comments.
+The configuration system of Neel Node uses HOCON format. HOCON stands for Human-Optimized Config Object Notation. The complete description of HOCON could be found in the [Official HOCON documentation](https://github.com/typesafehub/config/blob/master/HOCON.md). The advantages of HOCON are simple syntax and ability to use comments.
 
 ## Default Configs and Overrides
 
 ### Default Configuration Embedded into JAR
 
-Complete default Waves Node configuration file which is embedded into jar-file can be found here: https://github.com/wavesplatform/Waves/blob/master/src/main/resources/application.conf
+Complete default Neel Node configuration file which is embedded into jar-file can be found here: https://github.com/wavesplatform/Waves/blob/master/src/main/resources/application.conf
 
 ### MainNet and TestNet config in DEB-packages
 
@@ -18,7 +18,7 @@ If you use DEB-packages to install a node, they also contain configuration files
 
 ### Overriding parameters when running JAR-file
 
-If you run JAR file it's recommended to override default parameters by passing a path to config file as the command line parameter then starting Waves Node application.
+If you run JAR file it's recommended to override default parameters by passing a path to config file as the command line parameter then starting Neel Node application.
 
 ```java -jar waves-all-0.13.3.jar waves.conf```
 
@@ -27,13 +27,13 @@ Typically this file should contain you node's unique characteristics (ip, name, 
 
 ## Configuration Sections
 
-### Waves configuration section
+### Neel configuration section
 
-Root configuration section `waves` holds essential application parameters and other configuration subsections.
+Root configuration section `neel` holds essential application parameters and other configuration subsections.
 
 Using parameter `directory` it is possible to set a path to the base application directory. Starting from version 0.6.0 it is possible to use environment variables to set configuration parameters. For example, by default, the base directory constructed relative to the user’s `HOME` environment variable. Please, do not enclose environment variables references in quotes, in this case, they will be handled as strings and won’t be resolved.
 
-**Note:** If you want to change waves directory in Ubuntu packages you should change it using `-J-Dwaves.directory=path` in `/etc/waves/application.ini` and `/lib/systemd/system/waves.service`. You can override any JVM start parameter in `waves.service`, it has priority.
+**Note:** If you want to change neel directory in Ubuntu packages you should change it using `-J-Dwaves.directory=path` in `/etc/waves/application.ini` and `/lib/systemd/system/waves.service`. You can override any JVM start parameter in `waves.service`, it has priority.
 
 
 
@@ -52,13 +52,13 @@ Using parameter `leveldb-cache-size` you can set the size of theinternal cache o
 
 In `network` section P2P network related settings could be set.
 
-Use `file` parameter to set the location of peers database. In this database node stores lists of known and blacklisted peers. By default, the path is resolved with regard to base `directory` from `waves` section.
+Use `file` parameter to set the location of peers database. In this database node stores lists of known and blacklisted peers. By default, the path is resolved with regard to base `directory` from `neel` section.
 
 Using `declared-address` parameter you can set the external IP address and port number of the node. It’s necessary to work behind NAT in most cloud hosting, where the machine does not interface directly with the external address. If you do not specify it, then your node connects to the P2P network, but it won’t listen to incoming connections so other nodes will not be able to connect. Other nodes are connected to your node using these data. The format of this parameter is "\[ip-address\]:\[port\]".
 
-Using parameter `bind-address` you can set the IP address of local network interface on which Waves Node will accept incoming connections. By default, node binds to `0.0.0.0` that means that it will listen on all available network adapters.
+Using parameter `bind-address` you can set the IP address of local network interface on which Neel Node will accept incoming connections. By default, node binds to `0.0.0.0` that means that it will listen on all available network adapters.
 
-Use `port` parameter to set the network port number to which other Waves nodes will connect. Check that the port is reachable from outside otherwise, your node will connect to P2P network only using outgoing connections. If this the port is taken by other application, your node won’t start.
+Use `port` parameter to set the network port number to which other Neel nodes will connect. Check that the port is reachable from outside otherwise, your node will connect to P2P network only using outgoing connections. If this the port is taken by other application, your node won’t start.
 
 Parameter `node-name` could be used to set the name of your node visible to other participants of the P2P network. The name transmitted during initial handshake. In the default configuration, this parameter is commented out, which leads to random name generation.
 
