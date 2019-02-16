@@ -4,7 +4,7 @@
 2. Download the DEB or Jar file depending on your operating system.
 3. Upgrade DEB by running the following command:
    ```bash
-   sudo dpkg -i waves_X.Y.Z_all.deb
+   sudo dpkg -i neel_X.Y.Z_all.deb
    ```
 4. Or upgrade JAR by copying the new version over the old one
 5. Check the release notes. If there are new features to vote and activate, you will need to include that in the config.
@@ -22,31 +22,31 @@ Basically, the node should be upgraded as follows:
 
 1. Stop the Node by executing the following command:
    ```bash
-   sudo systemctl stop waves
+   sudo systemctl stop neel
    ```
 2. After stopping the node execute following command to export existing blocks to a binary file:
    ```bash
-   sudo -u waves exporter /etc/waves/waves.conf /usr/share/waves/mainnet
+   sudo -u neel exporter /etc/neel/neel.conf /usr/share/neel/mainnet
    ```
 3. Remove data folder:
    ```bash
-   sudo rm -rdf /var/lib/waves/data
+   sudo rm -rdf /var/lib/neel/data
    ```
 4. Install the new version of the node:
    ```bash
-   sudo dpkg -i waves_X.Y.Z_all.deb
+   sudo dpkg -i neel_X.Y.Z_all.deb
    ```
 5. Import blocks from the binary file:
    ```bash
-   sudo -u waves importer /etc/waves/waves.conf /usr/share/waves/mainnet-[some height]
+   sudo -u neel importer /etc/neel/neel.conf /usr/share/neel/mainnet-[some height]
    ```
 6. After import start the node:
    ```bash
-   sudo systemctl start waves
+   sudo systemctl start neel
    ```
 7. Do not forget to remove binary blockchain files if you don't need them any more:
    ```bash
-   sudo rm /usr/share/waves/mainnet-[some height]
+   sudo rm /usr/share/neel/mainnet-[some height]
    ```
 
 ## Update the Configuration
