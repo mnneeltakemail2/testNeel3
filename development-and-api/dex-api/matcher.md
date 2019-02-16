@@ -26,8 +26,8 @@ A user initiates his willingness to buy or sell assets by creating, signing and 
 | :--- | :--- | :--- |
 | sender | PublicKeyAccount | Public key of order creator related to the address from which to send/receive assets |
 | matcher | PublicKeyAccount | Public key of matcher to whom user authorize to match his order |
-| spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **WAVES** |
-| receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **WAVES** |
+| spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **NEEL** |
+| receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **NEEL** |
 | price | Long | 10^\(8+Asset2Decimals-Asset1Decimals\) |
 | amount | Long | Amount in `Asset1` |
 | expiration | Long | Max time of open order to live before execution. Currently, max is 1 month |
@@ -37,7 +37,7 @@ A user initiates his willingness to buy or sell assets by creating, signing and 
 `spendAssetId` and `receiveAssetId` form `AssetPair = (Asset1, Asset2)` by the following rule:
 
 * the first asset in the pair is an asset with minimal bytes compared byte by byte starting from the first. Empty asset \(
-  **WAVES**
+  **NEEL**
   \) is always first in the pair. Thus:
 
 ```js
@@ -149,8 +149,8 @@ Get Order Book for a given Asset Pair.
 
 | Field name | Type | Description |
 | :--- | :--- | :--- |
-| asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair, or empty if it is WAVES |
-| asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair, or empty if it is WAVES |
+| asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair, or empty if it is NEEL |
+| asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair, or empty if it is NEEL |
 | depth | Int \(_optional_\) | Limit the number of bid/ask levels returned |
 
 Notes about _depth_:
@@ -201,8 +201,8 @@ Get Order status for a given Asset Pair. Status is returned for orders submitted
 | Field name | Type | Description |
 | :--- | :--- | :--- |
 | id | Array\[Byte\] Base58-encoded | Order Id to get status of |
-| asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair that is not WAVES |
-| asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair or empty if it is WAVES |
+| asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair that is not NEEL |
+| asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair or empty if it is NEEL |
 
 Possible statuses:
 
@@ -236,8 +236,8 @@ POST /matcher/orders/cancel
 | Field name | Type | Description |
 | :--- | :--- | :--- |
 | sender | PublicKeyAccount | Public key of order creator related to the address from which to spend/receive assets |
-| spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **WAVES** |
-| receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **WAVES** |
+| spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **NEEL** |
+| receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **NEEL** |
 | orderId | Array\[Byte\] | Accepted Order Id that sender wants to cancel. |
 | fee | Long | Fee for Asset transaction, min = 100000 \(WAVElets\) |
 | timestamp | Long | UNIX timestamp in millisec |
@@ -256,9 +256,9 @@ GET /matcher/orderbook/{{amountAsset}}/{{priceAsset}}/tradableBalance/{{address}
 ```json
 {
   "zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy": 11,
-  "WAVES": 1024460284
+  "NEEL": 1024460284
 }
 ```
 
-So, in pair `zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy/WAVES` you can spend `1024460284 WAVES` and `11 Bitcoin Cash`.
+So, in pair `zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy/NEEL` you can spend `1024460284 NEEL` and `11 Bitcoin Cash`.
 
