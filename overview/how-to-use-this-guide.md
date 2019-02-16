@@ -15,20 +15,17 @@ This section will give you a general information about Waves Platform and its ma
 1. [Platform Components](../overview/platform-components.md)
 2. [Waves Official Resources](../overview/waves-official-resources.md)
 3. [Security Notes](../overview/security-notes.md)
-4. [Waves Releases](../overview/waves-releases.md)
-5. [Waves Tokens](../overview/waves-tokens.md)
+4. [Neel Releases](../overview/waves-releases.md)
+5. [Neel Tokens](../overview/waves-tokens.md)
 
 # Platform Features
 
-This section contains explanations about Waves main Features such as \(Waves-NG Protocol\).
+This section contains explanations about Waves main Features such as \(Neel-NG Protocol\).
 
 1. [Decentralized Exchange \(DEX\)](../platform-features/decentralized-cryptocurrency-exchange-dex.md)
-2. [Assets \(Custom Tokens\)](../platform-features/assets-custom-tokens.md)
-3. [Leased Proof of Stake \(LPoS\)](../platform-features/leased-proof-of-stake-lpos.md)
-4. [Fair Proof of Stake \(FPoS\)](../platform-features/fair-pos.md)
-5. [Waves-NG Protocol](../platform-features/waves-ng-protocol.md)
-6. [Activation Protocol](../platform-features/activation-protocol.md)
-7. [Smart Contracts.](../platform-features/smart-contracts.md)
+2. [Tokens \(Custom Tokens\)](../platform-features/assets-custom-tokens.md)
+3. [Activation Protocol](../platform-features/activation-protocol.md)
+4. [Neel-NG Protocol](../platform-features/waves-ng-protocol.md)
 
 # Getting Started
 
@@ -50,7 +47,7 @@ This section contains all information about Installing, configuring and upgradin
 
 # Development and API
 
-1. [Client Libraries ](../development-and-api/client-libraries.md)\([PyNeel](../development-and-api/client-libraries/pywaves.md), [Neel Java Library](../development-and-api/client-libraries/wavesj.md) and [NeelTx](../development-and-api/client-libraries/waves-transactions.md)
+1. [Client Libraries ](../development-and-api/client-libraries.md)\([PyNeel](../development-and-api/client-libraries/pywaves.md), [Neel Java Library](../development-and-api/client-libraries/wavesj.md) and [NeelTx](../development-and-api/client-libraries/waves-transactions.md))
 2. [DEX API](../development-and-api/dex-api.md) \([Matcher](../development-and-api/dex-api/matcher.md)\)
 3. [Neel Node Rest API](../development-and-api/waves-node-rest-api.md)
 4. [Examples](../development-and-api/examples.md)
