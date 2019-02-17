@@ -1,22 +1,22 @@
-# Waves Console Commands
+# Neel Console Commands
 
-[Waves IDE](https://ide.wavesplatform.com) has a Waves console feature which supports different commands:
+[Neel IDE](https://ide.neelplatform.com) has a Neel console feature which supports different commands:
 
-**Note. **Using [Waves Transactions library ](/development-and-api/client-libraries/waves-transactions.md)you can easily create and sign transactions for Waves blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
+**Note. **Using [Neel Transactions library ](/development-and-api/client-libraries/neel-transactions.md)you can easily create and sign transactions for Neel blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
 
 # MultiSig Example
 
-[_**Here**_](/technical-details/waves-contracts-language-description/waves-console-commands/examples.md) you can check the MultiSig smart contract example using Waves Console.
+[_**Here**_](/technical-details/neel-contracts-language-description/neel-console-commands/examples.md) you can check the MultiSig smart contract example using Neel Console.
 
-# Waves REPL
+# Neel REPL
 
-It's a Javascript console for waves blockchain. It's built on top of [jsconsole](https://github.com/remy/jsconsole) and it has predefined functions to work with Waves.
+It's a Javascript console for neel blockchain. It's built on top of [jsconsole](https://github.com/remy/jsconsole) and it has predefined functions to work with Neel.
 
 ## Builtin functions
 
 #### JS lib
 
-Console uses [waves-transactions](/development-and-api/client-libraries/waves-transactions.md) library. Top level library functions are bound to console global scope. The difference is that in console, seed argument comes second and it's optional. E.x.:
+Console uses [neel-transactions](/development-and-api/client-libraries/neel-transactions.md) library. Top level library functions are bound to console global scope. The difference is that in console, seed argument comes second and it's optional. E.x.:
 
 ##### Console
 
@@ -89,7 +89,7 @@ Starts dev server
 ```js
 import * as React from 'react';
 import {render} from 'react-dom';
-import {Repl} from 'waves-repl';
+import {Repl} from 'neel-repl';
 
 const App: React.StatelessComponent = () => (
     <Repl theme="dark"/>
@@ -103,7 +103,7 @@ render(<App />, document.getElementById("root"));
 Repl.updateEnv({
     SEED: 'SEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEED',
     CHAIN_ID: 'T',
-    API_BASE: 'https://testnodes.wavesnodes.com/'
+    API_BASE: 'https://testnodes.neelnodes.com/'
 })
 ```
 
@@ -235,9 +235,9 @@ broadcast(tx1)
  * Creates signed transfer transaction.
  * @param {number} amount - Amount to transfer.
  * @param {string} recipient - Recipient address to transfer funds to.
- * @param {string} assetId - Asset Id to transfer, default: 'WAVES'.
+ * @param {string} assetId - Asset Id to transfer, default: 'NEEL'.
  * @param {string} attachment - Attachment to transfer, default: ''.
- * @param {number} feeAssetId - Asset Id to pay fee with, default: 'WAVES'.
+ * @param {number} feeAssetId - Asset Id to pay fee with, default: 'NEEL'.
  * @param {number} fee - Transaction fee, default: 100000.
  * @param {number} timestamp - Transaction timestamp, default: Date.now().
  * @param {number} version - Transaction version, default: 1.
@@ -247,9 +247,9 @@ broadcast(tx1)
 declare function transfer(
   amount: number,
   recipient: string,
-  assetId: string = 'WAVES',
+  assetId: string = 'NEEL',
   attachment: string = '',
-  feeAssetId: string = 'WAVES',
+  feeAssetId: string = 'NEEL',
   fee: number = 100000,
   timestamp: number = Date.now(),
   version: number = 1,
@@ -331,7 +331,7 @@ declare function cancelLease(
 Example:
 
 ```js
-const aliasTx = alias({alias: 'wavesplatform'})
+const aliasTx = alias({alias: 'neelplatform'})
 broadcast(aliasTx)
 ```
 
@@ -374,7 +374,7 @@ broadcast(massTransferTx)
  * Creates signed massTransfer transaction.
  * @param {(string | number)[]} transfers - Array of recepients and amounts, 
    example: [100, '3N84Z1vMsHTpFEi6pBh8EdefQCmWLgC5hnH', 200, 'addr2'].
- * @param {string} assetId - Asset Id to transfer, in case you want to transfer WAVES use default, default: ''.
+ * @param {string} assetId - Asset Id to transfer, in case you want to transfer NEEL use default, default: ''.
  * @param {number} fee - Transaction fee, default: 200000.
  * @param {number} timestamp - Transaction timestamp, default: Date.now().
  * @param {number} version - Transaction version, default: 1.
@@ -421,13 +421,13 @@ broadcast(scriptTx)
 )
 ```
 
-## Sends transaction to the Waves network using env.API\_BASE endpoint
+## Sends transaction to the Neel network using env.API\_BASE endpoint
 
 * broadcast\(tx\)
 
 ```js
  /**
- * Sends transaction to the Waves network using env.API_BASE endpoint.
+ * Sends transaction to the Neel network using env.API_BASE endpoint.
  * @param {any} tx - Transaction to send to the network.
  */
 

@@ -3,18 +3,18 @@
 * [Introduction](#introduction)
 * [How to receive Zcash](#how-to-receive-zcash)
 * [How to send Zcash](#how-to-send-zcash)
-* [How to transfer Zcash to another Waves account](#how-to-transfer-zcash-to-another-waves-account)
+* [How to transfer Zcash to another Neel account](#how-to-transfer-zcash-to-another-neel-account)
 * [More info](#more-info)
 
 ## Introduction
 
-Waves allow you to hold and transfer Zcash on its blockchain. This works through a so-called Multigateway approach: Zcash sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Zcash token \(wZEC\) issued in the Waves blockchain. Every single Zcash token is backed 1:1 with the real Zcash.
+Neel allow you to hold and transfer Zcash on its blockchain. This works through a so-called Multigateway approach: Zcash sent to a user's deposit address available in the Neel wallet and after the deposit the user receives a Zcash token \(wZEC\) issued in the Neel blockchain. Every single Zcash token is backed 1:1 with the real Zcash.
 
-Read more about [What is a payment gateway?](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Read more about [What is a payment gateway?](/neel-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## How to receive Zcash
 
-Open your Waves wallet  
+Open your Neel wallet  
 In the Zcash section, click on the **Receive** button.
 
 ![](/_assets/zcash_transfers_01.png)
@@ -38,14 +38,14 @@ Copy the shown Zcash address or Scan QR Code and send a payment.
 
 ## How to send Zcash
 
-Open your Waves wallet  
+Open your Neel wallet  
 In the Zcash section, click on the **Send** button.
 
 ![](/_assets/zcash_transfers_01.png)
 
 The following pop-up will appear.  
 Paste the Zcash address you want to send to as well as the amount of Zcash.  
-Please note that the gateway charges **0.01 ZEC** for the gateway fee as well as **0.001 Waves** for the network fee.
+Please note that the gateway charges **0.01 ZEC** for the gateway fee as well as **0.001 Neel** for the network fee.
 **Before proceeding please carefully read the conditions**.
 
 After you have filled the form, click on the **Continue** button.
@@ -59,11 +59,11 @@ To complete the operation, click on the **Confirm** or **Back** to repeat the pr
 
 **Note**: Processing can take up to 120 minutes, the minimum amount is 0.1 ZEC.
 
-## How to transfer Zcash to another Waves account
+## How to transfer Zcash to another Neel account
 
-You can send Zcash directly to another Waves account. Just use the recipient **Waves** address, click on the **Send** and fill-in the sending form.
+You can send Zcash directly to another Neel account. Just use the recipient **Neel** address, click on the **Send** and fill-in the sending form.
 
-**Note** The network fee is only 0.001 Waves \(no gateway fee\)
+**Note** The network fee is only 0.001 Neel \(no gateway fee\)
 
 ![](/_assets/zcash_transfers_01.png)
 
@@ -80,6 +80,6 @@ ___
 
 ## More info
 
-See more articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
+See more articles in the [Transfers and Gateways](/neel-client/wallet-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

@@ -10,4 +10,4 @@ To cancel the opened order just click on the **X Cancel** in the **My Open Order
 
 **Note**: Please take into account, the maximum order time is 29 days. You can change the order time in the **Expiration** field.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

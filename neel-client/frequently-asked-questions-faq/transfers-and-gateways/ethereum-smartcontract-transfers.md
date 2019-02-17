@@ -1,8 +1,8 @@
 # Processing Ethereum payments and smart-contracts
 
-Since recently there have been more Ethereum deposits to Waves made from third-party exchanges and other services using smart contracts resulting from "internal transactions" payments that our gateway can't yet process and deposit to Waves accounts.
+Since recently there have been more Ethereum deposits to Neel made from third-party exchanges and other services using smart contracts resulting from "internal transactions" payments that our gateway can't yet process and deposit to Neel accounts.
 
-Wavesplatform does not support deposits/withdrawals of Ethereum from/to smart contracts addresses, and we warn our users that they can lose their money if they do so. However, neither Waves nor our users can control third-party services that sometimes use smart contracts to perform the Ethereum withdraw operations.
+Neelplatform does not support deposits/withdrawals of Ethereum from/to smart contracts addresses, and we warn our users that they can lose their money if they do so. However, neither Neel nor our users can control third-party services that sometimes use smart contracts to perform the Ethereum withdraw operations.
 
 **NOTE**: Before using the Ethereum gateway, please pay attention to the yellow box with warning and check the sender or recipient address.
 

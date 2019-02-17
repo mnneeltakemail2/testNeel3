@@ -1,27 +1,27 @@
-# Waves Payments API
+# Neel Payments API
 
-If you want to make someone pay with WAVES or any other Waves tokens, you can use our Payments API.
+If you want to make someone pay with NEEL or any other Neel tokens, you can use our Payments API.
 
 ## Process
 
 1. You need to set up a button on your site which triggers the creation of an URL and a redirect to it.
 2. A user decides to buy something and the user presses that button.
-3. After that, the user is redirected to the Waves Client with a payment parameters window.
+3. After that, the user is redirected to the Neel Client with a payment parameters window.
 4. The user modifies those parameters if possible and submits the form.
 5. If everything's okay, The user is redirected back to referer.
 6. Referer is provided with transaction ID which can be checked if it's in the blockchain.
 
-If the user interrupts the process, he stays on the Waves Client page.
+If the user interrupts the process, he stays on the Neel Client page.
 
 ## Details
 
-[**Here**](https://demo.wavesplatform.com/payment-api) you can find the demo project which shows how to use Payment API for donations. The Payment API allows creating a special link for avoiding users' seed input on 3-party sites.
+[**Here**](https://demo.neelplatform.com/payment-api) you can find the demo project which shows how to use Payment API for donations. The Payment API allows creating a special link for avoiding users' seed input on 3-party sites.
 
 ### Request
 
-[Example](https://client.wavesplatform.com/#send/WAVES?recipient=your-alias&amount=0.01&attachment=SomeString&referrer=https://example.com&strict): `https://client.wavesplatform.com/#send/WAVES?recipient=your-alias&amount=0.01&attachment=SomeString&referrer=https://example.com&strict`.
+[Example](https://client.neelplatform.com/#send/NEEL?recipient=your-alias&amount=0.01&attachment=SomeString&referrer=https://example.com&strict): `https://client.neelplatform.com/#send/NEEL?recipient=your-alias&amount=0.01&attachment=SomeString&referrer=https://example.com&strict`.
 
-Basic path is `https://client.wavesplatform.com/#send/{assetId}`. Then there are the parameters.
+Basic path is `https://client.neelplatform.com/#send/{assetId}`. Then there are the parameters.
 
 #### Asset ID
 
@@ -41,7 +41,7 @@ Basic path is `https://client.wavesplatform.com/#send/{assetId}`. Then there are
 
 #### Referrer
 
-`?referrer=https://example.com/waves-payment` — the URL of your service. It should be HTTPS-only. _\(Optional\)_
+`?referrer=https://example.com/neel-payment` — the URL of your service. It should be HTTPS-only. _\(Optional\)_
 
 #### Strict mode
 
@@ -49,7 +49,7 @@ Basic path is `https://client.wavesplatform.com/#send/{assetId}`. Then there are
 
 ### Response
 
-Example: `https://example.com/waves-payment?txId=D1USZfZPzVd2XNH9xj52Z81XhxChpwUKDJpQHz2haXRT`.
+Example: `https://example.com/neel-payment?txId=D1USZfZPzVd2XNH9xj52Z81XhxChpwUKDJpQHz2haXRT`.
 
 The ID of the user's payment transaction will be in the query.
 

@@ -3,23 +3,23 @@
 * [Introduction](#introduction)
 * [How to receive Bitcoin Cash](#how-to-receive-bitcoin-cash)
 * [How to send Bitcoin Cash](#how-to-send-bitcoin-cash)
-* [How to transfer Bitcoin Cash to another Waves account](#how-to-transfer-bitcoin-cash-to-another-waves-account)
+* [How to transfer Bitcoin Cash to another Neel account](#how-to-transfer-bitcoin-cash-to-another-neel-account)
 * [More info](#more-info)
 
 ## Introduction
 
-Waves allow you to hold and transfer Bitcoin Cash on its blockchain. This works through a so-called Multigateway approach: Bitcoin Cash sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Bitcoin Cash token \(wMONERO\) issued in the Waves blockchain. Every single Bitcoin Cash token is backed 1:1 with the real Bitcoin Cash.
+Neel allow you to hold and transfer Bitcoin Cash on its blockchain. This works through a so-called Multigateway approach: Bitcoin Cash sent to a user's deposit address available in the Neel wallet and after the deposit the user receives a Bitcoin Cash token \(wMONERO\) issued in the Neel blockchain. Every single Bitcoin Cash token is backed 1:1 with the real Bitcoin Cash.
 
-Read more about [What is a payment gateway?](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Read more about [What is a payment gateway?](/neel-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## How to receive Bitcoin Cash (on the way)
 
-Open your Waves app and log in to your Account.
-At the bottom of the interface, click on the ![](/waves-client/mobile-apps/_assets/waves_transfers_ios_01.png) and click on the **Receive**.
+Open your Neel app and log in to your Account.
+At the bottom of the interface, click on the ![](/neel-client/mobile-apps/_assets/neel_transfers_ios_01.png) and click on the **Receive**.
 
 The following window will appear. Tap on the **Asset** and choose **Bitcoin Cash** from the drop-down menu.
 
-![](/waves-client/mobile-apps/_assets/bitcoin-cash_01.png)
+![](/neel-client/mobile-apps/_assets/bitcoin-cash_01.png)
 
 Before proceeding please carefully read the conditions:
 
@@ -36,7 +36,7 @@ After that click on the **Continue**.
 
 The following window will appear.
 
-![](/waves-client/mobile-apps/_assets/bitcoin-cash_02.png)
+![](/neel-client/mobile-apps/_assets/bitcoin-cash_02.png)
 
 There you will find Bitcoin Cash address of your account. Copy it by clicking on the **Copy** or **Share** with the sender. Also, there you will find **QR code** that contains your address.
 
@@ -44,12 +44,12 @@ There you will find Bitcoin Cash address of your account. Copy it by clicking on
 
 ## How to send Bitcoin Cash (on the way)
 
-Open your Waves app and log in to your Account.
-At the bottom of the interface, click on the ![](/waves-client/mobile-apps/_assets/waves_transfers_ios_01.png) and click on the **Send**.
+Open your Neel app and log in to your Account.
+At the bottom of the interface, click on the ![](/neel-client/mobile-apps/_assets/neel_transfers_ios_01.png) and click on the **Send**.
 
 The following window will appear.
 
-![](/waves-client/mobile-apps/_assets/bitcoin-cash_03.png)
+![](/neel-client/mobile-apps/_assets/bitcoin-cash_03.png)
 
 Fill in the sending form.
 
@@ -58,47 +58,47 @@ Fill in the sending form.
 * **Bitcoin Cash Payment ID**: Use the Payment ID received on the receipt side.
 * **Amount**: Define a number of Bitcoin Cash you want to send or choose **Use total balance** **50%** **10%** **5%**
 
-Please note that the gateway charges **0.01 MONERO** for the gateway fee as well as **0.001 Waves** for the network fee.
+Please note that the gateway charges **0.01 MONERO** for the gateway fee as well as **0.001 Neel** for the network fee.
 **Before proceeding please carefully read the conditions**.
 
 After you have filled the form, click on the **Continue**.
 
 The following window will appear.
 
-![](/waves-client/mobile-apps/_assets/bitcoin-cash_04.png)
+![](/neel-client/mobile-apps/_assets/bitcoin-cash_04.png)
 
 To complete the proccess, click on the **Confirm**.
 
 **Note**: Processing may take up to 120 minutes.
 
-## How to transfer Bitcoin Cash to another Waves account
+## How to transfer Bitcoin Cash to another Neel account
 
-You can send Bitcoin Cash directly to another Waves account.
+You can send Bitcoin Cash directly to another Neel account.
 
-Open your Waves app and log in to your Account.
-At the bottom of the interface, click on the ![](/waves-client/mobile-apps/_assets/waves_transfers_ios_01.png) and click on the **Send**.
-**Note**: The network fee is only 0.001 Waves \(no gateway fee\).
+Open your Neel app and log in to your Account.
+At the bottom of the interface, click on the ![](/neel-client/mobile-apps/_assets/neel_transfers_ios_01.png) and click on the **Send**.
+**Note**: The network fee is only 0.001 Neel \(no gateway fee\).
 
 The following window will appear.
 
-![](/waves-client/mobile-apps/_assets/bitcoin-cash_05.png)
+![](/neel-client/mobile-apps/_assets/bitcoin-cash_05.png)
 
 Fill in the sending form.
 
 * **Asset**: Choose **Bitcoin Cash** from the drop-down menu.
-* **Recipient**: Put the recipient **Waves** address or scan QR-code or choose from Address book.
+* **Recipient**: Put the recipient **Neel** address or scan QR-code or choose from Address book.
 * **Amount**: Define a number of **Assets** you want to send or choose **Use total balance** **50%** **10%** **5%**
 
 After you have entered all necessary information click on the **Continue**.
 
 Re-check entered data and click on the **Confirm** to complete the process.
 
-![](/waves-client/mobile-apps/_assets/bitcoin-cash_06.png)
+![](/neel-client/mobile-apps/_assets/bitcoin-cash_06.png)
 
 ___
 
 ## More info
 
-See more articles in the [Transfers and gateways](/waves-client/mobile-apps/android/wallet-management.md) chapter.
+See more articles in the [Transfers and gateways](/neel-client/mobile-apps/android/wallet-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

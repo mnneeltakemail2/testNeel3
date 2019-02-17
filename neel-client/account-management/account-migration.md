@@ -1,16 +1,16 @@
-# How to migrate your Beta and Lite client accounts into Waves wallet
+# How to migrate your Beta and Lite client accounts into Neel wallet
 
-As you may know, Wavesplatform had several developmend stages. We had Waves Lite client as one of the very first wallet version. Then we created a completely redesigned application, and for several months the wallet had a Beta status. Finally, we proud to inform you that the official application has come out of Beta.
+As you may know, Neelplatform had several developmend stages. We had Neel Lite client as one of the very first wallet version. Then we created a completely redesigned application, and for several months the wallet had a Beta status. Finally, we proud to inform you that the official application has come out of Beta.
 
 These instructions are relevant only for online versions used in the web browsers and only if you run into problems with account transferring, since the new online application should do it in automatic mode.
 
 For owners of desktop applications, there is no need to perform any actions with their accounts, since the application will just automatically update everything that is needed.
 
-At the same time, you can always restore your account using a backup copy of the phrase. More detailed instruction available here - [How to restore access to my account](waves-client/account-management/restore-an-account.md)
+At the same time, you can always restore your account using a backup copy of the phrase. More detailed instruction available here - [How to restore access to my account](neel-client/account-management/restore-an-account.md)
 
 **So, let's just start the migration process (Google Chrome/Firefox and other)**
 
-Open the link https://client.wavesplatform.com/restore and you will be forwarded to the restoring page.
+Open the link https://client.neelplatform.com/restore and you will be forwarded to the restoring page.
 
 ![](/_assets/account_migration_01.png)
 
@@ -28,7 +28,7 @@ And that's it! You will forwarding to the Login page, where you can select the n
 
 The migration process for Safari browser is slightly different, but it's straightforward.
 
-Open the link https://client.wavesplatform.com/restore and you will be forwarded to the restoring page.
+Open the link https://client.neelplatform.com/restore and you will be forwarded to the restoring page.
 
 Under **Continue** button find and click on the **Import accounts** button. After a few seconds, you will see a window with a list of supporting applications (Beta and Lite clients).
 
@@ -42,6 +42,6 @@ You will forwarding to the Login page, where you can select the necessary accoun
 
 ___
 
-See more articles in the [Account Management](/waves-client/account-management.md) chapter.
+See more articles in the [Account Management](/neel-client/account-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

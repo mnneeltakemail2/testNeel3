@@ -11,15 +11,15 @@ To run the Neel node have to go through 2 steps:
 1. Install the JRE 1.8 \(**64-bit version**\).
 2. Download Neel package and configure the application.
 
-**P.S.** you can check Neel Releases [Here](https://github.com/wavesplatform/Waves/releases).
+**P.S.** you can check Neel Releases [Here](https://github.com/neelplatform/Neel/releases).
 
-**Prior to the launch of your nodes, make sure you read the **[**configuration specification**](/waves-full-node/configuration-parameters.md)**! The default configuration does not contain the safest solution!**
+**Prior to the launch of your nodes, make sure you read the **[**configuration specification**](/neel-full-node/configuration-parameters.md)**! The default configuration does not contain the safest solution!**
 
 More specific steps depend on your operating system:
 
-* [On Mac](/waves-full-node/how-to-install-a-node/on-mac.md)
-* [On Windows](/waves-full-node/how-to-install-a-node/on-windows.md)
-* [On Ubuntu](/waves-full-node/how-to-install-a-node/on-ubuntu.md)
+* [On Mac](/neel-full-node/how-to-install-a-node/on-mac.md)
+* [On Windows](/neel-full-node/how-to-install-a-node/on-windows.md)
+* [On Ubuntu](/neel-full-node/how-to-install-a-node/on-ubuntu.md)
 
 Here you can find a tutorial about [Installing Neel Node](https://www.youtube.com/watch?v=CDmMeZlzKbk&feature=youtu.be).
 

@@ -121,9 +121,9 @@ So, you can buy `NEEL` for `BTC` even if you have no `NEEL`.
 # 5. Installing DEX {#Decentralizedcryptocurrencyexchange(DEX)-InstallingDEX}
 
 * Download the Neel client from our official website,
-  [www.wavesplatform.com](http://www.wavesplatform.com/)
+  [www.neelplatform.com](http://www.neelplatform.com/)
   , or use the webwallet, available at
-  [client.wavesplatform.com](https://client.wavesplatform.com/)
+  [client.neelplatform.com](https://client.neelplatform.com/)
 * [Deposit your bitcoins](/neel-client/transfers-and-gateways/bitcoin-transfers.md) or any [supported coins and tokens](/en/neel-client/wallet-management.md) into the wallet and [start trading using the Neel DEX](/neel-client/neel-dex.md).
 
 # 6. Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}

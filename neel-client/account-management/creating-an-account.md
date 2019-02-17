@@ -7,14 +7,14 @@
 ## How to Create an Account
 
 You can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
-Also downloads are available from the official site - https://wavesplatform.com/product
+Also downloads are available from the official site - https://neelplatform.com/product
 
-Choose and open up your Waves wallet.
+Choose and open up your Neel wallet.
 
 Please take some time to understand some important things for your own safety.
 We cannot recover your funds or freeze your account if you visit a phishing site or lose your backup phrase (aka SEED phrase).
 By continuing to use our platform, you agree to accept all risks associated with the loss of your SEED, including but not limited to the inability to obtain your funds and dispose of them.
-In case you lose your SEED, you agree and acknowledge that the Waves Platform would not be responsible for the negative consequences of this.
+In case you lose your SEED, you agree and acknowledge that the Neel Platform would not be responsible for the negative consequences of this.
 
 To continue, click on the **What you need to know about your SEED**
 
@@ -33,7 +33,7 @@ Click on the **Continue** button.
 
 Now, it's an important step to backup your account by clicking **Back Up Now**.
 
-Waves will display an important reminder. Never provide your backup phrase to anyone except the official Waves client.  We recommend that you write the backup phrase on a piece of paper and store it in a secure location.  Do not store the backup phrase unencrypted on any electronic device.
+Neel will display an important reminder. Never provide your backup phrase to anyone except the official Neel client.  We recommend that you write the backup phrase on a piece of paper and store it in a secure location.  Do not store the backup phrase unencrypted on any electronic device.
 
 ![](/_assets/account_creation_03.png)
 
@@ -42,7 +42,7 @@ Carefully read the warning and only then click on **I understand**
 ![](/_assets/account_creation_04.png)
 
 After that, you will get account seed phrase.
-Waves wants to make sure you actually wrote down the backup phrase. Therefore, Waves will ask you to verify the backup phrase before proceeding to your Waves account.
+Neel wants to make sure you actually wrote down the backup phrase. Therefore, Neel will ask you to verify the backup phrase before proceeding to your Neel account.
 Create several copies of the seed phrase and click on **I've written it down**
 
 ![](/_assets/account_creation_05.png)
@@ -73,7 +73,7 @@ Login to your account, at the bottom right corner find the pop-up window **Save 
 ![](/_assets/backup_01.png)
 
 After that, you will get account seed phrase.
-Waves wants to make sure you actually wrote down the backup phrase.
+Neel wants to make sure you actually wrote down the backup phrase.
 Create several copies of the seed phrase and click on **I've written it down**
 
 ![](/_assets/account_creation_05.png)
@@ -95,6 +95,6 @@ ___
 
 ## More info
 
-See more articles in the [Account Management](/waves-client/account-management.md) chapter.
+See more articles in the [Account Management](/neel-client/account-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

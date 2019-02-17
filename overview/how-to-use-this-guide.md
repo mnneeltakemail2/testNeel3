@@ -13,10 +13,10 @@ In this guide, you can find all the information about Neel Network as the struct
 This section will give you a general information about Neel Network and its main components.
 
 1. [Platform Components](../overview/platform-components.md)
-2. [Neel Official Resources](../overview/waves-official-resources.md)
+2. [Neel Official Resources](../overview/neel-official-resources.md)
 3. [Security Notes](../overview/security-notes.md)
-4. [Neel Releases](../overview/waves-releases.md)
-5. [Neel Tokens](../overview/waves-tokens.md)
+4. [Neel Releases](../overview/neel-releases.md)
+5. [Neel Tokens](../overview/neel-tokens.md)
 
 # Platform Features
 
@@ -25,7 +25,7 @@ This section contains explanations about Neel main Features such as \(Neel-NG Pr
 1. [Decentralized Exchange \(DEX\)](../platform-features/decentralized-cryptocurrency-exchange-dex.md)
 2. [Tokens \(Custom Tokens\)](../platform-features/assets-custom-tokens.md)
 3. [Activation Protocol](../platform-features/activation-protocol.md)
-4. [Neel-NG Protocol](../platform-features/waves-ng-protocol.md)
+4. [Neel-NG Protocol](../platform-features/neel-ng-protocol.md)
 
 # Getting Started
 
@@ -41,13 +41,13 @@ This section contains all information about Installing, configuring and upgradin
 2. [How To Install a node](../neel-full-node/how-to-install-a-node/how-to-install-a-node.md)
 3. [Upgrading](../neel-full-node/upgrading.md)
 4. [How to Rollback a Node](../neel-full-node/how-to-rollback-a-node.md)
-5. [Neel Node in Docker](../neel-full-node/waves-node-in-docker.md)
+5. [Neel Node in Docker](../neel-full-node/neel-node-in-docker.md)
 6. [How to Configure a node](../neel-full-node/configuration-parameters.md)
 7. [Options for Getting Actual Blockchain](../neel-full-node/options-for-getting-actual-blockchain.md)  \([State Importing ](../neel-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md)and [State Downloading](../neel-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md)\)
 
 # Development and API
 
-1. [Client Libraries ](../development-and-api/client-libraries.md)\([PyNeel](../development-and-api/client-libraries/pywaves.md), [Neel Java Library](../development-and-api/client-libraries/wavesj.md) and [NeelTx](../development-and-api/client-libraries/waves-transactions.md))
+1. [Client Libraries ](../development-and-api/client-libraries.md)\([PyNeel](../development-and-api/client-libraries/pyneel.md), [Neel Java Library](../development-and-api/client-libraries/neelj.md) and [NeelTx](../development-and-api/client-libraries/neel-transactions.md))
 2. [DEX API](../development-and-api/dex-api.md) \([Matcher](../development-and-api/dex-api/matcher.md)\)
-3. [Neel Node Rest API](../development-and-api/waves-node-rest-api.md)
+3. [Neel Node Rest API](../development-and-api/neel-node-rest-api.md)
 4. [Examples](../development-and-api/examples.md)

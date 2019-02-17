@@ -19,7 +19,7 @@ Lets assume that we want to get distribution of asset `DHgwrRvVyqJsepd32YbBqUeDH
 **1. First  Request:**
 
 ```js
-http://nodes.wavesnodes.com/assets/DHgwrRvVyqJsepd32YbBqUeDH4GJ1N984X8QoekjgH8J/distribution/1352994/limit/10
+http://nodes.neelnodes.com/assets/DHgwrRvVyqJsepd32YbBqUeDH4GJ1N984X8QoekjgH8J/distribution/1352994/limit/10
 ```
 
 **2. First  Response:**
@@ -52,7 +52,7 @@ Where:
 **1. Request to get next 10 addresses in distribution at height 1353075 and after the address of LastItem which is 3PPfAGBSZbTka5jCL3iXmQycXdgySbCj3kK :**
 
 ```js
-http://nodes.wavesnodes.com/assets/DHgwrRvVyqJsepd32YbBqUeDH4GJ1N984X8QoekjgH8J/distribution/1353075/limit/10?after=3PPfAGBSZbTka5jCL3iXmQycXdgySbCj3kK
+http://nodes.neelnodes.com/assets/DHgwrRvVyqJsepd32YbBqUeDH4GJ1N984X8QoekjgH8J/distribution/1353075/limit/10?after=3PPfAGBSZbTka5jCL3iXmQycXdgySbCj3kK
 ```
 
 **2. Respond to get next 10 addresses in distribution:**

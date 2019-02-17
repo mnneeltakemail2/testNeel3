@@ -23,7 +23,7 @@ sudo apt-get install sbt
 ## 2. Obtaining Source Codes
 
 ```bash
-git clone git@github.com:wavesplatform/Waves.git
+git clone git@github.com:neelplatform/Neel.git
 cd Neel
 ```
 

@@ -2,7 +2,7 @@
 
 An Alias is a string between 4 and 30 characters long consisting of lowercase Latin letters, digits and symbols **-.0123456789@_abcdefghijklmnopqrstuvwxyz** used to simplify transactions.  
 It is possible to specify aliases instead of full address for asset transfers and leasing transactions.  
-The cost is limited to 0.001 WAVES \(the Tx fee\).
+The cost is limited to 0.001 NEEL \(the Tx fee\).
 
 The creation of an Alias is very straightforward;
 
@@ -25,6 +25,6 @@ Your Alias should be ready to use as from the next block update.
 
 ___
 
-See more articles in the [Account Management](/waves-client/account-management.md) chapter.
+See more articles in the [Account Management](/neel-client/account-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

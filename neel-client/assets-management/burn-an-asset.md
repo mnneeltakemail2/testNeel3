@@ -1,8 +1,8 @@
 # ​How to burn issued Token
 
-Here you will find how to decrease token supply if you are the token issuer or burn any spam tokens if you no longer want to see them in your Waves account.
+Here you will find how to decrease token supply if you are the token issuer or burn any spam tokens if you no longer want to see them in your Neel account.
 
-Open up your Waves wallet.
+Open up your Neel wallet.
 
 Go to the **Portfolio**.
 
@@ -31,6 +31,6 @@ Check the entered data and if everything is ok, click on the **Confirm** button.
 
 ___
 
-See more articles in the [Assets Management](/waves-client/assets-management.md) chapter.
+See more articles in the [Assets Management](/neel-client/assets-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

@@ -102,7 +102,7 @@ let total = 3 + 5 + 8 + 11  # Fibonacci
 
 ## Types
 
-As described in [Available data types](/technical-details/waves-contracts-language-description/language-description.md#available-data-types),  
+As described in [Available data types](/technical-details/neel-contracts-language-description/language-description.md#available-data-types),  
 language has the following types: `Bottom Type, Primitive Types, Complex Types`. Users shouldn't specify type,  
 the language will do it automatically, but remember basic rules:
 
@@ -111,7 +111,7 @@ the language will do it automatically, but remember basic rules:
 
 ## Collections
 
-Details are available by link [List\[T\]](/technical-details/waves-contracts-language-description/language-description.md#listt),  
+Details are available by link [List\[T\]](/technical-details/neel-contracts-language-description/language-description.md#listt),  
 and below is examples of `List[T]` usage:
 
 ```

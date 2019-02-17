@@ -2,7 +2,7 @@
 
 # 1. Neel Client
 
-[The Neel Client](https://client.wavesplatform.com) can be [easily installed](/neel-client/install-neel-client.md) and used to perform most actions in the Neel Network where users can issue, transfer and trade assets.
+[The Neel Client](https://client.neelplatform.com) can be [easily installed](/neel-client/install-neel-client.md) and used to perform most actions in the Neel Network where users can issue, transfer and trade assets.
 
 # 2. Neel Wallet
 
@@ -20,7 +20,7 @@
 
 # 4. Mobile apps
 
-* Neel App is a mobile client for Neel Network available for [iOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet).
+* Neel App is a mobile client for Neel Network available for [iOS](https://itunes.apple.com/us/app/neel-wallet/id1233158971?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.neelplatform.wallet).
 * The wallet is connected to public Neel nodes in order to retrieve your transactions and send payments.
 * Get started with Neel App for [iOS](/neel-client/mobile-apps/iOS.md) and [Android](/neel-client/mobile-apps/android.md) devices.
 
@@ -69,20 +69,20 @@ Nodes are a critical part of our ecosystem. [Run a Neel node](/neel-full-node/ho
 * You don’t need any fancy hardware, just a simple hosted server and at least 1,000 Neel.
 * You can run a public mining pool and have users lease their funds to you, thereby increasing your profits and sharing them with the community.
 
-You can find the full list of Neel nodes for leasing with their corresponding address [_**HERE.**_](https://forum.wavesplatform.com/c/pools)
+You can find the full list of Neel nodes for leasing with their corresponding address [_**HERE.**_](https://forum.neelplatform.com/c/pools)
 
 # 7.2 Official nodes with open API
 
-1. [**NeelGo**](http://www.wavesgo.com) is the foremost Neel node, with the biggest balance \(16,214,530 NEEL\) and a thriving community of supporters. The node distributes the NeelGo token to anyone who leases their funds to it.
-2. [**Neelnode.NET**](https://wavesnode.net)** **represents a developing community in Netherlands with a balance of 10,589,578 NEEL. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Neel merchandise.
+1. [**NeelGo**](http://www.neelgo.com) is the foremost Neel node, with the biggest balance \(16,214,530 NEEL\) and a thriving community of supporters. The node distributes the NeelGo token to anyone who leases their funds to it.
+2. [**Neelnode.NET**](https://neelnode.net)** **represents a developing community in Netherlands with a balance of 10,589,578 NEEL. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Neel merchandise.
 
-**Note.** You can find a full nodes list at [dev.pywaves.org](http://dev.pywaves.org/generators/) and [Here](https://wavesplatform.com/leasing#nodes) you can find a list of the top nodes by NEEL balance.
+**Note.** You can find a full nodes list at [dev.pyneel.org](http://dev.pyneel.org/generators/) and [Here](https://neelplatform.com/leasing#nodes) you can find a list of the top nodes by NEEL balance.
 
 # 7.3 Matcher nodes
 
 Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher. Orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation. These nodes connect the seller to the buyer for a commission, and then fix the transaction in the Neel blockchain.
 
-In principle, **any full node** can become a **Matcher**. Neel client connects to Matchers at [nodes.wavesnodes.com](https://nodes.wavesnodes.com/) by default.
+In principle, **any full node** can become a **Matcher**. Neel client connects to Matchers at [nodes.neelnodes.com](https://nodes.neelnodes.com/) by default.
 
 Matchers will receive fees for the service they provide, adding an additional revenue stream for Neel full nodes.
 
@@ -91,4 +91,4 @@ Matchers will receive fees for the service they provide, adding an additional re
 # 8. MainNet / TestNet
 
 1. **MainNet** - this is the real deal, the live Neel blockchain where you in the worst case could lose money if you are not careful. You can access the mainnet via a full node. it's integrated with the GUI in the Neel client, allowing anyone to use it without any technical knowledge or blockchain downloads.
-2. **TestNet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest features before they go live.
+2. **TestNet **- this is the test version of the Neel blockchain. [here](https://github.com/neelplatform/Neel/releases) you'll find always the latest versions and newest features before they go live.

@@ -20,13 +20,13 @@ then it good, you can move to the next step!
 
 But if you get an error, then check your installation and try to find some better tutorials in google.
 
-**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version, **you also can check Neel Releases [Here](https://github.com/wavesplatform/Waves/releases).
+**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version, **you also can check Neel Releases [Here](https://github.com/neelplatform/Neel/releases).
 
 ## Installation from deb package on deb-based linux \(Ubuntu, Debian\)
 
-Just [download latest neel deb](https://github.com/wavesplatform/Waves/releases) and install it with `sudo dpkg -i neel*.deb`. Now it's time to check your neel config!
+Just [download latest neel deb](https://github.com/neelplatform/Neel/releases) and install it with `sudo dpkg -i neel*.deb`. Now it's time to check your neel config!
 
-It's embedded into the deb package and unpacked to `/usr/share/neel/conf/neel.conf` \(or `neel-testnet` folder for testnet\) and symlinked to `/etc/neel/neel.conf`. [Please read this and edit neel config](/waves-full-node/configuration-parameters.md) with caution.
+It's embedded into the deb package and unpacked to `/usr/share/neel/conf/neel.conf` \(or `neel-testnet` folder for testnet\) and symlinked to `/etc/neel/neel.conf`. [Please read this and edit neel config](/neel-full-node/configuration-parameters.md) with caution.
 
 There are two types of deb packages of neel nodes: with _**upstart loader**_ and _**systemd loader**_.
 
@@ -44,11 +44,11 @@ Users can start the node with `sudo service neel start` \(`neel-testnet` for tes
 
 # Installation for advanced users
 
-[Download latest version](https://github.com/wavesplatform/Waves/releases) of neel.jar and required configuration file \(for mainnet or testnet\) to any folder, for example `/opt/neel`.
+[Download latest version](https://github.com/neelplatform/Neel/releases) of neel.jar and required configuration file \(for mainnet or testnet\) to any folder, for example `/opt/neel`.
 
 Check out the configuration file, **it is very important**! On this depends **the safety of your wallet and money**.
 
-Just open it via your favorite text editor, pour a cup of tea and read [the documentation of the configuration file.](/waves-full-node/configuration-parameters.md)
+Just open it via your favorite text editor, pour a cup of tea and read [the documentation of the configuration file.](/neel-full-node/configuration-parameters.md)
 
 Then start console, navigate to the folder with the jar file with the command `cd /opt/neel` and start neel node with command `java -jar neel.jar neel-config.conf`.
 
@@ -69,7 +69,7 @@ Now you can write a script to run every node, which you like and use it! I hope 
 * Clone the repository:
 
   ```
-  git clone git@github.com:wavesplatform/Waves.git
+  git clone git@github.com:neelplatform/Neel.git
   ```
 
 * Run SBT at project folder:

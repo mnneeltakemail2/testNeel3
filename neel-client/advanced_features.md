@@ -1,6 +1,6 @@
 # Advanced features
 
-This chapter includes all details about all necessary details related to advanced settings of Waves wallet.
+This chapter includes all details about all necessary details related to advanced settings of Neel wallet.
 
 **Warning**: actions can lead to loss of access to your account.
 We do not recommend you submit script transactions unless you are an experienced user. Errors can lead to permanent loss of access to your account.

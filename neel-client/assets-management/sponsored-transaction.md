@@ -1,14 +1,14 @@
 # How to use sponsored transactions
 
-Some projects want their users to be able to operate with their tokens without using Waves token at all. Often it makes much sense since these assets have value. Currently, it's impossible to ensure all the miners accept particular asset as a fee.
+Some projects want their users to be able to operate with their tokens without using Neel token at all. Often it makes much sense since these assets have value. Currently, it's impossible to ensure all the miners accept particular asset as a fee.
 
 For these reasons, we implemented a completely new feature called Sponsored Transactions. So, any user who issued their token can use custom fees in official wallets and other apps.
 
-**Note**: Before you start, please make sure that you have at least 2 WAVES on the balance. Since activation and deactivation procedure cost 1 WAVES per request.
+**Note**: Before you start, please make sure that you have at least 2 NEEL on the balance. Since activation and deactivation procedure cost 1 NEEL per request.
 
 **How to activate sponsored transactions**.
 
-Open up your Waves wallet.
+Open up your Neel wallet.
 
 Go to the **Portfolio** and find your token.
 
@@ -35,10 +35,10 @@ After all, you'll be able to see activation status. There will be a special % sy
 
 ![](/_assets/sponsored_transaction_06.png)
 
-**Note**: For each user transaction in the sponsored mode, you will be charged a commission of 0.001 Waves.
-**Note**: If the balance of your account will not have enough Waves to pay for user transactions. In this case, your sponsored transactions will be canceled.
+**Note**: For each user transaction in the sponsored mode, you will be charged a commission of 0.001 Neel.
+**Note**: If the balance of your account will not have enough Neel to pay for user transactions. In this case, your sponsored transactions will be canceled.
 
-**For example**: You activated the sponsored transaction. You have free - 3 Waves, in orders - 5 Waves and in leasing - 10 Waves. As soon as 3 Waves run out, the active sponsored mode will use Waves from active (unfilled) orders. In this case, orders at the time of the matching will be canceled, since you will not have enough Waves to pay the order fee or to ensure an active order. As soon as all free Waves are used, the sponsored mode will be forcibly disabled.​
+**For example**: You activated the sponsored transaction. You have free - 3 Neel, in orders - 5 Neel and in leasing - 10 Neel. As soon as 3 Neel run out, the active sponsored mode will use Neel from active (unfilled) orders. In this case, orders at the time of the matching will be canceled, since you will not have enough Neel to pay the order fee or to ensure an active order. As soon as all free Neel are used, the sponsored mode will be forcibly disabled.​
 
 **How to deactivate sponsored transactions**.
 
@@ -58,6 +58,6 @@ After all, you'll be able to see deactivation status. A special symbol will be r
 
 ___
 
-See more articles in the [Assets Management](/waves-client/assets-management.md) chapter.
+See more articles in the [Assets Management](/neel-client/assets-management.md) chapter.
 
-If  you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If  you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

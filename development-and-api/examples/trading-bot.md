@@ -3,9 +3,9 @@
 ###Introduction
 Neel network is designed and built from the ground up for speed and scale. At the same time Neel is one of the most developer-friendly ecosystems. Neel blockchain exposes its functionality through a powerful REST API, that can be used with any programming language.
 
-This text guides you through the basics of Neel Node Rest API. Here we will use python wrapper for the API — [PyWaves](https://github.com/PyWaves/PyWaves) library, but there are other options for different programming languages, e.g. [WavesCS for C#](https://github.com/wavesplatform/WavesCS), [WavesJ for Java](https://github.com/wavesplatform/WavesJ) etc.
+This text guides you through the basics of Neel Node Rest API. Here we will use python wrapper for the API — [PyNeel](https://github.com/PyNeel/PyNeel) library, but there are other options for different programming languages, e.g. [NeelCS for C#](https://github.com/neelplatform/NeelCS), [NeelJ for Java](https://github.com/neelplatform/NeelJ) etc.
 
-Pywaves is an object-oriented Python interface to the Neel blockchain, which will help us to reduce code complexity while maintaining its structure, so anything you learn using this library can be applied with pure HTTP API calls.
+Pyneel is an object-oriented Python interface to the Neel blockchain, which will help us to reduce code complexity while maintaining its structure, so anything you learn using this library can be applied with pure HTTP API calls.
 
 ###What is Neel Node REST API
 Neel Network is a little bit complex and consists of a lot of components:
@@ -29,10 +29,10 @@ Disclaimer: I do not suggest to use scalping strategy. The strategy was chosen b
 The bot with initial parameters trades on Neel-BTC pair (Neel is an amount asset and BTC is a `price_asset`). The spread mean price is `(best_bid + best_ask) / 2`. The price step is `0.5%` from the mean price. The bot places the buy order at price `meanprice * (1 - price_step)` and the amount `(BTC_balance / bid_price) - order_fee`. The sell order is placed at `meanprice * (1 + price_step)` and the amount equal to `Neel_balance - order_fee `.
 
 ###Let’s code, step-by-step
-So, let’s get started! We’ll use Pywaves and configparser libraries for API calls and reading config file. Let's install them:
+So, let’s get started! We’ll use Pyneel and configparser libraries for API calls and reading config file. Let's install them:
 
 ```python
-pip install pywaves
+pip install pyneel
 pip install configparser
 ```
 It’s better to make configuration file where we will store all sensitive and customizable settings. A common way for the task in python ecosystem is .cfg format. The main section of the file will contain general settings of the bot:
@@ -44,7 +44,7 @@ node = http://127.0.0.1
 # select the network: testnet or mainnet
 network = mainnet
 # DEX matcher
-matcher = http://nodes.wavesnodes.com
+matcher = http://nodes.neelnodes.com
 order_fee = 300000
 # order lifetime in seconds, max allowed 29 days
 order_lifetime = 86400
@@ -53,13 +53,13 @@ Additionally bot requires account and market details.
 [account]
 private_key = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 [market]
-amount_asset = WAVES
+amount_asset = NEEL
 price_asset = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
-First of all, we should import all dependencies. Besides already mentioned pywaves and configparser we need next:
+First of all, we should import all dependencies. Besides already mentioned pyneel and configparser we need next:
 
 ```python
-import pywaves as pw
+import pyneel as pw
 import datetime from time
 import sleep import math import os import configparser
 ```
@@ -68,13 +68,13 @@ Great, now we will define SimpleBot class as a wrapper of settings. We can set d
 ```python
 def __init__(self):
   self.log_file = "bot.log"
-  self.node = "https://nodes.wavesnodes.com"
+  self.node = "https://nodes.neelnodes.com"
   self.chain = "mainnet"
-  self.matcher = "https://nodes.wavesnodes.com"
+  self.matcher = "https://nodes.neelnodes.com"
   self.order_fee = int(0.003 * 10 ** 8)
   self.order_lifetime = 29 * 86400  # 29 days
   self.private_key = ""
-  self.amount_asset = pw.WAVES
+  self.amount_asset = pw.NEEL
   self.price_asset_id = "8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS" # BTC
   self.price_asset = pw.Asset(self.price_asset_id)
   self.price_step = 0.005
@@ -90,9 +90,9 @@ self.node = config.get('main', 'node')
 self.chain = config.get('main', 'network')
 ...
 ```
-Using our new class SimpleBot and Pywaves library we finally can implement our business logic.
+Using our new class SimpleBot and Pyneel library we finally can implement our business logic.
 
-Pywaves requires some configuration before usage, all available methods are listed here, in our case, it’s enough to set:
+Pyneel requires some configuration before usage, all available methods are listed here, in our case, it’s enough to set:
 
 ```python
 pw.setNode(node=bot.node, chain=bot.chain)
@@ -103,16 +103,16 @@ We also need and an instance of our address:
 ```python
 my_address = pw.Address(privateKey=bot.private_key)
 ```
-Pywaves method AssetPair creates a new AssetPair object with 2 asset objects, which we’d like to trade:
+Pyneel method AssetPair creates a new AssetPair object with 2 asset objects, which we’d like to trade:
 
 ```python
-waves_btc = pw.AssetPair(bot.amount_asset, bot.price_asset)
+neel_btc = pw.AssetPair(bot.amount_asset, bot.price_asset)
 ```
-In our simple example, amount asset is WAVES, price asset is BTC, but it can be changed in the config file.
+In our simple example, amount asset is NEEL, price asset is BTC, but it can be changed in the config file.
 
 Scalping trading strategy implies infinite trading with selected timeframe size, in our case 15 sec. Let’s define an infinite loop, where we’ll :
 
-* Get Waves and BTC balances.
+* Get Neel and BTC balances.
 * Get orderBook of our AssetPair. It provides python dictionary with bids and asks amounts
 * Calculate mean spread price
 * Calculate bid and ask
@@ -121,26 +121,26 @@ Scalping trading strategy implies infinite trading with selected timeframe size,
 
 ```python
 while True:
-  # Get waves balance
-  waves_balance = my_address.balance()
+  # Get neel balance
+  neel_balance = my_address.balance()
   # Get btc balance
   btc_balance = my_address.balance(bot.price_asset_id)
   # Get order book
-  order_book = waves_btc.orderbook()
+  order_book = neel_btc.orderbook()
   # Get best bid and ask
   best_bid = order_book["bids"][0]["price"]
   best_ask = order_book["asks"][0]["price"]
   spread_mean_price = (best_bid + best_ask) // 2
   bid_price = spread_mean_price * (1 - bot.price_step)
   ask_price = spread_mean_price * (1 + bot.price_step)
-  bid_amount = int((btc_balance / bid_price) * 10 **         pw.WAVES.decimals) - bot.order_fee
-  ask_amount = int(waves_balance) - bot.order_fee
+  bid_amount = int((btc_balance / bid_price) * 10 **         pw.NEEL.decimals) - bot.order_fee
+  ask_amount = int(neel_balance) - bot.order_fee
   # Send orders
   if bid_amount >= bot.min_amount:
-  my_address.buy(assetPair=waves_btc, amount=bid_amount,   price=bid_price, matcherFee=bot.order_fee,
+  my_address.buy(assetPair=neel_btc, amount=bid_amount,   price=bid_price, matcherFee=bot.order_fee,
   maxLifetime=bot.order_lifetime)
   if ask_amount >= bot.min_amount:
-  my_address.sell(assetPair=waves_btc, amount=ask_amount,   price=ask_price, matcherFee=bot.order_fee,
+  my_address.sell(assetPair=neel_btc, amount=ask_amount,   price=ask_price, matcherFee=bot.order_fee,
 maxLifetime=bot.order_lifetime)
   # Wait for the next tick
   sleep(bot.seconds_to_sleep)

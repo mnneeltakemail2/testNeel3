@@ -2,9 +2,9 @@
 
 ## About the used framework
 
-For log writing, we use one of the logging frameworks [logback](https://logback.qos.ch/documentation.html). For the logback correct work, it needs the right configuration, [here](https://logback.qos.ch/manual/configuration.html) you can see how to configure the [logback.xml](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) file.
+For log writing, we use one of the logging frameworks [logback](https://logback.qos.ch/documentation.html). For the logback correct work, it needs the right configuration, [here](https://logback.qos.ch/manual/configuration.html) you can see how to configure the [logback.xml](https://github.com/neelplatform/Neel/blob/master/src/main/resources/logback.xml) file.
 
-By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logs are written to STDOUT and to `neel.log` file in a human-readable format.
+By [default](https://github.com/neelplatform/Neel/blob/master/src/main/resources/logback.xml) logs are written to STDOUT and to `neel.log` file in a human-readable format.
 
 ## STDOUT
 
@@ -26,7 +26,7 @@ You can change the place where the log will be written:
 * If you run the node from the jar: using Java's options, for example, `java -Dsomeoption=somevalue -jar /path/to/neel-all.jar /path/to/config`
 
 
-According to a [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logging configuration, we have such limits for file logs:
+According to a [default](https://github.com/neelplatform/Neel/blob/master/src/main/resources/logback.xml) logging configuration, we have such limits for file logs:
 1. Logs older than 30 days are deleted;
 2. If total size of logs are larger than 1Gb, oldest logs are deleted to fit this limit.
 

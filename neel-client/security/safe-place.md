@@ -1,47 +1,47 @@
 # Treat your backup phrase (aka SEED phrase) with care!
 
-Waves — a platform you can trust. The project’s open code and its architecture based on cryptographic algorithms ensure the reliability, transparency and utmost security of the operations carried out on the platform. But even the most secure methods of protection can be rendered useless if elementary rules are not followed.
+Neel — a platform you can trust. The project’s open code and its architecture based on cryptographic algorithms ensure the reliability, transparency and utmost security of the operations carried out on the platform. But even the most secure methods of protection can be rendered useless if elementary rules are not followed.
 
  * **Safely store your secret phrase (Seed). It’s the key to your wallet.**
- * **Use official Waves resources (communities on social networks, websites, apps).**
- * **Before entering your secret phrase or downloading the app, carefully check your browser’s address bar and make sure that you are using an official Waves resource.**
+ * **Use official Neel resources (communities on social networks, websites, apps).**
+ * **Before entering your secret phrase or downloading the app, carefully check your browser’s address bar and make sure that you are using an official Neel resource.**
  * **Do not forget about standard safety measures.**
 
-When registering your account, you will be asked to save your secret phrase (Seed) and to protect your account with a password. On normal centralized servers, special attention is paid to the password, which can be changed and reset via email, if the need arises. However, on decentralized platforms such as Waves, everything is arranged differently:
+When registering your account, you will be asked to save your secret phrase (Seed) and to protect your account with a password. On normal centralized servers, special attention is paid to the password, which can be changed and reset via email, if the need arises. However, on decentralized platforms such as Neel, everything is arranged differently:
 
  * **You use your wallet anonymously, meaning your account is not connected to an email account or any other identifying data.**
  * **Your password protects your account when working on a certain device or browser. It is needed in order to ensure that your secret phrase is not saved in storage and that attackers cannot gain access to it.**
  * **If you forget your password, you can easily create a new one by using the account recovery form via your secret phrase. If you lose your secret phrase, however, you will have no way to access your account.**
- * **You cannot change your secret phrase. If you accidentally sent it to someone or suspect that scammers have taken it over, then create a new Waves wallet immediately and transfer your funds to it. Do not forget to save a new secret phrase when creating a new wallet.**
+ * **You cannot change your secret phrase. If you accidentally sent it to someone or suspect that scammers have taken it over, then create a new Neel wallet immediately and transfer your funds to it. Do not forget to save a new secret phrase when creating a new wallet.**
 
 One of the most common forms of scamming is phishing, which is when scammers create fake communities on Facebook or other websites that look similar to the authentic ones.
 
-**Official Waves resources**
+**Official Neel resources**
 
-* Official website - https://wavesplatform.com
-* Online client - https://client.wavesplatform.com
-* Client on GitHub - https://github.com/wavesplatform/WavesGUI
-* Mobile app on App Store - https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8
-* Mobile app on Google Play - https://play.google.com/store/apps/details?id=com.wavesplatform.wallet
+* Official website - https://neelplatform.com
+* Online client - https://client.neelplatform.com
+* Client on GitHub - https://github.com/neelplatform/NeelGUI
+* Mobile app on App Store - https://itunes.apple.com/us/app/neel-wallet/id1233158971?mt=8
+* Mobile app on Google Play - https://play.google.com/store/apps/details?id=com.neelplatform.wallet
 
 Cloned company web pages are the main ways of distributing phishing links. Subscribe to our official communities on social networks, follow our posts, and do not fall victim to scammers:
 
-* Waves forum - https://forum.wavesplatform.com
-* Waves blog - https://blog.wavesplatform.com/latest
+* Neel forum - https://forum.neelplatform.com
+* Neel blog - https://blog.neelplatform.com/latest
 * Sasha's Twitter - https://twitter.com/sasha35625
 * Sasha's Telegram (US) - https://t.me/absolutelysasha
 * Sasha's Telegram (RU) - https://t.me/absolutelysasharu
-* Twitter - https://twitter.com/wavesplatform
-* Facebook - https://www.facebook.com/wavesplatform
-* Reddit - https://www.reddit.com/r/Wavesplatform
-* Youtube - https://www.youtube.com/wavesplatform
-* Vkontakte - https://vk.com/wavesplatform
+* Twitter - https://twitter.com/neelplatform
+* Facebook - https://www.facebook.com/neelplatform
+* Reddit - https://www.reddit.com/r/Neelplatform
+* Youtube - https://www.youtube.com/neelplatform
+* Vkontakte - https://vk.com/neelplatform
 * Discord - https://discord.gg/cnFmDyA
-* Telegram (News US) - https://t.me/wavesnews
-* Telegram (News RU) - https://t.me/WavesNewsRU
-* Telegram (Global) - https://t.me/Wavescommunity
-* Telegram (Russia) - https://t.me/WavesCommunityRU
-* Telegram (China) - https://t.me/WavesChina
+* Telegram (News US) - https://t.me/neelnews
+* Telegram (News RU) - https://t.me/NeelNewsRU
+* Telegram (Global) - https://t.me/Neelcommunity
+* Telegram (Russia) - https://t.me/NeelCommunityRU
+* Telegram (China) - https://t.me/NeelChina
 
 Use the following guidelines to secure your funds:
 
@@ -54,7 +54,7 @@ Use the following guidelines to secure your funds:
 
 Read more:
 
- * [Account creation](/waves-client/account-management/creating-an-account.md)
- * [Account recovery](/waves-client/account-management/restore-an-account.md)
- * [What is a SEED phrase?](/waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
- * [Spam transactions](/waves-client/security/spam-transactions.md)
+ * [Account creation](/neel-client/account-management/creating-an-account.md)
+ * [Account recovery](/neel-client/account-management/restore-an-account.md)
+ * [What is a SEED phrase?](/neel-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
+ * [Spam transactions](/neel-client/security/spam-transactions.md)

@@ -6,7 +6,7 @@ This section contains all information about Installing, configuring and upgradin
 2. [Upgrading](/neel-master-node/upgrading.md)
 3. [Logging Configuration](/neel-master-node/logging-configuration.md)
 4. [How to Configure a node](/neel-master-node/how-to-configure-a-node.md)
-5. [Neel Node in Docker](/neel-master-node/waves-node-in-docker.md)
+5. [Neel Node in Docker](/neel-master-node/neel-node-in-docker.md)
 6. [How to Rollback a Node](/neel-master-node/how-to-rollback-a-node.md)
 7. [State Downloading and Applying](/neel-master-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md)
 8. [Export and Import From The Blockchain](/neel-master-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md)
@@ -35,5 +35,5 @@ The job of a master node is to store the blockchain data, pass along the data to
 
 Any node may propose new transactions, and these proposed transactions are propagated between nodes until they are eventually added to a block.
 
-**Note.** You can find a master nodes list at [dev.pyneel.org](http://dev.pywaves.org/generators/) and [Here](https://wavesplatform.com/leasing#nodes) you can find a list of the top nodes by NEEL balance.
+**Note.** You can find a master nodes list at [dev.pyneel.org](http://dev.pyneel.org/generators/) and [Here](https://neelplatform.com/leasing#nodes) you can find a list of the top nodes by NEEL balance.
 

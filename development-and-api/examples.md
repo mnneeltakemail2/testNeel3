@@ -9,4 +9,4 @@ In this section you can find examples of Full Node configuration and usage of RE
 
 Examples are community driven and any good example of code can be included in the documentation.
 
-In case if you have an example or demo project using neel and would like to share with the community please [contact us](http://wavesplatform.com/forum).
+In case if you have an example or demo project using neel and would like to share with the community please [contact us](http://neelplatform.com/forum).

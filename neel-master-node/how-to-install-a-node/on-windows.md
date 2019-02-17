@@ -16,15 +16,15 @@ then all is ok, and you can move on to the next step!
 
 If you get an error check your installation and try find a solution or a better tutorial online.
 
-**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version, **you also can check Neel Releases [Here](https://github.com/wavesplatform/Waves/releases).
+**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version, **you also can check Neel Releases [Here](https://github.com/neelplatform/Neel/releases).
 
 # Download Neel package and configure the application
 
-[Download the latest version](https://github.com/wavesplatform/Waves/releases) of neel.jar and the required configuration file \(for mainnet or testnet\) to any folder, for example `~/neel`.
+[Download the latest version](https://github.com/neelplatform/Neel/releases) of neel.jar and the required configuration file \(for mainnet or testnet\) to any folder, for example `~/neel`.
 
 Carefully edit the configuration neel .conf file, **it is very important! The safety of your wallet and money depends on this!**
 
-Just open it with your favorite text editor, pour a cup of tea and read [the documentation of the configuration file](/waves-full-node/configuration-parameters.md).
+Just open it with your favorite text editor, pour a cup of tea and read [the documentation of the configuration file](/neel-full-node/configuration-parameters.md).
 
 Then start Windows Command line app `cmd.exe`, navigate to the folder with the jar file with the command `cd C:/neel` and start neel node with command `java -jar neel.jar neel.conf`.
 

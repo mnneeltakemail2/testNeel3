@@ -1,9 +1,9 @@
-# Compiling a MultiSig smart contract using Waves Console:
+# Compiling a MultiSig smart contract using Neel Console:
 
-let's write a multiSig smart contract and show how to compile it using waves console commands and let's include two transactions in our example, which are setScript Transaction and Data Transaction.
+let's write a multiSig smart contract and show how to compile it using neel console commands and let's include two transactions in our example, which are setScript Transaction and Data Transaction.
 
 * The first step to do is to create a new account, which will later become smart account in the test network. To do this, we can simply change the seed in the settings console  to "industry unable prison house cram toast produce panda slow position coffee energy awesome route quarter".
-* Then we need to have some Waves on our account through [Faucet](https://testnet.wavesexplorer.com/faucet) , We need this Waves, because the contract itself pays for the outgoing transactions. To get the address of the created account, we can use the console function **address**:
+* Then we need to have some Neel on our account through [Faucet](https://testnet.neelexplorer.com/faucet) , We need this Neel, because the contract itself pays for the outgoing transactions. To get the address of the created account, we can use the console function **address**:
   ```js
    address()
   ```

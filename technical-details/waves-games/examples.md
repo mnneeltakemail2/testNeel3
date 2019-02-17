@@ -1,6 +1,6 @@
 # Examples
 
-[_The Gaming SDK_](https://github.com/wavesplatform/waves-games#readme) has many supported functions, you can see the [_full description of all functions here_](https://wavesplatform.github.io/waves-games/index.html).
+[_The Gaming SDK_](https://github.com/neelplatform/neel-games#readme) has many supported functions, you can see the [_full description of all functions here_](https://neelplatform.github.io/neel-games/index.html).
 
 ## 1. Create an item
 

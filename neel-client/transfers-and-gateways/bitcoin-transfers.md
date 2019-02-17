@@ -3,18 +3,18 @@
 * [Introduction](#introduction)
 * [How to receive Bitcoin](#how-to-receive-bitcoin)
 * [How to send Bitcoin](#how-to-send-bitcoin)
-* [How to transfer Bitcoin to another Waves account](#how-to-transfer-bitcoin-to-another-waves-account)
+* [How to transfer Bitcoin to another Neel account](#how-to-transfer-bitcoin-to-another-neel-account)
 * [More info](#more-info)
 
 ## Introduction
 
-Waves allow you to hold and transfer Bitcoin on its blockchain. This works through a so-called Multigateway approach: Bitcoins are sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Bitcoin token \(wBTC\) issued in the Waves blockchain. Every single Bitcoin token is backed 1:1 with the real Bitcoin.
+Neel allow you to hold and transfer Bitcoin on its blockchain. This works through a so-called Multigateway approach: Bitcoins are sent to a user's deposit address available in the Neel wallet and after the deposit the user receives a Bitcoin token \(wBTC\) issued in the Neel blockchain. Every single Bitcoin token is backed 1:1 with the real Bitcoin.
 
-Read more about [What is a payment gateway?](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Read more about [What is a payment gateway?](/neel-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## How to receive Bitcoin
 
-Open your Waves wallet.
+Open your Neel wallet.
 In the Bitcoin section click on the **Receive** button.
 
 ![](/_assets/bitcoin_transfers_01.png)
@@ -38,14 +38,14 @@ Copy the shown Bitcoin address or Scan QR Code and send a payment.
 
 ## How to send Bitcoin
 
-Open your Waves wallet,  
+Open your Neel wallet,  
 In the Bitcoin section, click on the **Send** button.
 
 ![](/_assets/bitcoin_transfers_01.png)
 
 The following pop-up will appear.  
 Paste the Bitcoin address you want to send to as well as the amount of Bitcoin.  
-Please note that the gateway charges **0.001 BTC** for the gateway fee as well as **0.001 Waves** for the network fee.
+Please note that the gateway charges **0.001 BTC** for the gateway fee as well as **0.001 Neel** for the network fee.
 **Before proceeding please carefully read the conditions**.
 
 After you have filled the form, click on the **Continue** button.
@@ -59,11 +59,11 @@ To complete the operation, click on the **Confirm** or **Back** to repeat the pr
 
 **Note**: Processing may take up to 120 minutes.
 
-## How to transfer Bitcoin to another Waves account
+## How to transfer Bitcoin to another Neel account
 
-You can send Bitcoins directly to another Waves account. Just use the recipient **Waves** address, click on the **Send** and fill-in the sending form.
+You can send Bitcoins directly to another Neel account. Just use the recipient **Neel** address, click on the **Send** and fill-in the sending form.
 
-**Note.** The network fee is only 0.001 Waves \(no gateway fee\)
+**Note.** The network fee is only 0.001 Neel \(no gateway fee\)
 
 ![](/_assets/bitcoin_transfers_01.png)
 
@@ -80,6 +80,6 @@ ___
 
 ## More info
 
-See more articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
+See more articles in the [Transfers and Gateways](/neel-client/wallet-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

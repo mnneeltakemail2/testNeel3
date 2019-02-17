@@ -10,12 +10,12 @@ Assets Management chapter includes all details about Issue and Reissue Assets wh
 * [Sponsored transaction](assets-management/sponsored-transaction.md)
 * [Sponsored fee](assets-management/sponsored-fee.md)
 
-# Features of Generating your tokens on Waves Platform
+# Features of Generating your tokens on Neel Platform
 
 * No smart contracts required.
 * No programming experience needed.
 * No code audit required, minimising overheads.
 * No maintenance or monitoring needed.
 * Tokens can be launched in a few seconds.
-* It costs just 1 WAVES to launch a new token.
-* Tokens can be traded immediately on Waves exchange.
+* It costs just 1 NEEL to launch a new token.
+* Tokens can be traded immediately on Neel exchange.

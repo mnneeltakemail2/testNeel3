@@ -70,7 +70,7 @@ address
 
 ### GET /addresses/balance/{address}
 
-Get account balance in WAVES in {address}:
+Get account balance in NEEL in {address}:
 
 ```
   "address" - account's address in Base58 format
@@ -109,7 +109,7 @@ balance
 
 ### GET /addresses/balance/{address}/{confirmations}
 
-Get account balance in WAVES by {address} after {confirmations} from now:
+Get account balance in NEEL by {address} after {confirmations} from now:
 
 ```
   "address" - account's address in Base58 format

@@ -4,7 +4,7 @@
 * [How to sell cryptocurrency](#how-to-sell-cryptocurrency)
 * [More info](#more-info)
 
-Open up your Waves wallet.
+Open up your Neel wallet.
 
 Click on the DEX button ![](/_assets/dex_01.png).
 
@@ -20,7 +20,7 @@ Click on the found token.
 
 **Note**: In order to add the selected token to favourite list, just click on the star button. Also, you can get quick information about the selected token through a simple click on the Asset ID.
 
-By default, all selected tokens in the ALL section will be adding to the pair with Waves.
+By default, all selected tokens in the ALL section will be adding to the pair with Neel.
 
 If you want to open an order with other pair, such as "Asset"/BTC please click on the **BTC** | **ETH** and type a name or asset ID in the search box. Or just use **Asset ID** with any other **Asset ID** in the search field.
 
@@ -58,7 +58,7 @@ The placed order will appears in the **My Open Orders** box and in the **Order B
 
 **Note**: You can cancel opened order by clicking on the **X** in the **My Open Orders**.
 
-**Attention** The commission for creating one **buy** or **sell** order** on the DEX platform is **0.003 Waves**. This amount will be frozen for the order fee. If the order is not executed and then canceled, the amount will be unfrozen.
+**Attention** The commission for creating one **buy** or **sell** order** on the DEX platform is **0.003 Neel**. This amount will be frozen for the order fee. If the order is not executed and then canceled, the amount will be unfrozen.
 
 ## How to sell cryptocurrency
 
@@ -86,13 +86,13 @@ The placed order will appears in the **My Open Orders** box and in the **Order B
 
 **Note**: You can cancel opened order by clicking on the **X** in the **My Open Orders**.
 
-**Attention** The commission for creating one **buy** or **sell** order** on the DEX platform is **0.003 Waves**. This amount will be frozen for the order fee. If the order is not executed and then canceled, the amount will be unfrozen.
+**Attention** The commission for creating one **buy** or **sell** order** on the DEX platform is **0.003 Neel**. This amount will be frozen for the order fee. If the order is not executed and then canceled, the amount will be unfrozen.
 
 > _Before sending, receiving and trading crypto assets, educate yourself to make informed decisions. Crypto assets are volatile, and the prices can go up and down. Carefully evaluate your trading goals and the financial risk you are willing to take.
-> Please beware that Wavesplatform does not provide financial, tax, or legal advice. You should make such decisions on your own or consult with reliable experts_.
+> Please beware that Neelplatform does not provide financial, tax, or legal advice. You should make such decisions on your own or consult with reliable experts_.
 
 ___
 
 ## More info
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com) ticket or write a [question](https://forum.wavesplatform.com) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com) ticket or write a [question](https://forum.neelplatform.com) on our forum.

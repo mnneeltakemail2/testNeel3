@@ -8,13 +8,13 @@ The configuration system of Neel Node uses HOCON format. HOCON stands for Human-
 
 ### Default Configuration Embedded into JAR
 
-Complete default Neel Node configuration file which is embedded into jar-file can be found here: https://github.com/wavesplatform/Waves/blob/master/src/main/resources/application.conf
+Complete default Neel Node configuration file which is embedded into jar-file can be found here: https://github.com/neelplatform/Neel/blob/master/src/main/resources/application.conf
 
 ### MainNet and TestNet config in DEB-packages
 
 If you use DEB-packages to install a node, they also contain configuration files which override some parameters specific to the network:
-* https://github.com/wavesplatform/Waves/blob/master/waves-mainnet.conf
-* https://github.com/wavesplatform/Waves/blob/master/waves-testnet.conf
+* https://github.com/neelplatform/Neel/blob/master/neel-mainnet.conf
+* https://github.com/neelplatform/Neel/blob/master/neel-testnet.conf
 
 ### Overriding parameters when running JAR-file
 
@@ -52,13 +52,13 @@ Using parameter `leveldb-cache-size` you can set the size of theinternal cache o
 
 In `network` section P2P network related settings could be set.
 
-Use `file` parameter to set the location of peers database. In this database node stores lists of known and blacklisted peers. By default, the path is resolved with regard to base `directory` from `waves` section.
+Use `file` parameter to set the location of peers database. In this database node stores lists of known and blacklisted peers. By default, the path is resolved with regard to base `directory` from `neel` section.
 
 Using `declared-address` parameter you can set the external IP address and port number of the node. It’s necessary to work behind NAT in most cloud hosting, where the machine does not interface directly with the external address. If you do not specify it, then your node connects to the P2P network, but it won’t listen to incoming connections so other nodes will not be able to connect. Other nodes are connected to your node using these data. The format of this parameter is "\[ip-address\]:\[port\]".
 
-Using parameter `bind-address` you can set the IP address of local network interface on which Waves Node will accept incoming connections. By default, node binds to `0.0.0.0` that means that it will listen on all available network adapters.
+Using parameter `bind-address` you can set the IP address of local network interface on which Neel Node will accept incoming connections. By default, node binds to `0.0.0.0` that means that it will listen on all available network adapters.
 
-Use `port` parameter to set the network port number to which other Waves nodes will connect. Check that the port is reachable from outside otherwise, your node will connect to P2P network only using outgoing connections. If this the port is taken by other application, your node won’t start.
+Use `port` parameter to set the network port number to which other Neel nodes will connect. Check that the port is reachable from outside otherwise, your node will connect to P2P network only using outgoing connections. If this the port is taken by other application, your node won’t start.
 
 Parameter `node-name` could be used to set the name of your node visible to other participants of the P2P network. The name transmitted during initial handshake. In the default configuration, this parameter is commented out, which leads to random name generation.
 
@@ -93,13 +93,13 @@ Use `peers-broadcast-interval` parameter to set the period of time between broad
 
 Using `handshake-timeout` parameter it is possible to set time period to wait for reply during handshake. In case of no reply the peer will be blacklisted.
 
-In `upnp` section you can set the UPnP settings. Actually, those settings are useful only if you ran your Waves node on the home network where the node could ask your router to establish a tunnel. By default, this functionality is disabled. Use`enable`parameter of`upnp`to enable this functionality.
+In `upnp` section you can set the UPnP settings. Actually, those settings are useful only if you ran your Neel node on the home network where the node could ask your router to establish a tunnel. By default, this functionality is disabled. Use`enable`parameter of`upnp`to enable this functionality.
 
 In `traffic-logger` section you can enable or disable logging of some of incoming or outgoing network messages. Network messages are logged at TRACE level.
 
 ### Wallet settings {#user-content-wallet-settings}
 
-In `wallet` section you can configure wallet built in Waves node.
+In `wallet` section you can configure wallet built in Neel node.
 
 Use `file` parameter to set the path to the wallet file. By default, the path to the file is calculated relative to the base application directory.
 
@@ -163,7 +163,7 @@ Using `bind-address` it’s possible to set the IP address of local network inte
 
 `port` parameter is used to set the port number on which the matcher’s REST API will accept incoming connections.
 
-Using `min-order-fee` parameter it’s possible to set the minimum required fee to process orders. For now, matcher accepts fee only in WAVES. The fee should be given in minimal units \(WAVELETS\).
+Using `min-order-fee` parameter it’s possible to set the minimum required fee to process orders. For now, matcher accepts fee only in NEEL. The fee should be given in minimal units \(WAVELETS\).
 
 Use `order-match-tx-fee` parameter to set the transaction fee of order match transactions created by the matcher.
 
@@ -185,23 +185,23 @@ Parameter `price-assets` is the list of assets IDs that will be used as price as
 
 In case of no definition given, assets will be sorted by their IDs and the first will be selected as "price" asset and the second will be chosen as "amount" asset.
 
-To specify Waves as a side of a pair use special asset ID "WAVES".
+To specify Neel as a side of a pair use special asset ID "NEEL".
 
 Below you can find an example of setting assets pairs.
 
 ```cpp
 price-assets = [
-     "WAVES",
+     "NEEL",
      "Fmg13HEHJHuZYbtJq8Da8wifJENq8uBxDuWoP9pVe2Qe",
      "HyFJ3rrq5m7FxdkWtQXkZrDat1F7LjVVGfpSkUuEXQHj",
      "2xnE3EdpqXtFgCP156qt1AbyjpqdZ5jGjWo3CwTawcux",
      "6pmDivReTLikwYqQtJTv6dTcE59knriaodB3AK8T9cF8"
    ]
 predefined-pairs = [
-     {amountAsset = "WAVES", priceAsset = "Fmg13HEHJHuZYbtJq8Da8wifJENq8uBxDuWoP9pVe2Qe"},
-     {amountAsset = "WAVES", priceAsset = "HyFJ3rrq5m7FxdkWtQXkZrDat1F7LjVVGfpSkUuEXQHj"},
-     {amountAsset = "WAVES", priceAsset = "2xnE3EdpqXtFgCP156qt1AbyjpqdZ5jGjWo3CwTawcux"},
-     {amountAsset = "WAVES", priceAsset = "6pmDivReTLikwYqQtJTv6dTcE59knriaodB3AK8T9cF8"},
+     {amountAsset = "NEEL", priceAsset = "Fmg13HEHJHuZYbtJq8Da8wifJENq8uBxDuWoP9pVe2Qe"},
+     {amountAsset = "NEEL", priceAsset = "HyFJ3rrq5m7FxdkWtQXkZrDat1F7LjVVGfpSkUuEXQHj"},
+     {amountAsset = "NEEL", priceAsset = "2xnE3EdpqXtFgCP156qt1AbyjpqdZ5jGjWo3CwTawcux"},
+     {amountAsset = "NEEL", priceAsset = "6pmDivReTLikwYqQtJTv6dTcE59knriaodB3AK8T9cF8"},
      {amountAsset = "Fmg13HEHJHuZYbtJq8Da8wifJENq8uBxDuWoP9pVe2Qe", priceAsset = "2aSqCbvCTgvCpwkGsk4mea4tCLG4Zgp69aQDhHNvRUZv"},
      {amountAsset = "Fmg13HEHJHuZYbtJq8Da8wifJENq8uBxDuWoP9pVe2Qe", priceAsset = "8zEZuJcKPQmFuYgVe5ZMpxgiPLu5zBhjA6xgdGomQDaP"},
      {amountAsset = "Fmg13HEHJHuZYbtJq8Da8wifJENq8uBxDuWoP9pVe2Qe", priceAsset = "D2MNuUyA38pSKoV7F7vpS15Uhw9nw5qfbrGUfCLRNuRo"},
@@ -263,7 +263,7 @@ Parameter `remote-score-debounce` allows to set the time to wait before receivin
 
 In `history-replier` subsection you can configure the number of last blocks and micro-blocks cached in memory.
 
-In `micro-block-synchronizer` subsection you could tune various parameters of Waves-NG protocol.
+In `micro-block-synchronizer` subsection you could tune various parameters of Neel-NG protocol.
 
 ### UTX pool settings {#user-content-utx-pool-settings}
 

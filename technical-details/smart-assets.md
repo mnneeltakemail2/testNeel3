@@ -12,7 +12,7 @@
 
 ## Smart Assets Definition
 
-_**Smart assets**_ are unique virtual currency tokens that may represent a tangible real-world asset, or a non-tangible ownership that can be purchased, sold, or exchanged as _**defined by the rules of a script**_ on the Waves blockchain network.
+_**Smart assets**_ are unique virtual currency tokens that may represent a tangible real-world asset, or a non-tangible ownership that can be purchased, sold, or exchanged as _**defined by the rules of a script**_ on the Neel blockchain network.
 
 In simple words, **Smart assets** are assets with an attached script which validates every transaction within that asset.
 
@@ -36,12 +36,12 @@ Smart assets can be used in the following cases:
 
 # Smart Asset Fees
 
-The transaction fee is calculated in the same way as for [smart accounts](../technical-details/waves-contracts-language-description/approach-and-capabilities.md): for each time the script is called, [total transaction’s fee](../technical-details/transactions-fees.md) increases by 0.004 WAVES.
+The transaction fee is calculated in the same way as for [smart accounts](../technical-details/neel-contracts-language-description/approach-and-capabilities.md): for each time the script is called, [total transaction’s fee](../technical-details/transactions-fees.md) increases by 0.004 NEEL.
 
 **Examples:**
 
-* If user will transfer smart assets from scripted account the final fee is 0.009.waves
-* x for a TransferTransaction of a Smart Asset from a Smart Account would be 0.001+0.004+0.004=0.009 WAVES
+* If user will transfer smart assets from scripted account the final fee is 0.009.neel
+* x for a TransferTransaction of a Smart Asset from a Smart Account would be 0.001+0.004+0.004=0.009 NEEL
 
 **Note.** If a scripted account transfers a smart asset, then the fee is increased twice \(the fee increases _**+0.004**_ every time the transaction is validated by account’s script or asset’s script\).
 
@@ -61,7 +61,7 @@ If an Asset Pair contains a Smart Asset then the fee is increased by + 0.004 \(+
 
 This fee is payed to the Matcher by every account that is placing an order. The same fee is payed by the Matcher when an ExchangeTransaction is put into the blockchain.
 
-If an ExchangeTransaction's sender \(the Matcher or any other account\) has a script then the total fee for the transaction is increased by 0.004 waves.
+If an ExchangeTransaction's sender \(the Matcher or any other account\) has a script then the total fee for the transaction is increased by 0.004 neel.
 
 ## Validation
 
@@ -100,7 +100,7 @@ For example, if a smart asset’s script requires that all the transactions with
 
 You can create a smartAsset via [IssueTransaction\(Version2\)](../technical-details/transactions-structure.md) and specify the script in this transaction.
 
-Here’s an example of JSON for [IssueTransaction\(Version2\)](https://nodes.wavesnodes.com/transactions/info/FTQvw9zdYirRksUFCKDvor3hiu2NiUjXEPTDEcircqti):
+Here’s an example of JSON for [IssueTransaction\(Version2\)](https://nodes.neelnodes.com/transactions/info/FTQvw9zdYirRksUFCKDvor3hiu2NiUjXEPTDEcircqti):
 
 ```js
 {
@@ -124,17 +124,17 @@ The assets that were issued without a script cannot become scripted. You can cre
 
 ## Changing a Smart Asset's Script
 
-A smart asset’s script can be changed via [_**SetAssetScriptTransaction**_](../technical-details/data-structures.md) \([fee](../technical-details/transactions-fees.md) on changing is equal to 1 WAVES\).
+A smart asset’s script can be changed via [_**SetAssetScriptTransaction**_](../technical-details/data-structures.md) \([fee](../technical-details/transactions-fees.md) on changing is equal to 1 NEEL\).
 
 Only the issuer can change the asset's script.
 
 ## Examples of Scripts for Smart Assets
 
-You can find an example of _**SetAssetScript **\_transaction on _**testnet**\_ in the following [transactions examples](../development-and-api/waves-node-rest-api/example-transactions.md).
+You can find an example of _**SetAssetScript **\_transaction on _**testnet**\_ in the following [transactions examples](../development-and-api/neel-node-rest-api/example-transactions.md).
 
 ### 1. Issue an unburnable asset
 
-For issue an unburnable asset you can use [pattern matching ](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md) with a `false` value to BurnTransaction:
+For issue an unburnable asset you can use [pattern matching ](../technical-details/neel-contracts-language-description/examples/lang-stlib-usage-examples.md) with a `false` value to BurnTransaction:
 
 ```js
 match tx {
@@ -242,4 +242,4 @@ with scriptBob (case Order => )
 
 \*Matcher validates Orders by the assets’ scripts as follows: the matcher creates an auxiliary counter-order, puts the two orders to an ExchangeTransaction and validates this transaction via the assets scripts’ “case tx: ExchangeTx => …” branches.
 
-As a result, for the Orders placement Alice pays fee=0.011 waves to the matcher, Bob pays fee=0.011 waves to the matcher. When the ExchangeTransaction is being put into the blockchain, the fee payed by the matcher is 0.011+0.004(because of the matcher’s script)=0.015 waves.
+As a result, for the Orders placement Alice pays fee=0.011 neel to the matcher, Bob pays fee=0.011 neel to the matcher. When the ExchangeTransaction is being put into the blockchain, the fee payed by the matcher is 0.011+0.004(because of the matcher’s script)=0.015 neel.

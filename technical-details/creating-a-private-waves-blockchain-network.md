@@ -1,4 +1,4 @@
-# How To Create a Private Waves Blockchain Network
+# How To Create a Private Neel Blockchain Network
 
 ## First Step
 
@@ -6,7 +6,7 @@
 
 ## Second Step
 
-* Clone [Waves repo](https://github.com/wavesplatform/Waves/) using git.
+* Clone [Neel repo](https://github.com/neelplatform/Neel/) using git.
 
 ## Third Step
 
@@ -57,11 +57,11 @@ genesis {
 
 ## Fifth Step
 
-* Open your favorite text editor and create waves-custom-network.conf \(or any other name\) file like this:
+* Open your favorite text editor and create neel-custom-network.conf \(or any other name\) file like this:
 
 ```
-# Waves node settings
-waves
+# Neel node settings
+neel
 {
   # data storage folder
   directory=/tmp/custom
@@ -140,21 +140,21 @@ waves
 }
 ```
 
-Pay attention to the parameters `waves.blockchain.custom.address-scheme-character` and `waves.blockchain.custom.genesis`, they was copied from the result and settings of genesis generator tool. Also look at `waves.wallet.seed` value, this value can be copied from "Seed" value for one of genesis addresses from the result of genesis generator tool.
+Pay attention to the parameters `neel.blockchain.custom.address-scheme-character` and `neel.blockchain.custom.genesis`, they was copied from the result and settings of genesis generator tool. Also look at `neel.wallet.seed` value, this value can be copied from "Seed" value for one of genesis addresses from the result of genesis generator tool.
 
 ## Sixth Step
 
-* Start your custom network node with `sbt "run waves-custom-network.conf"` Also you can run already builded release package \(deb or jar\) with this configuration file manually.
+* Start your custom network node with `sbt "run neel-custom-network.conf"` Also you can run already builded release package \(deb or jar\) with this configuration file manually.
 
-Done! You create your private Waves network consisting of one node!
+Done! You create your private Neel network consisting of one node!
 
 ## Adding Nodes to Your Network
 
-You can add more nodes to your network using `waves.network.known-peers` parameter, specify the address and port of the existing node with the same network parameters like "127.0.0.1:6860". If you are making several nodes locally, then do not forget to change for the new nodes the network port `waves.network.port`, the API port `waves.rest-api.port`, folder for the data `waves.directory` and wallet seed `waves.wallet.seed`.
+You can add more nodes to your network using `neel.network.known-peers` parameter, specify the address and port of the existing node with the same network parameters like "127.0.0.1:6860". If you are making several nodes locally, then do not forget to change for the new nodes the network port `neel.network.port`, the API port `neel.rest-api.port`, folder for the data `neel.directory` and wallet seed `neel.wallet.seed`.
 
-`waves.blockchain.custom.functionality` section contains parameters that allow you to enable and disable some features in your blockchain system.
+`neel.blockchain.custom.functionality` section contains parameters that allow you to enable and disable some features in your blockchain system.
 
-**Note.** the developers can add new parameters in `waves.blockchain.custom.functionality` section, which are not present in this example; for an example of a working configuration, you can look at the[ `waves-devnet.conf` file in root folder of repository](https://github.com/wavesplatform/Waves/blob/master/waves-devnet.conf).
+**Note.** the developers can add new parameters in `neel.blockchain.custom.functionality` section, which are not present in this example; for an example of a working configuration, you can look at the[ `neel-devnet.conf` file in root folder of repository](https://github.com/neelplatform/Neel/blob/master/neel-devnet.conf).
 
-Check our [configuration file documentation](/en/waves-full-node/configuration-parameters.md) for more information.
+Check our [configuration file documentation](/en/neel-full-node/configuration-parameters.md) for more information.
 

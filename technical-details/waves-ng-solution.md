@@ -5,11 +5,11 @@ The maximum rate of transactions in blockchain systems is limited by the choice 
 * The block interval defines the average amount of time that passes between the creation of two blocks. If we reduce this time, forks will appear more frequently, which will lead to either non-resolved forks or to decreased throughput since a considerable amount of time would be spent on resolving these forks.
 * Larger blocks lead to huge network usage spikes during block propagation, which in turn will lead to throughput problems and huge forks.
 
-**Note. **Find How Waves-NG Protocol works [**here.**](../platform-features/waves-ng-protocol.md)
+**Note. **Find How Neel-NG Protocol works [**here.**](../platform-features/neel-ng-protocol.md)
 
-# 1.1 Waves-NG Solution With Technical Details
+# 1.1 Neel-NG Solution With Technical Details
 
-Waves addresses this issue by allowing the miner to continuously farm a block during the time of mining. This continuously increasing block is called liquid block, which becomes immutable when next block referencing it is built and appended. A liquid block consists of a key block and chain of microblocks. The process of creating liquid block goes as follows:
+Neel addresses this issue by allowing the miner to continuously farm a block during the time of mining. This continuously increasing block is called liquid block, which becomes immutable when next block referencing it is built and appended. A liquid block consists of a key block and chain of microblocks. The process of creating liquid block goes as follows:
 
 * When miner node observes it has the right to create a block, it creates and sends keyBlock, which is regularly just an empty block.
 * After that, it creates and sends microblocks every 3 seconds. Microblock is very similar to regular block: it's a non-empty pack of transactions, which references its parent: previous microblock or key block.

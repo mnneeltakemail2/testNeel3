@@ -1,18 +1,18 @@
 # ​How to create JSON confirmation
 
-As you may know, Waves app contains advanced functionality. One of them is [Script transaction](/waves-client/advanced_features/script_transaction.md). With this feature, you can create a multi-signature wallet. So, several owners of one Waves account can manage the funds stored on the same balance. For easier management of script transactions, we integrated a special section called **JSON**.
+As you may know, Neel app contains advanced functionality. One of them is [Script transaction](/neel-client/advanced_features/script_transaction.md). With this feature, you can create a multi-signature wallet. So, several owners of one Neel account can manage the funds stored on the same balance. For easier management of script transactions, we integrated a special section called **JSON**.
 
-**Note**:The fee for a transfer of a Smart Asset from a Smart Account would be 0.001+0.004+0.004=**0.009 Waves**.
-Set Alias for an account without a script would cost **0.001 WAVES**, whereas for a Smart Account it would be 0.001+0.004=**0.005 WAVES**.
+**Note**:The fee for a transfer of a Smart Asset from a Smart Account would be 0.001+0.004+0.004=**0.009 Neel**.
+Set Alias for an account without a script would cost **0.001 NEEL**, whereas for a Smart Account it would be 0.001+0.004=**0.005 NEEL**.
 
 **Before you start, please keep in mind. We do not recommend you submit JSON unless you are an experienced user. Errors may lead to loss of funds**.
 
 So, to start using all available features of the application, first you need to activate the advanced features.
 
 By the way, you can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
-Also downloads are available from the official site - https://wavesplatform.com/product
+Also downloads are available from the official site - https://neelplatform.com/product
 
-Choose and open your Waves wallet. Click on the **Settings** button (see left bottom corner) ![](/_assets/dark_mode_01.png)
+Choose and open your Neel wallet. Click on the **Settings** button (see left bottom corner) ![](/_assets/dark_mode_01.png)
 
 You will be forwarded to the following settings page. Find and put the checkmark near **Advanced features**.
 
@@ -20,7 +20,7 @@ You will be forwarded to the following settings page. Find and put the checkmark
 
 After that, close the settings.
 
-So, let's transfer **1 Waves** or any available assets from the multi-sign account.
+So, let's transfer **1 Neel** or any available assets from the multi-sign account.
 
 **Note**: Please keep in mind, if you specified sequence of accounts as A, B, C. Where **A** is multi-sig account and **B**, **C** participants of the created contract So, to confirm the withdrawal from the multi-sig account, you must follow the sequence of confirmation by other members of the multi-sig account.
 
@@ -54,4 +54,4 @@ After a few seconds, created transaction will be confirmed. Thus, members of the
 
 ___
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

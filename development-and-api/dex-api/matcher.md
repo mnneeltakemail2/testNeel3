@@ -1,11 +1,11 @@
 ## Matcher
 
-The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secure exchange of assets issued on Waves platform. When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create `ExchangeTransaction` on the conditions that are not worse than in user's order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.
+The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secure exchange of assets issued on Neel platform. When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create `ExchangeTransaction` on the conditions that are not worse than in user's order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.
 
 Please find the matcher API for **_MainNet_** and **_TestNet_**:
-{% prettylink link="https://matcher.wavesplatform.com/api-docs/index.html" %}MainNet Matcher API{% endprettylink %}
+{% prettylink link="https://matcher.neelplatform.com/api-docs/index.html" %}MainNet Matcher API{% endprettylink %}
 
-{% prettylink link="https://matcher.testnet.wavesnodes.com/api-docs/index.html" %}TestNet Matcher API{% endprettylink %}
+{% prettylink link="https://matcher.testnet.neelnodes.com/api-docs/index.html" %}TestNet Matcher API{% endprettylink %}
 
 
 
@@ -85,7 +85,7 @@ Execution price of `ExchangeTransaction` is always determined by the price of an
 ### Full execution
 
 1. If for a submitted order there is no counter-order matched by price \(which price _equal or better_\) that order would be put in the corresponding `OrderBook` and remains open until executed or until `maxTimestamp` is reached.
-2. If there is a counter-order that matches with a submitted order then \_order execution \_is performed. That means the counter-order is removed from `OrderBook` and `ExchangeTransaction` is created and signed by the Matcher's private key and is sent to the Waves network to be included in the blockchain.
+2. If there is a counter-order that matches with a submitted order then \_order execution \_is performed. That means the counter-order is removed from `OrderBook` and `ExchangeTransaction` is created and signed by the Matcher's private key and is sent to the Neel network to be included in the blockchain.
 3. If there are multiple orders, that are matched with a new order, the earliest on based on acceptance time gets chosen.
 
 ### Partial execution
@@ -110,7 +110,7 @@ New transaction type for blockchain is created for assets exchange. It contains 
 | :--- | :--- | :--- |
 | buyOrder | Order | Initially signed order executed in this transaction that 'BUY' corresponding `AssetPair` |
 | sellOrder | Order | Initially signed order executed in this transaction that 'SELL' corresponding `AssetPair` |
-| price | Long | Execution price of orders see[algorithm](https://github.com/wavesplatform/Waves/wiki/Matcher#price-calculation). Price is determined for `Asset2` in `Asset1` \* 10^8 |
+| price | Long | Execution price of orders see[algorithm](https://github.com/neelplatform/Neel/wiki/Matcher#price-calculation). Price is determined for `Asset2` in `Asset1` \* 10^8 |
 | amount | Long | Executed amount in `Asset1` that is matched from both orders |
 | buyMatcherFee | Long | Amount fee for matching from `buyOrder`. Transferred to Matcher's account balance. |
 | sellMatcherFee | Long | Amount fee for matching from `sellOrder`. Transferred to Matcher's account balance. |

@@ -1,6 +1,6 @@
 # Upgrading
 
-1. First of all, you need to check the[ latest Neel Release.](https://github.com/wavesplatform/Waves/releases) and choose the latest Mainnet release.
+1. First of all, you need to check the[ latest Neel Release.](https://github.com/neelplatform/Neel/releases) and choose the latest Mainnet release.
 2. Download the DEB or Jar file depending on your operating system.
 3. Upgrade DEB by running the following command:
    ```bash

@@ -1,17 +1,17 @@
-# Waves Keeper API
+# Neel Keeper API
 
 [Download](https://drive.google.com/drive/folders/1m4dD4C8pEJ4y6-hpauF9TGSIsevY-3me?usp=sharing)
 
 [Demo page](https://chrome-ext.wvservices.com/)
 
-Note that the Waves Keeper also can support [Waves Client API](https://docs.wavesplatform.com/en/development-and-api/client-api/overview.html): [Web Auth API](https://docs.wavesplatform.com/en/development-and-api/client-api/auth-api.html), [Payment API](https://docs.wavesplatform.com/en/development-and-api/client-api/payments-api.html). If a user has both of Waves Client and Waves Keeper, the Keeper would have higher priority.
+Note that the Neel Keeper also can support [Neel Client API](https://docs.neelplatform.com/en/development-and-api/client-api/overview.html): [Web Auth API](https://docs.neelplatform.com/en/development-and-api/client-api/auth-api.html), [Payment API](https://docs.neelplatform.com/en/development-and-api/client-api/payments-api.html). If a user has both of Neel Client and Neel Keeper, the Keeper would have higher priority.
  
-Firstly, for working with API, you need to add a public object Waves on your site. In this object the following functions are available.
+Firstly, for working with API, you need to add a public object Neel on your site. In this object the following functions are available.
 
 
 
 ## Authentication
-For working with a concrete account you need to implement authentication via Waves function:
+For working with a concrete account you need to implement authentication via Neel function:
 
 `auth(AUTH_DATA)`
 
@@ -29,10 +29,10 @@ AUTH_DATA {
 An example request might look like:
 
 ```
-Waves.auth({
+Neel.auth({
     name: 'My App',
     data: 'test secret string',
-    successPath: 'https://my-site.com/auth/waves' 
+    successPath: 'https://my-site.com/auth/neel' 
   }).then(
 	  res,  // res - the user data + signature of auth data
 	  err   // err - the error message
@@ -49,7 +49,7 @@ This function only generates a signature for the transaction but doesn't send it
 
 The full request is:
 
-`Waves.signTransaction(TRANSACTION): Promise<tx>;`
+`Neel.signTransaction(TRANSACTION): Promise<tx>;`
 
 
 The example of `TRANSACTION` you can find below.
@@ -57,15 +57,15 @@ The example of `TRANSACTION` you can find below.
 An example of a request to signing a transfer transaction:
 
 ```
-Waves.signTransaction({
+Neel.signTransaction({
 type: 4,
 data: {
 	amount: {
-		assetId: ‘WAVES’,
+		assetId: ‘NEEL’,
 		tokens: ‘0.123456’
 	},
 	fee: {
-		assetId: ‘WAVES’,
+		assetId: ‘NEEL’,
 		tokens: ‘0.01’
 	},
 	recipient: ‘3N5net4nzSeeqxPfGZrvVvnGavsinipQHbE’
@@ -81,23 +81,23 @@ data: {
 
 This function signs transaction, send it to the node and return a Promise object with the server response. The full request is:
 
-`Waves.signAndPublishTransaction(TRANSACTION): Promise<tx>;`
+`Neel.signAndPublishTransaction(TRANSACTION): Promise<tx>;`
 
 The example of `TRANSACTION` you can find below. 
-Also there can be optional parameter `successPath` : `Waves.signAndPublishTransaction(TRANSACTION, successPath): Promise<tx>;`,
+Also there can be optional parameter `successPath` : `Neel.signAndPublishTransaction(TRANSACTION, successPath): Promise<tx>;`,
 this parameter can redirect user to some URL if the transaction is successfully sent with `?txId={id};` 
 
 An example of a request to signing a transfer transaction:
 ```
-Waves.signAndPublishTransaction({
+Neel.signAndPublishTransaction({
   type: 4,
   {
     amount: {
-      assetId: 'WAVES',
+      assetId: 'NEEL',
       tokens: '0.123456'
     },
     fee: {
-      assetId: 'WAVES',
+      assetId: 'NEEL',
       tokens: '0.01'
     },
     recipient: '3N5net4nzSeeqxPfGZrvVvnGavsinipQHbE'
@@ -112,7 +112,7 @@ Waves.signAndPublishTransaction({
 
 This function returns signature of data. The full request is:
 
-`Waves.signRequest(SIGN_REQUEST_DATA)`.
+`Neel.signRequest(SIGN_REQUEST_DATA)`.
 
 ```
 SIGN_REQUEST_DATA {
@@ -133,13 +133,13 @@ This function returns signature of order's data. It signs data and returns a Pro
 
 The full request is:
 
-`Waves.signOrder(SIGN_ORDER_DATA)`.
+`Neel.signOrder(SIGN_ORDER_DATA)`.
 
 ## Sign and Publish Order
 
 This function signs the order, send it to the matcher and return a Promise object with the server response. The full request is:
 
-`Waves.signAndPublishOrder(SIGN_ORDER_DATA)`
+`Neel.signAndPublishOrder(SIGN_ORDER_DATA)`
 ```
 SIGN_ORDER_DATA  {
 	type: 1002,
@@ -169,13 +169,13 @@ This function returns signature of order cancel data. It signs data and returns 
 
 The full request is:
 
-`Waves.signCancelOrder(SIGN_CANCEL_ORDER_DATA)`.
+`Neel.signCancelOrder(SIGN_CANCEL_ORDER_DATA)`.
 
 ## Sign and Publish Cancel Order
 
 This function signs the order cancel, send it to the matcher and return a Promise object with the server response. The full request is:
 
-`Waves.signAndPublishCancelOrder(SIGN_CANCEL_ORDER_DATA)`.
+`Neel.signAndPublishCancelOrder(SIGN_CANCEL_ORDER_DATA)`.
 ```
 SIGN_CANCEL_ORDER_DATA  {
 	type: 1003,
@@ -200,7 +200,7 @@ successPath: string,
 }
 ```
 ### Transaction Types
-Waves transaction can be one of 14 types (1 - is Genesis transaction):
+Neel transaction can be one of 14 types (1 - is Genesis transaction):
 ```
 TRANSACTION_TYPE_NUMBER {
    SEND_OLD = 2,
@@ -221,7 +221,7 @@ TRANSACTION_TYPE_NUMBER {
 
 ### Transaction Data
 
-A `TRANSACTION_DATA` contains information about the transaction with json in standard Waves transaction format for different transaction types:
+A `TRANSACTION_DATA` contains information about the transaction with json in standard Neel transaction format for different transaction types:
 
 **Transfer:**
 ```
@@ -362,7 +362,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
     assetId: ASSET_ID,
     tokens: Number|String
   },
-  script: string, //a script in Waves script format: 'base64:{script in base64 from RIDE compiler}'
+  script: string, //a script in Neel script format: 'base64:{script in base64 from RIDE compiler}'
 }
 ```
 

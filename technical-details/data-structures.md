@@ -85,9 +85,9 @@ Block's signature is calculated from the following bytes:
 | --- | --- | --- | --- |
 | 1 | Sender's public key | Bytes | 32 |
 | 2 | Matcher's public key | Bytes | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 1 |
+| 3 | Amount's asset flag \(0-Neel, 1-Asset\) | Byte | 1 |
 | 4 | Amount's asset ID \(\*if used\) | Bytes | 0 \(32\*\) |
-| 5 | Price's asset flag \(0-Waves, 1-Asset\) | Byte | 1 |
+| 5 | Price's asset flag \(0-Neel, 1-Asset\) | Byte | 1 |
 | 6 | Price's asset ID \(\*\*if used\) | Bytes | 0 \(32\*\*\) |
 | 7 | Order type \(0 - Buy, 1 - Sell\) | Bytes | 1 |
 | 8 | Price | Long | 8 |
@@ -107,9 +107,9 @@ The signature is calculated from the following bytes:
 | --- | --- | --- | --- |
 | 1 | Sender's public key | Bytes | 32 |
 | 2 | Matcher's public key | Bytes | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 1 |
+| 3 | Amount's asset flag \(0-Neel, 1-Asset\) | Byte | 1 |
 | 4 | Amount's asset ID \(\*if used\) | Bytes | 0 \(32\*\) |
-| 5 | Price's asset flag \(0-Waves, 1-Asset\) | Byte | 1 |
+| 5 | Price's asset flag \(0-Neel, 1-Asset\) | Byte | 1 |
 | 6 | Price's asset ID \(\*\*if used\) | Bytes | 0 \(32\*\*\) |
 | 7 | Order type \(0 - Buy, 1 - Sell\) | Bytes | 1 |
 | 8 | Price | Long | 8 |
@@ -125,9 +125,9 @@ The signature is calculated from the following bytes:
 | 1 | Version | Byte \(constant, value = 2\) | 1 
 | 2 | Sender's public key | PublicKeyAccount \(Array[Byte]\) | 32 
 | 3 | Matcher's public key | PublicKeyAccount \(Array[Byte]\) | 32 
-| 4.1 | Amount asset flag \(1 - asset, 0 - Waves\) |  | 1 
+| 4.1 | Amount asset flag \(1 - asset, 0 - Neel\) |  | 1 
 | 4.2 | Amount asset | AssetId \(ByteStr = Array[Byte]\) | 32/0 \(depends on byte in 4.1\) 
-| 5.1 | Price asset flag \(1 - asset, 0 - Waves\) |  | 1 
+| 5.1 | Price asset flag \(1 - asset, 0 - Neel\) |  | 1 
 | 5.2 | Price asset | AssetId \(ByteStr = Array[Byte]\) | 32/0 \(depends on byte in 5.1\) 
 | 6 | Order type \(0 - Buy, 1 - Sell\) | Byte | 1 
 | 7 | Price | Long | 8 
@@ -250,9 +250,9 @@ The transaction's signature is calculated from the following bytes:
 | 2 | Signature | ByteStr \(Array[Byte]\) | 64 
 | 3 | Transaction type | Byte \(constant, value = 4\) | 1 
 | 4 | Sender's public key | PublicKeyAccount \(Array[Byte]\) | 32 
-| 5.1 | Asset ID flag \(1 - asset, 0 - Waves\) |  | 1 
+| 5.1 | Asset ID flag \(1 - asset, 0 - Neel\) |  | 1 
 | 5.2 | Asset ID | AssetId \(ByteStr = Array[Byte]\) | 32/0 \(depends on byte in 5.1\) 
-| 6.1 | Fee's asset ID flag \(1 - asset, 0 - Waves\) |  | 1 
+| 6.1 | Fee's asset ID flag \(1 - asset, 0 - Neel\) |  | 1 
 | 6.2 | Fee's asset ID | AssetId \(ByteStr = Array[Byte]\) | 32/0 \(depends on byte in 6.1\) 
 | 7 | Timestamp | Long | 8 
 | 8 | Amount | Long | 8 
@@ -267,9 +267,9 @@ The transaction's signature is calculated from the following bytes:
 | --- | --- | --- | --- |
 | 1 | Transaction type \(0x04\) | Byte | 1 |
 | 2 | Sender's public key | Bytes | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 1 |
+| 3 | Amount's asset flag \(0-Neel, 1-Asset\) | Byte | 1 |
 | 4 | Amount's asset ID \(\*if used\) | Bytes | 0\(32\*\) |
-| 5 | Fee's asset flag \(0-Waves, 1-Asset\) | Byte | 1 |
+| 5 | Fee's asset flag \(0-Neel, 1-Asset\) | Byte | 1 |
 | 6 | Fee's asset ID \(\*\*if used\) | Bytes | 0\(32\*\*\) |
 | 7 | Timestamp | Long | 8 |
 | 8 | Amount | Long | 8 |
@@ -286,9 +286,9 @@ The transaction's signature is calculated from the following bytes:
 | 2 | Transaction type | Byte \(constant, value = 4\) | 1 
 | 3 | Version | Byte | 1 
 | 4 | Sender's public key | PublicKeyAccount \(Array[Byte]\) | 32 
-| 5.1 | Asset ID flag \(1 - asset, 0 - Waves\) |  | 1 
+| 5.1 | Asset ID flag \(1 - asset, 0 - Neel\) |  | 1 
 | 5.2 | Asset ID\* | AssetId \(ByteStr = Array[Byte]\) | 32/0 \(depends on byte in 5.1\) 
-| 6.1 | Fee's asset ID flag \(1 - asset, 0 - Waves\) |  | 1 
+| 6.1 | Fee's asset ID flag \(1 - asset, 0 - Neel\) |  | 1 
 | 6.2 | Fee's asset ID | AssetId \(ByteStr = Array[Byte]\) | 32/0 \(depends on byte in 6.1\) 
 | 7 | Timestamp | Long | 8 
 | 8 | Amount | Long | 8 
@@ -304,7 +304,7 @@ The transaction's signature is calculated from the following bytes:
 | 12.6 | Proof 2  | ByteStr \(Array[Byte]\) | P2 
 | ... | ... | ... | ... |
 
-* The fee only in Waves;
+* The fee only in Neel;
 * You may sign your transaction in your way and place the signature in proofs.
 
 #### Reissue Transaction V1
@@ -490,7 +490,7 @@ The transaction's signature is calculated from the following bytes:
 | 1 | Transaction multiple version mark | Byte \(constant, value = 0\) | 1 
 | 2 | Transaction type | Byte \(constant, value = 8\) | 1 
 | 3 | Version | Byte | 1 
-| 4.1 | Leasing asset flag\* \(1 - asset, 0 - Waves\) |  | 1 
+| 4.1 | Leasing asset flag\* \(1 - asset, 0 - Neel\) |  | 1 
 | 4.2 | Leasing asset | AssetId \(ByteStr = Array[Byte]\) | 32/0 \(depends on byte in 4.1\) 
 | 5 | Sender's public key | PublicKeyAccount \(Array[Byte]\) | 32 
 | 6 | Recipient | Address or Alias | depends on first byte \(1 - Address, 2 - Alias\) 
@@ -505,7 +505,7 @@ The transaction's signature is calculated from the following bytes:
 | 10.6 | Proof 2  | ByteStr \(Array[Byte]\) | P2 
 | ... | ... | ... | ... |
 
-\* Only Waves are currently supported
+\* Only Neel are currently supported
 
 #### Lease Cancel Transaction V1
 
@@ -723,11 +723,11 @@ Sets the script which verifies all outgoing transactions. The set script can be 
 | 9.6 | Proof 2  | ByteStr \(Array[Byte]\) | P2 
 | ... | ... | ... | ... |
 
-[**Here**](/technical-details/waves-contracts-language-description.md) you can find more details about Waves smart-contracts.
+[**Here**](/technical-details/neel-contracts-language-description.md) you can find more details about Neel smart-contracts.
 
-[**Here**](/technical-details/waves-contracts-language-description/standard-library.md) you can find more details about smart-contracts standard library.
+[**Here**](/technical-details/neel-contracts-language-description/standard-library.md) you can find more details about smart-contracts standard library.
 
-[**Here**](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md) you can find detailed instruction how to create and deploy a script manually.
+[**Here**](/technical-details/neel-contracts-language-description/creating-and-deploying-a-script-manually.md) you can find detailed instruction how to create and deploy a script manually.
 
 #### Sponsor Fee Transaction
 

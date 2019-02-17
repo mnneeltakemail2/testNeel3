@@ -1,6 +1,6 @@
 # Language description
 
-Waves smart contracts language is:
+Neel smart contracts language is:
 
 * Lazy
 * Strong typed

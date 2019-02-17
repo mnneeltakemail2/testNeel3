@@ -1,6 +1,6 @@
 # Neel Java Library
 
-It's a [Java library](https://github.com/wavesplatform/WavesJ) for interacting with the Neel blockchain.
+It's a [Java library](https://github.com/neelplatform/NeelJ) for interacting with the Neel blockchain.
 
 Supports node interaction, offline transaction signing, Matcher orders, and creating addresses and keys.
 
@@ -12,8 +12,8 @@ Use the codes below to add Neel Java Library as a dependency for your project.
 
 ```js
 <dependency>
-    <groupId>com.wavesplatform</groupId>
-    <artifactId>wavesj</artifactId>
+    <groupId>com.neelplatform</groupId>
+    <artifactId>neelj</artifactId>
     <version>0.8</version>
 </dependency>
 ```
@@ -21,16 +21,16 @@ Use the codes below to add Neel Java Library as a dependency for your project.
 ##### Gradle:
 
 ```
-compile group: 'com.wavesplatform', name: 'wavesj', version: '0.2'
+compile group: 'com.neelplatform', name: 'neelj', version: '0.2'
 ```
 
 ##### SBT:
 
 ```
-libraryDependencies += "com.wavesplatform" % "wavesj" % "0.2"
+libraryDependencies += "com.neelplatform" % "neelj" % "0.2"
 ```
 
-[This library's page at Maven Central](https://mvnrepository.com/artifact/com.wavesplatform/wavesj)
+[This library's page at Maven Central](https://mvnrepository.com/artifact/com.neelplatform/neelj)
 
 ## Basic Usage
 
@@ -46,7 +46,7 @@ String address = account.getAddress();
 Create a Node and learn a few things about blockchain:
 
 ```java
-Node node = new Node("https://my.waves.node/");
+Node node = new Node("https://my.neel.node/");
 System.out.println("Current height is " + node.getHeight());
 System.out.println("My balance is " + node.getBalance(address));
 System.out.println("With 100 confirmations: " + node.getBalance(address, 100));
@@ -62,7 +62,7 @@ String txId = node.transfer(account, buddy, 1_00000000, 100_000, "Here's for you
 Sign a transaction offline:
 
 ```java
-Transaction tx = Transaction.makeTransferTx(account, buddy, 1_00000000, Asset.WAVES, 100_000, Asset.WAVES, "");
+Transaction tx = Transaction.makeTransferTx(account, buddy, 1_00000000, Asset.NEEL, 100_000, Asset.NEEL, "");
 System.out.println("JSON encoded data: " + tx.getJson());
 System.out.println("Server endpoint to send this JSON to: " + tx.getEndpoint());
 ```
@@ -76,12 +76,12 @@ node.send(tx);
 Create a DEX order:
 
 ```java
-Node matcher = new Node("https://testnode2.wavesnodes.com");
+Node matcher = new Node("https://testnode2.neelnodes.com");
 String matcherKey = matcher.getMatcherKey();
 String wbtcId = "Fmg13HEHJHuZYbtJq8Da8wifJENq8uBxDuWoP9pVe2Qe";
 Order order = matcher.createOrder(alice, matcherKey,
-                new AssetPair(Asset.WAVES, wbtcId),
-                // buy 10 WAVES at 0.00090000 WBTC each
+                new AssetPair(Asset.NEEL, wbtcId),
+                // buy 10 NEEL at 0.00090000 WBTC each
                 Order.Type.BUY, 90_000, 10 * Asset.TOKEN,
                 // make order valid for 1 hour
                 System.currentTimeMillis() + 3_600_000, MATCHER_FEE);

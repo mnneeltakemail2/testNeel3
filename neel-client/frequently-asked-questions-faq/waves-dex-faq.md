@@ -1,6 +1,6 @@
-# FAQ: Waves DEX
+# FAQ: Neel DEX
 
-This section contains frequently asked questions related to the Waves Decentralised Exchange.
+This section contains frequently asked questions related to the Neel Decentralised Exchange.
 
-* [Order execution time](waves-dex/order-time.md)
-* [Asset ID on the Waves DEX](waves-dex/asset-id.md)
+* [Order execution time](neel-dex/order-time.md)
+* [Asset ID on the Neel DEX](neel-dex/asset-id.md)

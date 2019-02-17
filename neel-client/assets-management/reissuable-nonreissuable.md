@@ -1,6 +1,6 @@
 # How to change a reissuable token to non-reissuable
 
-Open up your Waves wallet.
+Open up your Neel wallet.
 
 Go to the **Portfolio**.
 
@@ -31,6 +31,6 @@ So, after confirmation you will not be able to reissue additional tokens.
 
 ___
 
-See more articles in the [Assets Management](/waves-client/assets-management.md) chapter.
+See more articles in the [Assets Management](/neel-client/assets-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

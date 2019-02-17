@@ -1,29 +1,29 @@
 # Neel Transactions
 
-Using [_**this library **_](https://www.npmjs.com/package/waves-transactions)you can easily create and sign transactions for Neel blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
+Using [_**this library **_](https://www.npmjs.com/package/neel-transactions)you can easily create and sign transactions for Neel blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
 
 This library is a set of transaction constructing functions:
 
-* [Alias](https://ebceu4.github.io/waves-transactions/globals.html#alias)
-* [Issue](https://ebceu4.github.io/waves-transactions/globals.html#issue)
-* [Reissue](https://ebceu4.github.io/waves-transactions/globals.html#reissue)
-* [Burn](https://ebceu4.github.io/waves-transactions/globals.html#burn)
-* [Lease](https://ebceu4.github.io/waves-transactions/globals.html#lease)
-* [Cancel lease](https://ebceu4.github.io/waves-transactions/globals.html#cancellease)
-* [Transfer](https://ebceu4.github.io/waves-transactions/globals.html#transfer)
-* [Mass transfer](https://ebceu4.github.io/waves-transactions/globals.html#masstransfer)
-* [Set script](https://ebceu4.github.io/waves-transactions/globals.html#setscript)
-* [Data](https://ebceu4.github.io/waves-transactions/globals.html#data)
+* [Alias](https://ebceu4.github.io/neel-transactions/globals.html#alias)
+* [Issue](https://ebceu4.github.io/neel-transactions/globals.html#issue)
+* [Reissue](https://ebceu4.github.io/neel-transactions/globals.html#reissue)
+* [Burn](https://ebceu4.github.io/neel-transactions/globals.html#burn)
+* [Lease](https://ebceu4.github.io/neel-transactions/globals.html#lease)
+* [Cancel lease](https://ebceu4.github.io/neel-transactions/globals.html#cancellease)
+* [Transfer](https://ebceu4.github.io/neel-transactions/globals.html#transfer)
+* [Mass transfer](https://ebceu4.github.io/neel-transactions/globals.html#masstransfer)
+* [Set script](https://ebceu4.github.io/neel-transactions/globals.html#setscript)
+* [Data](https://ebceu4.github.io/neel-transactions/globals.html#data)
 
-Check full documentation on [_**GitHub Pages**_](https://ebceu4.github.io/waves-transactions/index.html)_**.**_
+Check full documentation on [_**GitHub Pages**_](https://ebceu4.github.io/neel-transactions/index.html)_**.**_
 
 ### Transactions
 
-The idea is really simple - you create transaction and sign it from a minimal set of required params. If you want to create [Transfer transaction](https://ebceu4.github.io/waves-transactions/interfaces/transfertransaction.html) the minimum you need to provide is **amount **and **recipient**:
+The idea is really simple - you create transaction and sign it from a minimal set of required params. If you want to create [Transfer transaction](https://ebceu4.github.io/neel-transactions/interfaces/transfertransaction.html) the minimum you need to provide is **amount **and **recipient**:
 
 ```js
 
-const { transfer } = require('waves-transactions')
+const { transfer } = require('neel-transactions')
 const seed = '19875c31fa594035bd9a2473c2c33d3ff468c0f4beb981b8c1ea6def4a'
 const signedTranserTx = transfer(seed,
 { 

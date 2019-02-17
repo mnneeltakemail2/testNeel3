@@ -1,12 +1,12 @@
 # How to create a Token
 
-Issuing your own token on Waves couldn’t be simpler, in the Waves client there is a tab for “Token Creation” where you can give your token a name and description, choose the total token and decimals and then create it.
+Issuing your own token on Neel couldn’t be simpler, in the Neel client there is a tab for “Token Creation” where you can give your token a name and description, choose the total token and decimals and then create it.
 
-It costs just 1 Waves to do so and then your token can be traded on the DEX.
+It costs just 1 Neel to do so and then your token can be traded on the DEX.
 
 Go to the **Tokens Creation** tab to create an asset ![](/_assets/token_creation_01.png)
 
-**Note**: Before creating a new asset, please make sure that you have at least 1 WAVES on your account to pay the fee charged for the asset creation.
+**Note**: Before creating a new asset, please make sure that you have at least 1 NEEL on your account to pay the fee charged for the asset creation.
 
 You'll see the following window:
 
@@ -24,7 +24,7 @@ Let's describe each boxes:
 
 **Decimals**: Set how many decimals your asset shall have. For example, if you set 8 decimals as in Bitcoin, your token can be divided down to 0.00000001. If you set 0, your token can only be transacted in whole pieces (1, 3, 15);
 
-**Note**: Before creating a new Asset, make sure that you have at least 1 WAVES for asset creation fee.
+**Note**: Before creating a new Asset, make sure that you have at least 1 NEEL for asset creation fee.
 
 **Note**: The name of the created asset can not be shorter than 4 characters.
 
@@ -42,6 +42,6 @@ You'll be able to see your newly created token in the Portfolio.
 
 ___
 
-See more articles in the [Assets Management](/waves-client/assets-management.md) chapter.
+See more articles in the [Assets Management](/neel-client/assets-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

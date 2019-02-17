@@ -1,35 +1,35 @@
-# Waves Keeper API
+# Neel Keeper API
 
-{% prettylink link="https://chrome.google.com/webstore/detail/waves-keeper/lpilbniiabackdjcionkobglmddfbcjo" %}Download for Chrome{% endprettylink %}
+{% prettylink link="https://chrome.google.com/webstore/detail/neel-keeper/lpilbniiabackdjcionkobglmddfbcjo" %}Download for Chrome{% endprettylink %}
 
-{% prettylink link="https://addons.mozilla.org/en-US/firefox/addon/waves-keeper/" %}Download for Firfox{% endprettylink %}
+{% prettylink link="https://addons.mozilla.org/en-US/firefox/addon/neel-keeper/" %}Download for Firfox{% endprettylink %}
 
-{% prettylink link="https://addons.opera.com/ru/extensions/details/waves-keeper/" %}Download for Opera{% endprettylink %}
+{% prettylink link="https://addons.opera.com/ru/extensions/details/neel-keeper/" %}Download for Opera{% endprettylink %}
 
 
-{% prettylink link="https://www.microsoft.com/en-us/p/waves-keeper/9npz1hrq32nt?activetab=pivot:overviewtab" %}Download for Microsoft Edge{% endprettylink %}
+{% prettylink link="https://www.microsoft.com/en-us/p/neel-keeper/9npz1hrq32nt?activetab=pivot:overviewtab" %}Download for Microsoft Edge{% endprettylink %}
 
 
 {% prettylink link="https://chrome-ext.wvservices.com" %}Demo Page{% endprettylink %}
 
-{% prettylink link="https://kardanovir.github.io/WavesKeeper/" %}Demo Page 2{% endprettylink %}
+{% prettylink link="https://kardanovir.github.io/NeelKeeper/" %}Demo Page 2{% endprettylink %}
  
 
-Note that the Waves Keeper also can support [Waves Client API](https://docs.wavesplatform.com/en/development-and-api/client-api/overview.html): [Web Auth API](https://docs.wavesplatform.com/en/development-and-api/client-api/auth-api.html), [Payment API](https://docs.wavesplatform.com/en/development-and-api/client-api/payments-api.html). If a user has both of Waves Client and Waves Keeper, the Keeper would have higher priority.
+Note that the Neel Keeper also can support [Neel Client API](https://docs.neelplatform.com/en/development-and-api/client-api/overview.html): [Web Auth API](https://docs.neelplatform.com/en/development-and-api/client-api/auth-api.html), [Payment API](https://docs.neelplatform.com/en/development-and-api/client-api/payments-api.html). If a user has both of Neel Client and Neel Keeper, the Keeper would have higher priority.
 
-Firstly, for working with API, you need to add a public object Waves on your site. In this object the following functions are available.
+Firstly, for working with API, you need to add a public object Neel on your site. In this object the following functions are available.
 
-# Waves Keeper v1.0.8 
+# Neel Keeper v1.0.8 
 
-Waves Keeper is an extension that allows users to securely interact with Waves-enabled web services from the Chrome browser.
+Neel Keeper is an extension that allows users to securely interact with Neel-enabled web services from the Chrome browser.
 
 Seed phrases and private keys are encrypted and stored within the extension and cannot be accessed by online dApps and services, making sure that users' funds are always protected from hackers and malicious websites. Completion of a transaction doesn't require entering any sensitive information.
 
-Waves Keeper is designed for convenience, so users can sign transactions with just a couple of clicks. Users can create multiple wallets and switch between them easily. And if a user ever forgets the password to the account, it can be recovered from the seed phrase.
+Neel Keeper is designed for convenience, so users can sign transactions with just a couple of clicks. Users can create multiple wallets and switch between them easily. And if a user ever forgets the password to the account, it can be recovered from the seed phrase.
 
-**Waves Keeper API**
+**Neel Keeper API**
 
-On browser pages that operate under the http/https with Waves Keeper extension installed, Waves Keeper global object becomes available, featuring the following methods:
+On browser pages that operate under the http/https with Neel Keeper extension installed, Neel Keeper global object becomes available, featuring the following methods:
 
 
 
@@ -47,19 +47,19 @@ On browser pages that operate under the http/https with Waves Keeper extension i
 
 All methods, except for "on" operate asynchronously and return [promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
-In Waves Keeper, for greater security and ease of use, each new website using API has to be allowed by the user. At the first attempt to use API (except "`on"`), the user will see a request to allow that website's access to Waves Keeper. If the user agrees to allow access, the website is considered trusted and can use API on its pages. Otherwise, the website is blocked, and an error message will be displayed in response to all requests `{message: "Api rejected by user", code: 12}.` The users won't see new notifications. To grant access, the user will mark the website as trusted in the interface.
+In Neel Keeper, for greater security and ease of use, each new website using API has to be allowed by the user. At the first attempt to use API (except "`on"`), the user will see a request to allow that website's access to Neel Keeper. If the user agrees to allow access, the website is considered trusted and can use API on its pages. Otherwise, the website is blocked, and an error message will be displayed in response to all requests `{message: "Api rejected by user", code: 12}.` The users won't see new notifications. To grant access, the user will mark the website as trusted in the interface.
 
 **Description of methods**
 
 **publicState**
 
-If a website is trusted, Waves Keeper public data are returned.
+If a website is trusted, Neel Keeper public data are returned.
 
 Example:
 
 
 ```
-    WavesKeeper.publicState()
+    NeelKeeper.publicState()
         .then(state => {
             console.log(state); //displaying the result in the console
             /*...processing data */
@@ -78,7 +78,7 @@ or
 ```
     const getPublicState = async () => {
         try {
-            const state = await WavesKeeper.publicState();
+            const state = await NeelKeeper.publicState();
             console.log(state); // displaying the result in the console
             /*... processing data*/
         } catch(error) {
@@ -102,17 +102,17 @@ REPLY
     "account": {
         "name": "foo",
         "publicKey": "bar",
-        "address": "waves address",
+        "address": "neel address",
         "networkCode": "network byte",
         "balance": {
-            "available": "balance in waves",
+            "available": "balance in neel",
             "leasedOut": "leased balance"
         }
     },
     "network": {
         "code": "W",
-        "server": "https://nodes.wavesplatform.com/",
-        "matcher": "https://matcher.wavesplatform.com/"
+        "server": "https://nodes.neelplatform.com/",
+        "matcher": "https://matcher.neelplatform.com/"
     },
     "messages": [],
     "txVersion": {
@@ -132,7 +132,7 @@ Description of query return fields
 *   `initialized` - boolean keeper initialized
 *   `locked` - boolean keeper in wait mode
 *   `account` – current account, if the user allowed access to the website, or null
-*   `network` – current Waves network, node and matcher addresses
+*   `network` – current Neel network, node and matcher addresses
 *   `messages` – signature request statuses
 *   `txVersion` – available transaction versions for each type
 
@@ -140,13 +140,13 @@ Possible errors
 
 
 
-*   `{ message: "Init Waves Keeper and add account" }` – Waves Keeper is not initialized
-*   `{ message: "Add Waves Keeper account" }` – Waves Keeper accessed, but there are no accounts 
-*   `{ message: "User denied message" }` – the user denied the website operation with Waves Keeper 
+*   `{ message: "Init Neel Keeper and add account" }` – Neel Keeper is not initialized
+*   `{ message: "Add Neel Keeper account" }` – Neel Keeper accessed, but there are no accounts 
+*   `{ message: "User denied message" }` – the user denied the website operation with Neel Keeper 
 
 **on**
 
-Allows subscribing to Waves Keeper events.
+Allows subscribing to Neel Keeper events.
 
 Supports events:
 
@@ -158,8 +158,8 @@ Example:
 
 
 ```
-   WavesKeeper.on("update", state => {
-        //state object as from WavesKeeper.publicState
+   NeelKeeper.on("update", state => {
+        //state object as from NeelKeeper.publicState
    });
 ```
 
@@ -168,14 +168,14 @@ If a website is not trusted, events won't show.
 
 **auth**
 
-This is a method for obtaining a signature of authorization data while verifying Waves' user. It works the same way as [Waves Auth API](https://docs.wavesplatform.com/en/development-and-api/client-api/auth-api.html).
+This is a method for obtaining a signature of authorization data while verifying Neel' user. It works the same way as [Neel Auth API](https://docs.neelplatform.com/en/development-and-api/client-api/auth-api.html).
 
 Example:
 
 
 ```
     const authData = { data: "Auth on my site" };
-    Waves.auth(authData)
+    Neel.auth(authData)
         .then(auth => {
             console.log(state); //displaying the result on the console
             /*...processing data */
@@ -194,7 +194,7 @@ or
 ```
     const getAuthData = async authData => {
         try {
-            const state = await WavesKeeper.auth(authData);
+            const state = await NeelKeeper.auth(authData);
             console.log(state); // displaying the result on the console
             /*... processing data */
         } catch(error) {
@@ -226,14 +226,14 @@ Example
     const authData = { 
         data: "Generated string from server",
         name: "My test App",
-        icon: "/img/icons/waves_logo.svg",
-        referrer: "https://client.wavesplatform.com/",
+        icon: "/img/icons/neel_logo.svg",
+        referrer: "https://client.neelplatform.com/",
         successPath: "login"
     };
 
 
-    WavesKeeper.auth(authData).then((data) => {
-        //data – data from Waves Keeper
+    NeelKeeper.auth(authData).then((data) => {
+        //data – data from Neel Keeper
         //verifying signature and saving the address...
         console.log(data);
     }).catch((error) => {
@@ -246,19 +246,19 @@ Example
 ```
 
 
-If the verification is successful, Waves Keeper will return in the promise an object containing data for signature verification:
+If the verification is successful, Neel Keeper will return in the promise an object containing data for signature verification:
 
 
 
 *   `host` – a host that requested a signature
 *   `name` – the name of an application that requested a signature
 *   `prefix` – a prefix participating in the signature
-*   `address` – an address in Waves network
+*   `address` – an address in Neel network
 *   `publicKey` – the user's public key
 *   `signature` - signature
 *   `version` – API version
 
-[How to verify a signature](https://docs.wavesplatform.com/en/development-and-api/client-api/auth-api.html#section-2adf854e6133a03ce3003956df1f5c3b)?
+[How to verify a signature](https://docs.neelplatform.com/en/development-and-api/client-api/auth-api.html#section-2adf854e6133a03ce3003956df1f5c3b)?
 
 ERRORS
 
@@ -270,7 +270,7 @@ ERRORS
 
 **signTransaction**
 
-A method for signing transactions in Waves' network.
+A method for signing transactions in Neel' network.
 
 Example:
 
@@ -280,18 +280,18 @@ Example:
         type: 4,
         data: {
             amount: {
-               assetId: "WAVES",
+               assetId: "NEEL",
                tokens: "1.567"
             },
             fee: {
-                assetId: "WAVES",
+                assetId: "NEEL",
                 tokens: "0.001"
             },
             recipient: "test"
         }
     };
-    WavesKeeper.signTransaction(txData).then((data) => {
-        //data – a line ready for sending to Waves network's node (server)
+    NeelKeeper.signTransaction(txData).then((data) => {
+        //data – a line ready for sending to Neel network's node (server)
     }).catch((error) => { 
         //Processing errors
     });
@@ -302,7 +302,7 @@ API returns lines, not an object, as in javascript precision is lost in operatio
 
 A description of supported transaction types is below.
 
-In the example, we are signing a transaction for transferring WAVES to the alias `test `in Waves' network.
+In the example, we are signing a transaction for transferring NEEL to the alias `test `in Neel' network.
 
 REPLY `{"version":2,"assetId":"", "amount":156700000,"feeAssetId":"",fee:100000, "recipient":"recipient","attachment":"", "timestamp":1548770230589,"senderPublicKey":"public key","proofs":["signature"],"type":4}`
 
@@ -326,25 +326,25 @@ Example:
            type: 4,
            data: {
                amount: {
-                  assetId: "WAVES",
+                  assetId: "NEEL",
                   tokens: "1.567"
                },
                fee: {
-                   assetId: "WAVES",
+                   assetId: "NEEL",
                    tokens: "0.001"
                },
                recipient: "test"
            }
        };
-       WavesKeeper.signAndPublishTransaction(txData).then((data) => {
-           //data - a line ready for sending to Waves network's node (server)
+       NeelKeeper.signAndPublishTransaction(txData).then((data) => {
+           //data - a line ready for sending to Neel network's node (server)
        }).catch((error) => { 
            //processing errors
        });
 ```
 
 
-REPLY A reply from Waves network returns as a line containing the entire past transaction.
+REPLY A reply from Neel network returns as a line containing the entire past transaction.
 
 ERRORS
 
@@ -363,7 +363,7 @@ A package transaction signature. Sometimes several transactions need to be simul
 *   `4 – token transfer`
 *   `5 – token re-issue`
 *   `6 – token burning`
-*   `10 – creating an alias for an address in Waves' network`
+*   `10 – creating an alias for an address in Neel' network`
 *   `11 – mass transfer`
 *   `12 - DataTransaction`
 
@@ -376,11 +376,11 @@ Example:
         type: 4,
         data: {
             amount: {
-               assetId: "WAVES",
+               assetId: "NEEL",
                tokens: "1.567"
             },
             fee: {
-                assetId: "WAVES",
+                assetId: "NEEL",
                 tokens: "0.001"
             },
             recipient: "test"
@@ -388,11 +388,11 @@ Example:
         type: 4,
         data: {
             amount: {
-               assetId: "WAVES",
+               assetId: "NEEL",
                tokens: "0.51"
             },
             fee: {
-                assetId: "WAVES",
+                assetId: "NEEL",
                 tokens: "0.001"
             },
             recipient: "merry"
@@ -400,7 +400,7 @@ Example:
     }];
 
 
-    WavesKeeper.signTransactionPackage(tx, name)
+    NeelKeeper.signTransactionPackage(tx, name)
 ```
 
 
@@ -408,8 +408,8 @@ Sign two transaction:
 
 
 
-*   Transfer 1.567 WAVES to the alias test 
-*   Transfer 0.1 WAVES to the alias merry
+*   Transfer 1.567 NEEL to the alias test 
+*   Transfer 0.1 NEEL to the alias merry
 
 REPLY
 
@@ -417,10 +417,10 @@ A unit of two lines – transactions that are signed and ready to be broadcasted
 
 ERRORS Same as in "`signTransaction`"
 
-**[Transactions](https://docs.wavesplatform.com/en/development-and-api/client-libraries/waves-transactions.html)**
+**[Transactions](https://docs.neelplatform.com/en/development-and-api/client-libraries/neel-transactions.html)**
 
-Every user of Waves' network has a state (balances, assets, data, scripts), and every past transactions changes these data. \
-In Waves Keeper API it is different from [NODE REST API](https://docs.wavesplatform.com/en/development-and-api/waves-node-rest-api.html).
+Every user of Neel' network has a state (balances, assets, data, scripts), and every past transactions changes these data. \
+In Neel Keeper API it is different from [NODE REST API](https://docs.neelplatform.com/en/development-and-api/neel-node-rest-api.html).
 
 `signTransaction`, `signAndPublishTransaction` accept transactions as follows
 
@@ -437,7 +437,7 @@ In Waves Keeper API it is different from [NODE REST API](https://docs.wavesplatf
 
 Legend keys
 
-* - optional field, data are automatically supplied from WavesKeeper. \
+* - optional field, data are automatically supplied from NeelKeeper. \
 [x,y] – length limit from x to y. \
 [,x] – length limit to x. \
 [y,] – length limit from y. \
@@ -448,10 +448,10 @@ MoneyLike could look as:
 
 
 
-*   `{ tokens: 1, assetId: "WAVES" }`
-*   `{ coins: 100000000, assetId: "WAVES" }`;
+*   `{ tokens: 1, assetId: "NEEL" }`
+*   `{ coins: 100000000, assetId: "NEEL" }`;
 
-In both messages, the same price of 1 WAVES is indicated. You can easily convert `coins `into `tokens `and back, if you know in what asset the price is indicated and you have received its precision `tokens = coins / (10 ** precision)` \
+In both messages, the same price of 1 NEEL is indicated. You can easily convert `coins `into `tokens `and back, if you know in what asset the price is indicated and you have received its precision `tokens = coins / (10 ** precision)` \
 If the field contains other types than MoneyLike, for instance, string/MoneyLike , the sum is indicated as a number in  `coins`.
 
 
@@ -459,7 +459,7 @@ If the field contains other types than MoneyLike, for instance, string/MoneyLike
 ---
 
 
-**[Type 3 ISSUE – token issue](https://docs.wavesplatform.com/en/platform-features/assets-custom-tokens.html#section-8b6593d26c82bcc46ea77e373128b6f3)**
+**[Type 3 ISSUE – token issue](https://docs.neelplatform.com/en/platform-features/assets-custom-tokens.html#section-8b6593d26c82bcc46ea77e373128b6f3)**
 
 
 
@@ -469,7 +469,7 @@ If the field contains other types than MoneyLike, for instance, string/MoneyLike
 *   `precision` [0 - 8] number - precision,
 *   `reissuable` true|false – reissuble,
 *   `fee` MoneyLike -fee
-*   `*script` string – [asset script](https://docs.wavesplatform.com/en/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.html#section-5e6520b97a7ead921d7fb6bce7292ce0)
+*   `*script` string – [asset script](https://docs.neelplatform.com/en/technical-details/neel-contracts-language-description/creating-and-deploying-a-script-manually.html#section-5e6520b97a7ead921d7fb6bce7292ce0)
 *   `*senderPublicKey` string – sender's public key in base58
 *   `*timestamp` number/string – time in ms
 
@@ -477,7 +477,7 @@ Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 3,
         data: {
              "name": "Best Token",
@@ -487,7 +487,7 @@ Example:
              "reissuable": true,
              fee: {
                  "tokens": "1",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -500,7 +500,7 @@ Example:
 
 In case of a success, we are issuing a new asset in the quantity of 1,000,000, and your balance will show 10,000.00 Best Token
 
-**[Тype 4 TRANSFER – asset transfer](https://docs.wavesplatform.com/en/development-and-api/waves-node-rest-api/asset-transactions/public-functions.html#section-0c8edc11ae61814aebb41d3eeccbb831)**
+**[Тype 4 TRANSFER – asset transfer](https://docs.neelplatform.com/en/development-and-api/neel-node-rest-api/asset-transactions/public-functions.html#section-0c8edc11ae61814aebb41d3eeccbb831)**
 
 
 
@@ -515,22 +515,22 @@ Example:
 
 
 ```
-    WavesKeeper.signAndPublishTransaction({
+    NeelKeeper.signAndPublishTransaction({
         type: 4,
         data: {
-            amount: { tokens: "3.3333333", assetId: "WAVES" },
-            fee: { tokens: "0.001", assetId: "WAVES"},
+            amount: { tokens: "3.3333333", assetId: "NEEL" },
+            fee: { tokens: "0.001", assetId: "NEEL"},
             recipient: "merry"
         }
     }).then((tx) => {
-         console.log("Hurray! I've been able to send WAVES!!!");
+         console.log("Hurray! I've been able to send NEEL!!!");
     }).catch((error) => {
          console.error("Something went wrong", error);
     });
 ```
 
 
-**[Тype 5 REISSUE – token reissue](https://docs.wavesplatform.com/en/platform-features/assets-custom-tokens.html#section-2afead90ebe874ae06338a9253b0dc9d)**
+**[Тype 5 REISSUE – token reissue](https://docs.neelplatform.com/en/platform-features/assets-custom-tokens.html#section-2afead90ebe874ae06338a9253b0dc9d)**
 
 
 
@@ -545,7 +545,7 @@ Example:
 
 
 ```
-      WavesKeeper.signAndPublishTransaction({
+      NeelKeeper.signAndPublishTransaction({
            type: 5,
            data: {
                 "quantity": 1000,
@@ -553,7 +553,7 @@ Example:
                 "reissuable": true,
                 fee: {
                     "tokens": "1",
-                    "assetId": "WAVES"
+                    "assetId": "NEEL"
                 }
            }
       }).then((tx) => {
@@ -566,7 +566,7 @@ Example:
 
 In case of a success, we are re-issuing a new asset in the quantity of 1,000,000, and your balance will show 10,000.00 Best Token
 
-**[Тype 6 BURN – burning tokens](https://docs.wavesplatform.com/en/platform-features/assets-custom-tokens.html#section-423d9cffbd0e1a0b1298bf22c176fac3)**
+**[Тype 6 BURN – burning tokens](https://docs.neelplatform.com/en/platform-features/assets-custom-tokens.html#section-423d9cffbd0e1a0b1298bf22c176fac3)**
 
 
 
@@ -580,14 +580,14 @@ Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 6,
         data: {
              amount: 1000,
              assetId: "8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS",
              fee: {
                  "tokens": "0.001",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -600,7 +600,7 @@ Example:
 
 In case of a success, 1,000 coins `are burned`.
 
-**[Тype 8 LEASE - Leasing](https://docs.wavesplatform.com/en/platform-features/assets-custom-tokens.html#section-423d9cffbd0e1a0b1298bf22c176fac3)**
+**[Тype 8 LEASE - Leasing](https://docs.neelplatform.com/en/platform-features/assets-custom-tokens.html#section-423d9cffbd0e1a0b1298bf22c176fac3)**
 
 
 
@@ -614,14 +614,14 @@ Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 8,
         data: {
              "amount": 1000,
              "recipient": "merry",
              fee: {
                  "tokens": "0.001",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -632,9 +632,9 @@ Example:
 ```
 
 
-In case of a success, 0.00001000 WAVES is leased.
+In case of a success, 0.00001000 NEEL is leased.
 
-**[Тype 9 LEASE CANCEL – cancel leasing](https://docs.wavesplatform.com/en/technical-details/data-structures.html#section-92869b0109414c29eb600dfc6caf4520)**
+**[Тype 9 LEASE CANCEL – cancel leasing](https://docs.neelplatform.com/en/technical-details/data-structures.html#section-92869b0109414c29eb600dfc6caf4520)**
 
 
 
@@ -647,13 +647,13 @@ Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 9,
         data: {
              leaseId: "6frvwF8uicAfyEfTfyC2sXqBJH7V5C8he5K4YH3BkNiS",
              fee: {
                  "tokens": "0.001",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -666,7 +666,7 @@ Example:
 
 In case of a success, the leasing transaction is cancelled.
 
-**[Тype 10 CREATE ALIAS – creating an alias for an address](https://docs.wavesplatform.com/en/technical-details/data-structures.html#section-e4657fe644ac2cf0d4e382fe676f0477)**
+**[Тype 10 CREATE ALIAS – creating an alias for an address](https://docs.neelplatform.com/en/technical-details/data-structures.html#section-e4657fe644ac2cf0d4e382fe676f0477)**
 
 
 
@@ -679,13 +679,13 @@ Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 10,
         data: {
              alias: "testAlias",
              fee: {
                  "tokens": "0.001",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -698,7 +698,7 @@ Example:
 
 In case of a success, an alias (another name) is created.
 
-**[Тype 11 MASS TRANSFER - a mass transfer of an asset](https://docs.wavesplatform.com/en/technical-details/data-structures.html#section-bccba990c89ceec7ef3751e8e763ecc6)**
+**[Тype 11 MASS TRANSFER - a mass transfer of an asset](https://docs.neelplatform.com/en/technical-details/data-structures.html#section-bccba990c89ceec7ef3751e8e763ecc6)**
 
 
 
@@ -714,17 +714,17 @@ Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 11,
         data: {
-             totalAmount: { assetId: "WAVES", coins: 0},
+             totalAmount: { assetId: "NEEL", coins: 0},
              transfers: [
                 { recipient: "alias1", amount: "200000" },
                 { recipient: "alias2", amount: "200000" },
              ],
              fee: {
                  "tokens": "0.002",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -735,9 +735,9 @@ Example:
 ```
 
 
-In case of a success, 0.002 WAVES will be sent to alias1 and alias2.
+In case of a success, 0.002 NEEL will be sent to alias1 and alias2.
 
-**[Тype 12 DATA TRANSACTION - saving data](https://docs.wavesplatform.com/en/technical-details/data-structures.html#section-f6e7a2443d41af2a0ef8b4c4c33ba6b3)**
+**[Тype 12 DATA TRANSACTION - saving data](https://docs.neelplatform.com/en/technical-details/data-structures.html#section-f6e7a2443d41af2a0ef8b4c4c33ba6b3)**
 
 
 
@@ -753,7 +753,7 @@ Field:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 12,
         data: {
              data: [
@@ -764,7 +764,7 @@ Field:
              ],
              fee: {
                  "tokens": "0.01",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -777,28 +777,28 @@ Field:
 
 In case of a success, new data will be stored in the state.
 
-**[Тype 13 SET SCRIPT – scrypting an account](https://docs.wavesplatform.com/en/technical-details/data-structures.html#section-11573fe1c896857a6d3fcfcf6cf6571d)**
+**[Тype 13 SET SCRIPT – scrypting an account](https://docs.neelplatform.com/en/technical-details/data-structures.html#section-11573fe1c896857a6d3fcfcf6cf6571d)**
 
 
 
-*   `script` string - [scriptт](https://docs.wavesplatform.com/en/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.html#section-5e6520b97a7ead921d7fb6bce7292ce0)
+*   `script` string - [scriptт](https://docs.neelplatform.com/en/technical-details/neel-contracts-language-description/creating-and-deploying-a-script-manually.html#section-5e6520b97a7ead921d7fb6bce7292ce0)
 *   `fee` MoneyLike -fee
 *   `*senderPublicKey` string - sender's public key in base58
 *   `*timestamp` number/string – time in ms
 
-For cancelling a script the field `script `has to be "". [Script development on RIDE](https://ide.wavesplatform.com/)
+For cancelling a script the field `script `has to be "". [Script development on RIDE](https://ide.neelplatform.com/)
 
 Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 13,
         data: {
              script: "",
              fee: {
                  "tokens": "0.04",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -815,13 +815,13 @@ Example 2:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 13,
         data: {
              script: "base64:AQa3b8tH",
              fee: {
                  "tokens": "0.01",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -834,7 +834,7 @@ Example 2:
 
 In case of a success, a new script will be added to the account, allowing any transactions without a signature (be careful!).
 
-**[Тype 14 Sponsored Fee Transaction - Sponsorship](https://docs.wavesplatform.com/en/technical-details/data-structures.html#section-730bd9c8fe7e7628ba840d36df3c726e)**
+**[Тype 14 Sponsored Fee Transaction - Sponsorship](https://docs.neelplatform.com/en/technical-details/data-structures.html#section-730bd9c8fe7e7628ba840d36df3c726e)**
 
 
 
@@ -847,7 +847,7 @@ Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 14,
         data: {
              minSponsoredAssetFee: {
@@ -856,7 +856,7 @@ Example:
              },
              fee: {
                  "tokens": "1",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -869,30 +869,30 @@ Example:
 
 In case of a success, a transfer fee can be paid in the asset.
 
-**[Тype 15 SET ASSET SCRIPT – setting a script to an asset](https://docs.wavesplatform.com/en/technical-details/data-structures.html#section-9459bb3757b06f2d75f1a07f24f873ce)**
+**[Тype 15 SET ASSET SCRIPT – setting a script to an asset](https://docs.neelplatform.com/en/technical-details/data-structures.html#section-9459bb3757b06f2d75f1a07f24f873ce)**
 
 
 
 *   `assetId` string – asset ID
-*   `script` string - [script](https://docs.wavesplatform.com/en/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.html#section-5e6520b97a7ead921d7fb6bce7292ce0)
+*   `script` string - [script](https://docs.neelplatform.com/en/technical-details/neel-contracts-language-description/creating-and-deploying-a-script-manually.html#section-5e6520b97a7ead921d7fb6bce7292ce0)
 *   `fee` MoneyLike -fee
 *   `*senderPublicKey` string - sender's public key in base58
 *   `*timestamp` number/string – time in ms
 
-It's now impossible to cancel a script, you can only add a new script. [Script development on RIDE](https://ide.wavesplatform.com/)
+It's now impossible to cancel a script, you can only add a new script. [Script development on RIDE](https://ide.neelplatform.com/)
 
 Example:
 
 
 ```
-   WavesKeeper.signAndPublishTransaction({
+   NeelKeeper.signAndPublishTransaction({
         type: 15,
         data: {
              assetId: "",
              script: "base64:AQa3b8tH",
              fee: {
                  "tokens": "0.01",
-                 "assetId": "WAVES"
+                 "assetId": "NEEL"
              }
         }
    }).then((tx) => {
@@ -905,7 +905,7 @@ Example:
 
 In case of a success, the asset's script will be reset.
 
-**[Calculating transaction fees](https://docs.wavesplatform.com/en/technical-details/transactions-fees.html)**
+**[Calculating transaction fees](https://docs.neelplatform.com/en/technical-details/transactions-fees.html)**
 
 
 
@@ -914,7 +914,7 @@ In case of a success, the asset's script will be reset.
 
 **signOrder**
 
-Waves Keeper's method for signing an order to the matcher. As input, it accepts an object similar to a transaction like this:
+Neel Keeper's method for signing an order to the matcher. As input, it accepts an object similar to a transaction like this:
 
 
 ```
@@ -932,7 +932,7 @@ Waves Keeper's method for signing an order to the matcher. As input, it accepts 
 *   `amount` MoneyLike - amount
 *   `price` MoneyLike - price
 *   `orderType` 'sell'/'buy' – order type
-*   `matcherFee` MoneyLike - fee (0.003 WAVES minimum),
+*   `matcherFee` MoneyLike - fee (0.003 NEEL minimum),
 *   `matcherPublicKey` string - the public key of the exchange service
 *   `expiration` string/number – the order's expiration time
 *   `*timestamp` string/number - current time
@@ -942,7 +942,7 @@ Example:
 
 
 ```
-   WavesKeeper.signOrder({
+   NeelKeeper.signOrder({
         type: 1002,
         data: {
              matcherPublicKey: "7kPFrHDiGw1rCm7LPszuECwWYL3dMf6iMifLRDJQZMzy",
@@ -950,7 +950,7 @@ Example:
              expiration: Date.now() + 100000,
              amount: {
                  tokens: "100",
-                 assetId: "WAVES"
+                 assetId: "NEEL"
              },
              price: {
                  tokens: "0.01",
@@ -958,7 +958,7 @@ Example:
              },
              matcherFee: {
                  tokens: "0.03",
-                 assetId: "WAVES"
+                 assetId: "NEEL"
              }
         }
    }).then((tx) => {
@@ -981,7 +981,7 @@ ERRORS:
 
 **signAndPublishOrder**
 
-Waves Keeper's method for creating an order to the matcher is identical to `signOrder`, but it also tries to send data to the matcher.
+Neel Keeper's method for creating an order to the matcher is identical to `signOrder`, but it also tries to send data to the matcher.
 
 REPLY: the matcher's reply line about successful creation of an order.
 
@@ -994,7 +994,7 @@ ERRORS:
 
 **signCancelOrder**
 
-Waves Keeper's method for signing cancellation of an order to the matcher. As input, it accepts an object similar to a transaction like this:
+Neel Keeper's method for signing cancellation of an order to the matcher. As input, it accepts an object similar to a transaction like this:
 
 
 ```
@@ -1016,7 +1016,7 @@ Example:
 
 
 ```
-    WavesKeeper.signCancelOrder({
+    NeelKeeper.signCancelOrder({
         type: 1003,
         data: {
             id: '31EeVpTAronk95TjCHdyaveDukde4nDr9BfFpvhZ3Sap'	
@@ -1037,13 +1037,13 @@ ERRORS:
 
 **signAndPublishCancelOrder**
 
-Waves Keeper's method for cancelling an order to the matcher. It works identically to `signCancelOrder`, but also tries to send data to the matcher.
+Neel Keeper's method for cancelling an order to the matcher. It works identically to `signCancelOrder`, but also tries to send data to the matcher.
 
 Example:
 
 
 ```
-    WavesKeeper.signAndPublishCancelOrder({
+    NeelKeeper.signAndPublishCancelOrder({
         type: 1003,
         data: {
             id: '31EeVpTAronk95TjCHdyaveDukde4nDr9BfFpvhZ3Sap'
@@ -1067,7 +1067,7 @@ ERRORS:
 
 **signRequest**
 
-Waves Keeper's method for signing typified data, for signing requests on various services. As input, it accepts an object similar to a transaction like this:
+Neel Keeper's method for signing typified data, for signing requests on various services. As input, it accepts an object similar to a transaction like this:
 
 
 ```
@@ -1093,7 +1093,7 @@ Example:
 
 
 ```
-    WavesKeeper.signRequest({
+    NeelKeeper.signRequest({
         type: 1001,
         data: {
             timestamp: 234234242423423
@@ -1122,7 +1122,7 @@ Request:
 
 
 ```
-    WavesKeeper.signRequest({
+    NeelKeeper.signRequest({
         type: 1004,
         data: {
             timestamp: 234234242423423

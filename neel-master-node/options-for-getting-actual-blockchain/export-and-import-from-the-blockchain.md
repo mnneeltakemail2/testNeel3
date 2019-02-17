@@ -11,14 +11,14 @@ You have to stop the node before starting export of blocks. To export existing b
 _**On Windows:**_
 
 ```
-java -cp waves-all-<version>.jar com.wavesplatform.Exporter [configuration-file-name] [output-file-name] [height]
+java -cp neel-all-<version>.jar com.neelplatform.Exporter [configuration-file-name] [output-file-name] [height]
 ```
 
 _**On Linux:**_
 
 ```
-Mainnet: sudo -u waves exporter /etc/waves/waves.conf [output-file-name] [height]
-Testnet: sudo -u waves-testnet exporter-testnet /etc/waves-testnet/waves.conf [output-file-name] [height]
+Mainnet: sudo -u neel exporter /etc/neel/neel.conf [output-file-name] [height]
+Testnet: sudo -u neel-testnet exporter-testnet /etc/neel-testnet/neel.conf [output-file-name] [height]
 ```
 
 If the parameter `height` was not given, all blocks will be exported. Otherwise, only blocks up to that `height` will be exported to the output file.
@@ -28,20 +28,20 @@ The output file name parameter is optional, name 'blockchain' is used by default
 ## Remove the Existing Node's Data
 
 In order to fully rebuild the node's state, you have to remove the existing node's `data` folder.  
-On Windows, `data` folder usually located in `%HOMEPATH%\waves\data`.
+On Windows, `data` folder usually located in `%HOMEPATH%\neel\data`.
 
-On Linux it's in the `/var/lib/waves[-testnet]/` folder:
+On Linux it's in the `/var/lib/neel[-testnet]/` folder:
 
 ```
-sudo rm -rdf /var/lib/waves[-testnet]/data
+sudo rm -rdf /var/lib/neel[-testnet]/data
 ```
 
 ## Downloading Exported Blockchain
 
 You can download recently exported blockchains using following links:
-{% prettylink link="http://blockchain.wavesnodes.com/" %}MainNet{% endprettylink %}
+{% prettylink link="http://blockchain.neelnodes.com/" %}MainNet{% endprettylink %}
 
-{% prettylink link="http://blockchain.testnet.wavesnodes.com/" %}TestNet{% endprettylink %}
+{% prettylink link="http://blockchain.testnet.neelnodes.com/" %}TestNet{% endprettylink %}
 
 # Import Blocks From The Binary File
 
@@ -52,15 +52,15 @@ To import the blockchain and rebuild the state run the following command\(Import
 On Windows:
 
 ```
-java -cp waves-all-<version>.jar com.wavesplatform.Importer [configuration-file-name] [binary-file-name]
+java -cp neel-all-<version>.jar com.neelplatform.Importer [configuration-file-name] [binary-file-name]
 ```
 
 On Linux:
 
 ```
-Mainnet: sudo -u waves importer /etc/waves/waves.conf [binary-file-name]
+Mainnet: sudo -u neel importer /etc/neel/neel.conf [binary-file-name]
 
-Testnet: sudo -u waves-testnet importer-testnet /etc/waves-testnet/waves.conf [binary-file-name]
+Testnet: sudo -u neel-testnet importer-testnet /etc/neel-testnet/neel.conf [binary-file-name]
 ```
 
 ## Import blocks from a certain height
@@ -70,19 +70,19 @@ when importing, The user can specify the target height. If the parameter `height
 On Windows:
 
 ```
-java com.wavesplatform.Importer <config_file> <blockchain_file> <height>
+java com.neelplatform.Importer <config_file> <blockchain_file> <height>
 ```
 
 On Linux\(MainNet\):
 
 ```
-sudo -u waves /usr/share/waves/bin/importer /etc/waves/waves.conf /path/to/mainnet-1234688 500
+sudo -u neel /usr/share/neel/bin/importer /etc/neel/neel.conf /path/to/mainnet-1234688 500
 ```
 
 On Linux\(TestNet\):
 
 ```
-sudo -u waves-testnet /usr/share/waves-testnet/bin/importer-testnet /etc/waves-testnet/waves.conf /path/to/testnet-1234688 500
+sudo -u neel-testnet /usr/share/neel-testnet/bin/importer-testnet /etc/neel-testnet/neel.conf /path/to/testnet-1234688 500
 ```
 
 

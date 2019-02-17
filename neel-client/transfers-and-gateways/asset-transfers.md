@@ -6,25 +6,25 @@
 
 ## How to receive Asset
 
-Think of the Waves account as a multi-wallet. It, obviously, supports Waves and also any other token existing on the Waves blockchain.
+Think of the Neel account as a multi-wallet. It, obviously, supports Neel and also any other token existing on the Neel blockchain.
 
-Whenever you want to receive Waves based asset, just hand your personal Waves address to the sender and he is able to execute the transaction.
+Whenever you want to receive Neel based asset, just hand your personal Neel address to the sender and he is able to execute the transaction.
 
-Open your Waves wallet. At the top left corner click on the avatar of your account.
+Open your Neel wallet. At the top left corner click on the avatar of your account.
 
 ![](/_assets/asset_transfers_05.png)
 
 The following pop-up will appear.
 
-There you will find the Waves address of your account.
+There you will find the Neel address of your account.
 
 ![](/_assets/asset_transfers_06.png)
 
-Copy the shown Waves address and use it as recipient address.
+Copy the shown Neel address and use it as recipient address.
 
 ## How to send Asset
 
-Open up your Waves wallet.  
+Open up your Neel wallet.  
 At the top left corner click on the **Send** button.
 
 ![](/_assets/asset_transfers_01.png)
@@ -37,7 +37,7 @@ In the **Currency** field, select Asset that you want to send. Then click on it.
 
 Fill in the sending form
 
-* **Recipient**: Enter the recipient Waves address.
+* **Recipient**: Enter the recipient Neel address.
 * **Amount**: Define a number of selected Asset you want to send.
 * **Description**: Optional. You can write a message for the recipient in the Description field.
 * **Note**: Some exchanges require users to include description when depositing assets. Otherwise, they cannot credit your account.
@@ -56,6 +56,6 @@ ___
 
 ## More info
 
-See more articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
+See more articles in the [Transfers and Gateways](/neel-client/wallet-management.md) chapter.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.neelplatform.com/) ticket or write a [question](https://forum.neelplatform.com/) on our forum.

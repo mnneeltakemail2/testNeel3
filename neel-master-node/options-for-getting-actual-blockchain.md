@@ -4,7 +4,7 @@ After a user installs a node, the user will have different ways to get the block
 
 ## 1. Synchronization of the state during a regular operation of the node.
 
-Build from scratch, here you will need to [_**run the node**_](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), then it will receive all the needed information from the other nodes.
+Build from scratch, here you will need to [_**run the node**_](/neel-full-node/how-to-install-a-node/how-to-install-a-node.md), then it will receive all the needed information from the other nodes.
 
 After launch, the node begins to receive blocks from the network, verify them and validate the signature.  By affecting these components, you can reduce the time to reach the current state.  So, the following factors affect network sharing:
 
@@ -15,7 +15,7 @@ After launch, the node begins to receive blocks from the network, verify them an
 
 ## 2. Importing state from a previously prepared file
 
-[_**Import state**_](/waves-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md), here the user needs to stop the node before starting the process of exporting the blocks.
+[_**Import state**_](/neel-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md), here the user needs to stop the node before starting the process of exporting the blocks.
 
 In this case, we exclude network sharing costs \(we don’t count the time to download the file itself\). In addition, the import will not allow our node to "get on the fork"  
 The speed of block verification and signature verification affects the time of reaching the current state by the import method. These operations are performed on the CPU. The verification of the blocks goes in one stream, therefore, a gain in time will be given by a high-frequency CPU rather than a multicore one. The signature verification operation is multi-threaded, but against the background of block verification, it has an insignificant effect.  
@@ -28,7 +28,7 @@ Therefore, we choose SSD.
 
 ## 3. Copy the finished node database
 
-[_**Downloading state**_](/waves-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md), approximately the size of the State is around 23 GB \(**in November 2018**\).
+[_**Downloading state**_](/neel-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md), approximately the size of the State is around 23 GB \(**in November 2018**\).
 
 In this case, the longest operation is to download the archive. Then it is enough to unpack the archive files to the /var/lib/neel/data directory and run the node.  The remaining blocks will be synchronized during normal operation.
 

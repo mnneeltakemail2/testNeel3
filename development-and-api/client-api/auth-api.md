@@ -1,33 +1,33 @@
-# Waves Auth API
+# Neel Auth API
 
-If you want to authorize a user in your service by means of his Waves account, here's the solution. In general, you should redirect the user to the official Waves Client \([https://client.wavesplatform.com/](https://client.wavesplatform.com/)\) with certain query parameters including some arbitrary data for him to sign.
+If you want to authorize a user in your service by means of his Neel account, here's the solution. In general, you should redirect the user to the official Neel Client \([https://client.neelplatform.com/](https://client.neelplatform.com/)\) with certain query parameters including some arbitrary data for him to sign.
 
 That might be needed in cases when you need to work with user personal data and to be sure that a given blockchain account belongs to that user.
 
 ## Process
 
-1. You add the Waves Auth widget to your site.
-2. A user stumbles upon your site and wants to log in using his Waves account.
-3. He clicks the widget button and gets redirected to the official Waves Client, along with some random data from the widget.
+1. You add the Neel Auth widget to your site.
+2. A user stumbles upon your site and wants to log in using his Neel account.
+3. He clicks the widget button and gets redirected to the official Neel Client, along with some random data from the widget.
 4. There, the user chooses whether to log in or to cancel that chain of actions.
 5. If he proceeds, the data will be signed with the user's private key.
 6. The user then gets redirected back to your site, along with the signature and user's public key.
 7. You check the validity of the signature against the data provided for that user.
 8. If all is correct, the user is now authenticated in your service.
 
-If the user interrupts the process, he stays on the Waves Client page.
+If the user interrupts the process, he stays on the Neel Client page.
 
 ## Details
 
 Due to the length limitations of the query string all parameters are expressed with one character.
 
-[**Here**](https://demo.wavesplatform.com) you can find the demo project which shows how to use Web auth API.
+[**Here**](https://demo.neelplatform.com) you can find the demo project which shows how to use Web auth API.
 
 ### Request
 
-[Example](https://client.wavesplatform.com#gateway/auth?r=https://example.com&n=Service%20Name&d=0123456789abc&i=/img/logo.png&success=/wavesAuth): `https://client.wavesplatform.com#gateway/auth?r=https://example.com&n=Service%20Name&d=0123456789abc&i=/img/logo.png&success=/wavesAuth`.
+[Example](https://client.neelplatform.com#gateway/auth?r=https://example.com&n=Service%20Name&d=0123456789abc&i=/img/logo.png&success=/neelAuth): `https://client.neelplatform.com#gateway/auth?r=https://example.com&n=Service%20Name&d=0123456789abc&i=/img/logo.png&success=/neelAuth`.
 
-Basic path is `https://client.wavesplatform.com#gateway/auth`. Then the query parameters go.
+Basic path is `https://client.neelplatform.com#gateway/auth`. Then the query parameters go.
 
 #### Referrer
 
@@ -67,14 +67,14 @@ Example: `https://example.com/?s=2w7QKSkxKEUwCVhx2VGrt5YiYVtAdoBZ8KQcxuNjGfN6n4f
 
 #### Address
 
-`?a=base58EncodedAddress` — user's Waves address.
+`?a=base58EncodedAddress` — user's Neel address.
 
 ### How to check signature validity
 
-You can use the [@waves/signature-generator](https://www.npmjs.com/package/@waves/signature-generator) npm package.
+You can use the [@neel/signature-generator](https://www.npmjs.com/package/@neel/signature-generator) npm package.
 
 Signed data consists of three objects `Prefix string` + `URL host` + `Provided Data`
-Signature is taken from the data in the following order: a `WavesWalletAuthentication` string, then a string with your host parameter value, then a string with your data parameter value.
+Signature is taken from the data in the following order: a `NeelWalletAuthentication` string, then a string with your host parameter value, then a string with your data parameter value.
 All strings is converted to `length bytes + value bytes` as in [Data Transactions](technical-details/data-transaction.md)
 Prefix string and the host is required for security purposes if malicious service tries to use transaction data and signature from Auth API it would be useless to broadcast into blockchain.
 
@@ -82,7 +82,7 @@ We also suggest address validation in case the signature and public key is valid
 
 #### Js example code
 ```javascript
-const sg = require('@waves/signature-generator')
+const sg = require('@neel/signature-generator')
 const crypto = sg.utils.crypto
 const StringWithLength = sg.StringWithLength
 const generate = sg.generate
@@ -95,7 +95,7 @@ const generator = new generate([
 ]);
 
 function authValidate(data, sign, publicKey) {
-  const prefix = 'WavesWalletAuthentication'
+  const prefix = 'NeelWalletAuthentication'
 
   const byteGen = new generator({
     prefix: prefix,
@@ -160,7 +160,7 @@ signatureCheck.then(function(result) {
 #### Python example code
 ```python
 import axolotl_curve25519 as curve
-import pywaves.crypto as crypto
+import pyneel.crypto as crypto
 import base58
 from urllib.parse import urlparse, parse_qs
 
@@ -172,7 +172,7 @@ def str_with_length(string_data):
 
 
 def signed_data(host, data):
-    prefix = 'WavesWalletAuthentication'
+    prefix = 'NeelWalletAuthentication'
     return str_with_length(prefix) + str_with_length(host) + str_with_length(data)
 
 
