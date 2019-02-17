@@ -26,9 +26,9 @@ After installing Neel Client, you will need to create an account. the account ca
 
 ## Transfers and Gateways
 
-After creating your account, it's the time to make some transfers and deal with transactions. To be familiar with our transfers and gateways please check [_**Transfers and Gateways Guide**_](/neel-client/wallet-management.md). it includes all details about send and deposit operations for external cryptocurrencies which are supported within Neel Platform. All transactions with external coins are processing with the [_**payment gateways**_](/neel-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
+After creating your account, it's the time to make some transfers and deal with transactions. To be familiar with our transfers and gateways please check [_**Transfers and Gateways Guide**_](/neel-client/wallet-management.md). it includes all details about send and deposit operations for external cryptocurrencies which are supported within Neel Network. All transactions with external coins are processing with the [_**payment gateways**_](/neel-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
 
-**Note.** Each asset issued on Neel can be traded right after that and Gateways will be needed for cryptocurrencies which are not included on Neel Platform.
+**Note.** Each asset issued on Neel can be traded right after that and Gateways will be needed for cryptocurrencies which are not included on Neel Network.
 
 ## Assets Management
 

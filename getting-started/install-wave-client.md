@@ -10,7 +10,7 @@ The Neel client is available as:
 
 2. [**Online Client**](https://neelplatform.com/product)
 
-You can download the desktop client or use the Online client from the [official site of Neel Platform](https://neelplatform.com/), it's available for
+You can download the desktop client or use the Online client from the [official site of Neel Network](https://neelplatform.com/), it's available for
 
 Linux, Mac OS and Windows Then you need to follow the step by step guide for creating your account.
 

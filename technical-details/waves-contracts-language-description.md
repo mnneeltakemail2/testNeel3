@@ -13,7 +13,7 @@
 11. [Neel Console Commands](../technical-details/neel-contracts-language-description/neel-console-commands.md)
 12. [Video Tutorials and Articles](../technical-details/video-tutorials-and-articles.md)
 
-# 1. Benefits of Smart Contracts on Neel Platform
+# 1. Benefits of Smart Contracts on Neel Network
 
 ![master](https://img.shields.io/badge/node->%3D0.12.0-4bc51d.svg)
 

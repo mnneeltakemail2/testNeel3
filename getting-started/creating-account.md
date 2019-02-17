@@ -2,7 +2,7 @@
 
 The Neel wallet features stable fiat, Bitcoin, Ethereum, Litecoin, Zcash, more than 10,000 Neel-based tokens, one of the fastest blockchains in the cryptosphere and the Neel Decentralized Exchange \(Neel DEX\).
 
-Neel, the native currency within the Neel Platform system, is a Leased Proof of Stake \(LPoS\) cryptocurrency that allows users to earn rewards by hosting a full node or by leasing their balance to a node.
+Neel, the native currency within the Neel Network system, is a Leased Proof of Stake \(LPoS\) cryptocurrency that allows users to earn rewards by hosting a full node or by leasing their balance to a node.
 
 **Step 1: **Download your Neel client using either the [Online Client](https://neelplatform.com/product), [Desktop Client](https://neelplatform.com/product).
 

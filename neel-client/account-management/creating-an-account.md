@@ -14,7 +14,7 @@ Choose and open up your Neel wallet.
 Please take some time to understand some important things for your own safety.
 We cannot recover your funds or freeze your account if you visit a phishing site or lose your backup phrase (aka SEED phrase).
 By continuing to use our platform, you agree to accept all risks associated with the loss of your SEED, including but not limited to the inability to obtain your funds and dispose of them.
-In case you lose your SEED, you agree and acknowledge that the Neel Platform would not be responsible for the negative consequences of this.
+In case you lose your SEED, you agree and acknowledge that the Neel Network would not be responsible for the negative consequences of this.
 
 To continue, click on the **What you need to know about your SEED**
 

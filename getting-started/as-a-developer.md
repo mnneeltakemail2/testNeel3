@@ -54,7 +54,7 @@ In Neel, we always think about the best way to help external developers and beca
 
 ## DEX API
 
-The reason behind decentralized exchange is to perform secure exchange of assets issued on Neel platform.
+The reason behind decentralized exchange is to perform secure exchange of assets issued on Neel network.
 
 The real-time trading is achieved thanks to the only centralized design element of our DEX - the order book Matcher, which matches incoming orders and execute trades at high speed, typically within milliseconds. There is no need to wait for the next block to know whether a trade has been executed successfully, this provides speed at the level of centralized exchange and the security of the decentralized protocol.
 

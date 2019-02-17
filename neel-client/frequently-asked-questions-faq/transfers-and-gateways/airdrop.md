@@ -4,7 +4,7 @@ Q: *What is an airdrop?*
 A: An airdrop is the act of distributing tokens to multiple addresses. This is often used to reward holders or spread awareness for a new token.
 
 Q: *How do I get an airdrop?*
-A: To benefit from an airdrop on the Neel Platform you will need to hold the relevant assets in your Neel wallet. For example, if an announcement says "Airdrop for WCT holders" this means you must hold WCT tokens in your Neel wallet when the airdrop happens. Holding tokens on exchanges or other hosted wallets doesn't guarantee you will receive airdropped tokens.
+A: To benefit from an airdrop on the Neel Network you will need to hold the relevant assets in your Neel wallet. For example, if an announcement says "Airdrop for WCT holders" this means you must hold WCT tokens in your Neel wallet when the airdrop happens. Holding tokens on exchanges or other hosted wallets doesn't guarantee you will receive airdropped tokens.
 
 Q: *When is the next airdrop?*
 A: We announce all of our airdrops through our social media channels - please follow these for the latest details.

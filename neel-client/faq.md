@@ -1,6 +1,6 @@
 # Frequently asked questions
 
-This section contains frequently asked questions related to the Neel applications. In this section, you will find some subtle points for a better understanding of the Neel platform algorithms.
+This section contains frequently asked questions related to the Neel applications. In this section, you will find some subtle points for a better understanding of the Neel network algorithms.
 
 * [What is a SEED phrase?](/neel-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
 * [One Seed - One Neel address.](/neel-client/frequently-asked-questions-faq/account-management/one-seed.md)

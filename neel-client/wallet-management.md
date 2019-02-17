@@ -1,6 +1,6 @@
 # Transfers and gateways
 
-Transfers and gateways chapter includes all details about send and deposit operations for each cryptocurrency which is supporting within the Neel Platform. All transactions with external coins are processed by the [payment gateways](/neel-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
+Transfers and gateways chapter includes all details about send and deposit operations for each cryptocurrency which is supporting within the Neel Network. All transactions with external coins are processed by the [payment gateways](/neel-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
 
 * [Neel transfers](transfers-and-gateways/neel-transfers.md)
 * [Asset transfers](transfers-and-gateways/asset-transfers.md)

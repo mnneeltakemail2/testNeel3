@@ -13,7 +13,7 @@ Open your wallet. On the main page click on the **Receive** button in the US Dol
 
 Choose **Bank** and carefully read the terms of service provided by Coinomat gateway:
 
-> This service is provided by Coinomat Company (Сoinomat). Neel Platform AG does not undertake any responsibility for the activities carried out by Coinomat and does not take any part in the relationship that may arise between Coinomat and users of the Neel Platform.
+> This service is provided by Coinomat Company (Сoinomat). Neel Network AG does not undertake any responsibility for the activities carried out by Coinomat and does not take any part in the relationship that may arise between Coinomat and users of the Neel Network.
 By using Coinomat services, you agree to be bound by [Coinomat Terms of Service and Conduction of Transactions](https://coinomat.com/terms.php). If you do not agree to these terms, then do not use Coinomat services.
 
 > I agree with the [Terms of Service and Conduction of Transactions](https://coinomat.com/terms.php), [Price List](https://coinomat.com/limits.php) and [Privacy Policy](https://coinomat.com/privacy.php) of Coinomat Company.

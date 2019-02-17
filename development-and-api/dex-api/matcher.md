@@ -1,6 +1,6 @@
 ## Matcher
 
-The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secure exchange of assets issued on Neel platform. When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create `ExchangeTransaction` on the conditions that are not worse than in user's order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.
+The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secure exchange of assets issued on Neel network. When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create `ExchangeTransaction` on the conditions that are not worse than in user's order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.
 
 Please find the matcher API for **_MainNet_** and **_TestNet_**:
 {% prettylink link="https://matcher.neelplatform.com/api-docs/index.html" %}MainNet Matcher API{% endprettylink %}

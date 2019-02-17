@@ -10,6 +10,6 @@ The Neel client could also be called a multi-currency wallet. It does not only a
 * [**Desktop Client**](https://neelplatform.com/product)
 * [**Online Client**](https://client.neelplatform.com/)
 
-You can download the Desktop client from the [official site of Neel Platform](https://neelplatform.com/), it's available for Linux, Mac OS and Windows Then you need to follow the step by step guide for [creating your account](account-management/creating-an-account.md).
+You can download the Desktop client from the [official site of Neel Network](https://neelplatform.com/), it's available for Linux, Mac OS and Windows Then you need to follow the step by step guide for [creating your account](account-management/creating-an-account.md).
 
 ![](/_assets/install-neel-client-screenshot.png)

@@ -19,7 +19,7 @@ In general, tokens are a reproduction of a particular asset or utility, which us
 ## Ethereum Tokens
 
 * **Ethereum** **Smart contracts **are** **programmable computer codes that are self-executing and do not need any third-parties to operate.
-* Ethereum supports the ability to develop Smart Contracts using their platform and in the same directions Neel Platform has launched smart contracts on the Testnet so non-Turing complete contracts will cover a large proportion of use cases, including smart accounts and smart tokens on the Neel Network.
+* Ethereum supports the ability to develop Smart Contracts using their platform and in the same directions Neel Network has launched smart contracts on the Testnet so non-Turing complete contracts will cover a large proportion of use cases, including smart accounts and smart tokens on the Neel Network.
 
 * **Tokens** aren’t actually held in users’ Ethereum addresses. Rather, they’re registered to a smart contract and every time you move them, you’re really just updating the information that smart contract records. **Neel tokens**, however, are like Neel itself  — meaning they are treated exactly the same and are held in your address, while the platform still supports token creation in the core and from the standard Neel wallet.
 

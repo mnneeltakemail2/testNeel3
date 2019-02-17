@@ -10,7 +10,7 @@ Assets Management chapter includes all details about Issue and Reissue Assets wh
 * [Sponsored transaction](assets-management/sponsored-transaction.md)
 * [Sponsored fee](assets-management/sponsored-fee.md)
 
-# Features of Generating your tokens on Neel Platform
+# Features of Generating your tokens on Neel Network
 
 * No smart contracts required.
 * No programming experience needed.

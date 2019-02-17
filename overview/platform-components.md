@@ -26,7 +26,7 @@
 
 # 5. Neel Gateways
 
-Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Neel platform \(or any other cryptocurrency like BTC/ETH/LTC/ZCash/BCH/Dash\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Neel blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
+Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Neel network \(or any other cryptocurrency like BTC/ETH/LTC/ZCash/BCH/Dash\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Neel blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
 ## 6.1 Fiat Gateways
 
